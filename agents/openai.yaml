@@ -1,0 +1,4 @@
+interface:
+  display_name: "Português claro"
+  short_description: "Escrita técnica clara e precisa em português brasileiro"
+  default_prompt: "Use $portugues-claro para reescrever o texto abaixo em português brasileiro, preservando o sentido."
