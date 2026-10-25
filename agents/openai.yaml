@@ -1,4 +1,4 @@
 interface:
-  display_name: "Português claro"
+  display_name: "PTS-BR"
   short_description: "Escrita técnica clara e precisa em português brasileiro"
-  default_prompt: "Use $portugues-claro para reescrever o texto abaixo em português brasileiro, preservando o sentido."
+  default_prompt: "Use $pts-br para reescrever o texto abaixo em português brasileiro, preservando o sentido."

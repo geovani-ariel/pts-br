@@ -120,3 +120,40 @@ distintos. Uma revisão não deve transformar disponibilidade em entrega.
 
 **Motivo:** o coeficiente é localizado sem mudar seu valor. Versão e
 identificador não são números comuns; seus pontos e zeros permanecem.
+
+## 9. Ações dentro de um campo textual
+
+**Pedido:** traduzir somente o valor da coluna `message`, preservando CSV.
+
+**Antes**
+
+```csv
+code,message
+E2,"Open the file, then wait"
+```
+
+**Depois**
+
+```csv
+code,message
+E2,"Abra o arquivo. Em seguida, aguarde."
+```
+
+**Motivo:** a disciplina de uma ação por frase também vale dentro do campo.
+Dividir a frase não exige criar outra linha ou coluna.
+
+## 10. Adjetivo com alcance indefinido
+
+**Antes**
+
+> Revise os contratos e anexos assinados.
+
+**Depois**
+
+> Revise os contratos e anexos assinados.
+>
+> Pendente: esclarecer se “assinados” se refere apenas aos anexos ou também aos contratos.
+
+**Motivo:** repetir o adjetivo nos dois substantivos escolheria uma interpretação
+que a fonte não estabeleceu. A orientação de desambiguação da PTC é aplicada
+sem criar propriedades para os contratos.

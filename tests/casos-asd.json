@@ -1,0 +1,186 @@
+[
+  {
+    "id": "P01",
+    "prompt": "Reescreva este trecho de um procedimento fictício: AVISO [W-04]: Antes de remover a tampa, desligue a alimentação e aguarde 90 segundos. Não toque na superfície quente.",
+    "criterios_semanticos": "Preservar aviso, identificador, desligamento, espera anterior à remoção e proibição; não acrescentar medidas técnicas.",
+    "literais": [
+      "AVISO",
+      "[W-04]",
+      "90"
+    ]
+  },
+  {
+    "id": "P02",
+    "prompt": "Divida em passos um procedimento fictício: Só reabra a embalagem depois de receber a autorização e registrar o lote. Se a autorização for recusada, mantenha a embalagem fechada. Não descarte a etiqueta.",
+    "criterios_semanticos": "Manter duas condições cumulativas, recusa com consequência e proibição da etiqueta.",
+    "literais": []
+  },
+  {
+    "id": "P03",
+    "prompt": "Organize para execução: As verificações A e B podem ocorrer em qualquer ordem. Somente depois de ambas passarem, execute C. Se qualquer uma falhar, não execute C.",
+    "criterios_semanticos": "Não impor ordem entre A e B; preservar sucesso conjunto e bloqueio após falha.",
+    "literais": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "P04",
+    "prompt": "Reescreva sem alterar o prazo: Não envie o relatório antes de 48 horas após o recebimento da amostra. Esse prazo não garante que a análise esteja concluída.",
+    "criterios_semanticos": "Preservar limite mínimo e ponto de partida; não converter em prazo máximo ou garantia de conclusão.",
+    "literais": [
+      "48"
+    ]
+  },
+  {
+    "id": "P05",
+    "prompt": "Cada linha desta mensagem será entregue isoladamente a outro agente. Reescreva para que cada linha seja compreensível sozinha: O coletor recebeu o arquivo. Ele ainda não verificou esse arquivo. Depois disso, o executor poderá processá-lo.",
+    "criterios_semanticos": "Explicitar referências por linha sem afirmar verificação concluída; após verificação segue possibilidade de processar; não inventar responsável diferente.",
+    "literais": []
+  },
+  {
+    "id": "P06",
+    "prompt": "Reescreva este procedimento fictício, preservando o nível do aviso: CUIDADO [C-02]: Se houver vazamento, não inicie o equipamento. Se não houver vazamento, o operador pode iniciar o equipamento após a inspeção.",
+    "criterios_semanticos": "Preservar CUIDADO e código, duas condições, modalidade e inspeção; não inventar risco ou autorizar início sem inspeção.",
+    "literais": [
+      "CUIDADO",
+      "[C-02]"
+    ]
+  },
+  {
+    "id": "L01",
+    "prompt": "Simplifique o texto técnico sem mudar termos estatísticos: O estimador robusto pode apresentar menor variância nesse conjunto de dados. Isso não demonstra superioridade em outras populações.",
+    "criterios_semanticos": "Não retirar robusto por supor adjetivo de marketing; preservar possibilidade, escopo e limitação.",
+    "literais": []
+  },
+  {
+    "id": "L02",
+    "prompt": "Traduza para pt-BR: The driver parked the car. The printer driver is unavailable. The network port is open, but the port authority has not authorized the ship.",
+    "criterios_semanticos": "Distinguir motorista/driver e porta/autoridade portuária; não aplicar glossário de software ao domínio de transporte.",
+    "literais": []
+  },
+  {
+    "id": "L03",
+    "prompt": "Reescreva preservando o glossário de manutenção: cavitation=cavitação; check valve=válvula de retenção. The check valve may be damaged. Cavitation has not been confirmed.",
+    "criterios_semanticos": "Aplicar termos de domínio sem importar retenção de dados; preservar incerteza e ausência de confirmação.",
+    "literais": []
+  },
+  {
+    "id": "L04",
+    "prompt": "Traduza somente o texto de message e preserve o marcador: {\"id\":\"pending_files\",\"message\":\"There are {count} pending files.\",\"count\":3}. Devolva só JSON válido com as mesmas chaves.",
+    "criterios_semanticos": "Traduzir texto sem alterar marcador, identificador, número e contrato.",
+    "literais": [
+      "{count}"
+    ],
+    "formato": "json",
+    "chaves": [
+      "id",
+      "message",
+      "count"
+    ],
+    "valores_fixos": {
+      "id": "pending_files",
+      "count": 3
+    }
+  },
+  {
+    "id": "L05",
+    "prompt": "Traduza sem promover expectativa a obrigação: Neste contexto, should indica uma previsão incerta, não uma obrigação. The service should be back soon. This does not authorize restarting the service.",
+    "criterios_semanticos": "Preservar expectativa incerta e ausência de autorização; não inventar prazo.",
+    "literais": []
+  },
+  {
+    "id": "L06",
+    "prompt": "Torne clara a descrição sem mudar a definição: O campo usa um inteiro sem sinal. O tipo é uint8_t, o mínimo é 0 e o máximo inclusivo é 255. Não use valores negativos.",
+    "criterios_semanticos": "Preservar tipo, faixa inclusiva e proibição; não trocar por inteiro com sinal.",
+    "literais": [
+      "uint8_t",
+      "255"
+    ]
+  },
+  {
+    "id": "C01",
+    "prompt": "Traduza somente a coluna message para pt-BR. Devolva CSV válido, sem Markdown, separado por vírgula, com cabeçalho code,message e duas linhas: code,message\nE1,\"Request may have failed; retry is disabled\"\nE2,\"Open the file, then wait\"",
+    "criterios_semanticos": "Manter duas linhas e códigos, hipótese, retry desativado e ordem; respeitar delimitadores CSV.",
+    "literais": [
+      "E1",
+      "E2"
+    ]
+  },
+  {
+    "id": "C02",
+    "prompt": "Traduza apenas o valor de description para pt-BR; preserve chaves e demais valores. Devolva somente YAML válido:\nname: sync_orders\ndescription: \"The worker may retry after approval.\"\nretry: false\ncommand: \"tool --retry 0\"",
+    "criterios_semanticos": "Preservar YAML, nome, booleano, comando, modalidade e condição.",
+    "literais": [
+      "sync_orders",
+      "tool --retry 0"
+    ]
+  },
+  {
+    "id": "C03",
+    "prompt": "A saída será consumida diretamente por um agente sem acesso ao restante da conversa. Reescreva: A etapa de validação falhou. A publicação não começou. Os testes anteriores passaram. Isso não garante que o pacote atual seja válido.",
+    "criterios_semanticos": "Não converter teste anterior em validação do pacote atual; preservar falha, ausência de início e limitação sem depender de referente externo.",
+    "literais": []
+  },
+  {
+    "id": "C04",
+    "prompt": "Traduza somente o conteúdo textual do elemento message e devolva apenas XML válido. Preserve a tag, o atributo code e o marcador: <message code=\"E_WAIT\">Wait at least {seconds} seconds before retrying.</message>",
+    "criterios_semanticos": "Manter XML, atributo e marcador; traduzir limite mínimo e sequência.",
+    "literais": [
+      "code=\"E_WAIT\"",
+      "{seconds}"
+    ]
+  },
+  {
+    "id": "C05",
+    "prompt": "Melhore a clareza para documentação técnica sem inventar propriedades: A solução moderna oferece uma experiência inovadora, robusta e extremamente eficiente. A fonte não apresenta funcionalidades, medições ou condições de operação.",
+    "criterios_semanticos": "Não inventar funcionalidades, desempenho ou comprovação; reconhecer ausência de informação técnica em vez de tratá-la como descrição factual suficiente.",
+    "literais": []
+  },
+  {
+    "id": "C06",
+    "prompt": "Revise o texto e informe se pode certificar conformidade integral com o dicionário oficial ASD-STE100 em português, sem acesso a um dicionário autorizado: O serviço pode tentar novamente após aprovação.",
+    "criterios_semanticos": "Não alegar certificação ou existência de dicionário oficial de português; preservar texto e explicar limite verificável.",
+    "literais": []
+  },
+  {
+    "id": "R01",
+    "prompt": "Elimine a ambiguidade sem contexto adicional: Revise os contratos e anexos assinados.",
+    "criterios_semanticos": "Não decidir se assinados restringe somente anexos ou também contratos; preservar trecho e registrar escopo ausente.",
+    "literais": []
+  },
+  {
+    "id": "R02",
+    "prompt": "Desambigue sem inventar contexto: Uma vez que o token expira, renove o token. Não sabemos se a frase quer explicar uma causa ou indicar o momento da renovação.",
+    "criterios_semanticos": "Não escolher porque ou quando sem evidência; manter desconhecimento da relação causal/temporal.",
+    "literais": []
+  },
+  {
+    "id": "R03",
+    "prompt": "Simplifique mantendo as três possibilidades permitidas: O usuário pode enviar PDF e/ou CSV; são aceitos só PDF, só CSV ou os dois formatos juntos.",
+    "criterios_semanticos": "Manter três alternativas, incluindo ambos; não transformar em exclusividade ou obrigação.",
+    "literais": [
+      "PDF",
+      "CSV"
+    ]
+  },
+  {
+    "id": "R04",
+    "prompt": "Corte o que for supérfluo sem perder a evidência: Com base apenas no log fornecido, o timeout parece ocorrer após a autenticação. Não há acesso a outras fontes.",
+    "criterios_semanticos": "Preservar limitação ao log, hipótese, ordem observada e ausência de outras fontes.",
+    "literais": []
+  },
+  {
+    "id": "R05",
+    "prompt": "Revise sem proibir palavras legítimas: O engenheiro deve assumir a responsabilidade pelo relatório e submeter o material ao ensaio. A estrutura deve suportar a carga especificada.",
+    "criterios_semanticos": "Preservar responsabilidade, submissão ao ensaio e capacidade mecânica; não tratar todos os usos como falsos amigos.",
+    "literais": []
+  },
+  {
+    "id": "R06",
+    "prompt": "Desambigue a solicitação sem escolher uma interpretação: O administrador pediu para logar a operação. A fonte não esclarece se isso significa registrar a operação em log ou entrar na conta para executar a operação.",
+    "criterios_semanticos": "Preservar duas leituras e limitação da fonte; não inventar qual ação o administrador quer.",
+    "literais": []
+  }
+]

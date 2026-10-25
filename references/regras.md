@@ -50,6 +50,22 @@ indica continuidade. “O serviço processa os arquivos” perde essa informaç�
 
 ## Condições e sequência
 
+### Avisos e mensagens operacionais
+
+Preserve nível, código e alcance de avisos como `AVISO [W-04]`. Não substitua
+um aviso por uma observação informal para suavizar o tom. Coloque o aviso e suas
+precondições antes das ações afetadas, sem inventar riscos, medidas ou valores.
+Se a equivalência de um nível em outro idioma depender de uma norma ou produto,
+use a convenção fornecida; não deduza uma classificação de segurança.
+
+Quando passos puderem ocorrer em qualquer ordem, mantenha essa possibilidade.
+Não transforme uma lista de verificações independentes em uma sequência obrigatória.
+Em mensagens entregues isoladamente a agentes, cada trecho precisa identificar
+os referentes conhecidos, sem depender de “ele”, “isso” ou “depois disso” fora
+do trecho. Não invente referentes ausentes.
+
+### Escopo compartilhado
+
 Ao dividir uma instrução, escreva as condições compartilhadas em um cabeçalho
 que governe explicitamente todos os passos. Mantenha as condições particulares
 no passo correspondente. Não transforme uma condição cumulativa em alternativa.
@@ -108,6 +124,12 @@ Verifique também ambiguidades próprias do português:
   acrescente vírgulas que passem a atribuir a falha a todos os servidores.
 - Em “um simples teste”, não troque a posição do adjetivo automaticamente:
   “um teste simples” pode descrever a complexidade, em vez de minimizar o teste.
+- Em “os contratos e anexos assinados”, confirme o alcance de “assinados” antes
+  de repeti-lo nos dois substantivos. A repetição pode atribuir uma propriedade
+  que a fonte não estabeleceu para ambos.
+- “Uma vez que”, “como” e “inclusive” dependem do contexto. Não escolha uma
+  relação causal, temporal ou de inclusão que a fonte não esclareça. Em `e/ou`,
+  preserve a possibilidade de ambos quando isso estiver definido no texto.
 - Explicite o responsável apenas quando a fonte ou o contexto o estabelecer.
   Não converta voz passiva ou sujeito omitido em uma atribuição inventada.
 
@@ -153,3 +175,9 @@ Preserve também limitações contextuais, como a impossibilidade de consultar u
 fonte. Uma nota de pendência não substitui esse fato. Confira os estados descritos:
 suporte disponível não equivale a suporte fornecido, assim como envio não equivale
 a recebimento. Uma paráfrase que troca esses estados muda o que o texto afirma.
+
+Uma ressalva como “com base apenas no log fornecido” pode limitar a evidência.
+Não a remova como metatexto sem conferir o efeito sobre a afirmação. Prefira
+encurtar a ressalva preservando seu alcance. Formas legítimas como “assumir a
+responsabilidade” e “suportar uma carga” não são erros por aparecerem em listas
+de falsos amigos em outro sentido.

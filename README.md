@@ -1,4 +1,4 @@
-# Português claro
+# PTS-BR — Português Técnico Simplificado Brasileiro
 
 Skill para escrever, revisar e traduzir textos técnicos em português brasileiro.
 O objetivo é reduzir ambiguidades sem perder fatos, condições, exceções ou grau
@@ -14,7 +14,7 @@ dependências, chave de API ou acesso à rede durante a revisão de um texto.
 ### Codex — disponível em todos os projetos
 
 ```sh
-npx skills@latest add geovani-ariel/portugues-claro --skill portugues-claro --agent codex --global --copy
+npx skills@latest add geovani-ariel/pts-br --skill pts-br --agent codex --global --copy
 ```
 
 `--global` instala para o usuário. `--copy` cria uma cópia, sem depender de um
@@ -25,28 +25,28 @@ link simbólico para a pasta de origem. Abra uma nova conversa após instalar.
 Na pasta do projeto que vai usar a skill, execute:
 
 ```sh
-npx skills@latest add geovani-ariel/portugues-claro --skill portugues-claro --agent codex --copy
+npx skills@latest add geovani-ariel/pts-br --skill pts-br --agent codex --copy
 ```
 
 ### A partir de uma pasta local
 
-Depois de extrair o ZIP, execute na pasta que contém `portugues-claro`:
+Depois de extrair o ZIP, execute na pasta que contém `pts-br`:
 
 ```sh
-npx skills@latest add ./portugues-claro --skill portugues-claro --agent codex --copy
+npx skills@latest add ./pts-br --skill pts-br --agent codex --copy
 ```
 
 Para descobrir a skill sem instalar:
 
 ```sh
-npx skills@latest add geovani-ariel/portugues-claro --list
+npx skills@latest add geovani-ariel/pts-br --list
 ```
 
 Para consultar e atualizar uma instalação global feita pelo CLI:
 
 ```sh
 npx skills@latest list --global --agent codex
-npx skills@latest update portugues-claro --global
+npx skills@latest update pts-br --global
 ```
 
 Outros agentes podem ser selecionados por `--agent`, conforme a
@@ -56,19 +56,31 @@ defina `DISABLE_TELEMETRY=1`, conforme a [documentação de telemetria](https://
 
 ## Uso
 
+### Migração do nome anterior
+
+O identificador anterior era `portugues-claro`. Se você o instalou pelo Skills
+CLI, remova essa instalação e instale `pts-br`, evitando duas cópias da mesma skill:
+
+```sh
+npx skills@latest remove portugues-claro --global --agent codex
+npx skills@latest add geovani-ariel/pts-br --skill pts-br --agent codex --global --copy
+```
+
+### Pedidos no chat
+
 No chat do agente:
 
 ```text
-Use $portugues-claro para revisar este procedimento sem alterar as condições:
+Use $pts-br para revisar este procedimento sem alterar as condições:
 [texto]
 ```
 
 Outros pedidos possíveis:
 
 ```text
-Use $portugues-claro para traduzir esta descrição de ferramenta para pt-BR.
-Use $portugues-claro no modo natural e preserve o tom deste comunicado.
-Use $portugues-claro e mostre antes/depois com os motivos das mudanças.
+Use $pts-br para traduzir esta descrição de ferramenta para pt-BR.
+Use $pts-br no modo natural e preserve o tom deste comunicado.
+Use $pts-br e mostre antes/depois com os motivos das mudanças.
 ```
 
 A saída padrão contém somente o texto revisado. Quando faltar informação para
@@ -109,7 +121,7 @@ e as [regras com exemplos](references/regras.md).
 | ABNT NBR ISO 24495-1:2024 — Linguagem simples | Leitor, finalidade, organização, compreensão e uso. Veja o [escopo da ISO](https://www.iso.org/standard/78907.html). |
 | [Microsoft — guia de localização pt-BR](https://learn.microsoft.com/en-us/globalization/reference/microsoft-style-guides) | Tradução por contexto, terminologia, siglas e nomes de produto. |
 | [Português Técnico Controlado](https://github.com/kayquer/portugues-tecnico-controlado) | Ambiguidades próprias do português e organização do glossário. |
-| [ASD-STE100 Skill](https://github.com/danyuchn/asd-ste100-skill) | Inspiração inicial para aplicar linguagem controlada a textos consumidos por agentes. |
+| [ASD-STE100 Skill](https://github.com/danyuchn/asd-ste100-skill) | Estrutura de instruções, condições, avisos e textos consumidos por agentes. |
 
 As seções e versões consultadas, as adaptações e os conflitos entre fontes estão
 documentados em [referências](references/referencias.md) e
@@ -126,11 +138,19 @@ elementos literais e formatos de saída.
 ```sh
 python3 tests/verificar.py --selftest
 python3 tests/verificar.py tests/resultados.json
+python3 tests/verificar.py --casos tests/casos-asd.json tests/resultados-asd.json
+python3 -B tests/test_verificar.py
 ```
 
 O verificador usa apenas a biblioteca padrão do Python. Ele confere respostas
 salvas; não chama modelos nem prova equivalência semântica. Veja
 [método e limitações](docs/testes.md).
+
+A bateria complementar acrescenta 24 casos baseados em ASD-STE100 e PTC,
+totalizando 52 casos distintos nas duas baterias. Inclui procedimentos fictícios,
+avisos, mensagens isoladas para agentes, linguagem estatística, glossários de
+outros domínios, CSV, YAML, XML e ambiguidades próprias do português. Veja
+[adaptações e resultados da rodada](docs/base-asd-ptc.md).
 
 ## Licença
 

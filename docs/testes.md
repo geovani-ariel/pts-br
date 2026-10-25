@@ -57,6 +57,11 @@ cobertura da bateria completa.
 
 ## O que o resultado não demonstra
 
+A [rodada complementar ASD e PTC](base-asd-ptc.md) acrescenta 24 casos e
+documenta os ajustes posteriores. Para usar uma bateria própria, passe
+`--casos /caminho/casos.json` ao verificador. O comportamento sem essa opção
+continua usando `tests/casos.json`.
+
 O verificador não chama modelos nem decide equivalência de sentido. Uma resposta
 pode respeitar o JSON e ainda perder um fato, como ocorreu nas candidatas.
 

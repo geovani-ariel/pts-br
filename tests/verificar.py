@@ -88,6 +88,8 @@ def autoteste():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("resultados", type=Path, nargs="?")
+    parser.add_argument("--casos", type=Path, default=Path(__file__).with_name("casos.json"),
+                        help="Arquivo da bateria; padrão: casos.json ao lado do verificador")
     parser.add_argument("--parcial", action="store_true", help="Aceita casos não executados")
     parser.add_argument("--selftest", action="store_true")
     args = parser.parse_args()
@@ -97,7 +99,7 @@ if __name__ == "__main__":
         if not args.resultados:
             parser.error("informe o arquivo de resultados ou --selftest")
         try:
-            casos = json.loads(Path(__file__).with_name("casos.json").read_text(encoding="utf-8"))
+            casos = json.loads(args.casos.read_text(encoding="utf-8"))
             resultados = json.loads(args.resultados.read_text(encoding="utf-8"))
         except (OSError, ValueError) as erro:
             parser.error(str(erro))

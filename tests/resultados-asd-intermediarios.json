@@ -1,0 +1,98 @@
+[
+  {
+    "id": "P01",
+    "resposta": "AVISO [W-04]: Antes de remover a tampa:\n1. Desligue a alimentação.\n2. Aguarde 90 segundos após desligar a alimentação.\n\nNão toque na superfície quente."
+  },
+  {
+    "id": "P02",
+    "resposta": "1. Se a autorização for recusada, mantenha a embalagem fechada.\n2. Reabra a embalagem somente depois de receber a autorização e registrar o lote.\n\nNão descarte a etiqueta."
+  },
+  {
+    "id": "P03",
+    "resposta": "Faça as verificações A e B em qualquer ordem.\nExecute C somente depois que as verificações A e B passarem.\nSe a verificação A ou a verificação B falhar, não execute C."
+  },
+  {
+    "id": "P04",
+    "resposta": "Não envie o relatório antes de completar 48 horas após o recebimento da amostra.\nO prazo de 48 horas não garante que a análise esteja concluída."
+  },
+  {
+    "id": "P05",
+    "resposta": "O coletor recebeu o arquivo.\nO coletor ainda não verificou o arquivo que recebeu.\nO executor poderá processar o arquivo recebido pelo coletor depois que o coletor verificar esse arquivo."
+  },
+  {
+    "id": "P06",
+    "resposta": "CUIDADO [C-02]:\nSe houver vazamento, não inicie o equipamento.\nSe não houver vazamento, o operador pode iniciar o equipamento após a inspeção."
+  },
+  {
+    "id": "L01",
+    "resposta": "O estimador robusto pode ter menor variância nesse conjunto de dados. Isso não demonstra superioridade em outras populações."
+  },
+  {
+    "id": "L02",
+    "resposta": "O motorista estacionou o carro. O driver da impressora está indisponível. A porta de rede está aberta, mas a autoridade portuária não autorizou o navio."
+  },
+  {
+    "id": "L03",
+    "resposta": "A válvula de retenção pode estar danificada. A cavitação não foi confirmada."
+  },
+  {
+    "id": "L04",
+    "resposta": "{\"id\":\"pending_files\",\"message\":\"Há {count} arquivos pendentes.\",\"count\":3}"
+  },
+  {
+    "id": "L05",
+    "resposta": "Espera-se que o serviço volte em breve, mas essa previsão é incerta. Isso não autoriza reiniciar o serviço."
+  },
+  {
+    "id": "L06",
+    "resposta": "O campo usa um inteiro sem sinal do tipo uint8_t. O valor mínimo é 0, e o máximo inclusivo é 255. Não use valores negativos."
+  },
+  {
+    "id": "C01",
+    "resposta": "code,message\nE1,\"A requisição pode ter falhado. A nova tentativa está desativada.\"\nE2,\"Abra o arquivo e, em seguida, aguarde.\""
+  },
+  {
+    "id": "C02",
+    "resposta": "name: sync_orders\ndescription: \"O worker pode tentar novamente após aprovação.\"\nretry: false\ncommand: \"tool --retry 0\""
+  },
+  {
+    "id": "C03",
+    "resposta": "A etapa de validação falhou. A publicação não começou. Os testes anteriores passaram. A aprovação nos testes anteriores não garante a validade do pacote atual."
+  },
+  {
+    "id": "C04",
+    "resposta": "<message code=\"E_WAIT\">Aguarde pelo menos {seconds} segundos antes de tentar novamente.</message>"
+  },
+  {
+    "id": "C05",
+    "resposta": "A fonte apresenta alegações de modernidade, inovação, robustez e eficiência da solução, mas não informa funcionalidades, medições ou condições de operação."
+  },
+  {
+    "id": "C06",
+    "resposta": "O serviço pode tentar novamente após aprovação.\n\nO texto está claro e foi mantido. Não posso certificar conformidade integral com um dicionário oficial ASD-STE100 em português sem acesso a um dicionário autorizado. Esta revisão é editorial. A base portuguesa desta skill não é um dicionário oficial nem oferece certificação ASD-STE100."
+  },
+  {
+    "id": "R01",
+    "resposta": "Revise os contratos e anexos assinados.\n\nPendente: esclarecer se ‘assinados’ se refere apenas aos anexos ou também aos contratos."
+  },
+  {
+    "id": "R02",
+    "resposta": "Uma vez que o token expira, renove o token.\n\nPendente: esclarecer se a expiração é a causa da renovação ou indica o momento de renovar o token."
+  },
+  {
+    "id": "R03",
+    "resposta": "O usuário pode enviar apenas PDF, apenas CSV ou os dois formatos juntos."
+  },
+  {
+    "id": "R04",
+    "resposta": "Apenas pelo log fornecido, o tempo limite parece ser excedido após a autenticação. Não há acesso a outras fontes."
+  },
+  {
+    "id": "R05",
+    "resposta": "O engenheiro deve assumir a responsabilidade pelo relatório e submeter o material ao ensaio. A estrutura deve suportar a carga especificada."
+  },
+  {
+    "id": "R06",
+    "resposta": "O administrador pediu para logar a operação.\n\nPendente: esclarecer se o pedido é registrar a operação em log ou entrar na conta para executar a operação."
+  }
+]

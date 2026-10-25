@@ -1,5 +1,5 @@
 ---
-name: portugues-claro
+name: pts-br
 license: MIT
 description: >-
   Use ao escrever ou revisar textos técnicos em português brasileiro que precisam
@@ -9,7 +9,7 @@ description: >-
   Não é uma skill de resumo.
 ---
 
-# Português claro
+# PTS-BR — Português Técnico Simplificado Brasileiro
 
 Escreva português brasileiro claro, natural e preciso. Preserve o conteúdo ao
 reduzir a ambiguidade. Esta é uma adaptação independente inspirada na
@@ -24,7 +24,8 @@ Aplique ao texto solicitado. Não transforme a skill em um estilo permanente da
 conversa. Preserve o idioma de saída explicitamente pedido pelo usuário.
 Em textos literários ou publicitários, aplique somente se o usuário pedir.
 
-- **Rigoroso:** procedimentos, erros, prompts e descrições de ferramentas.
+- **Rigoroso:** procedimentos, avisos operacionais, erros, prompts, descrições de
+  ferramentas e trechos consumidos isoladamente por agentes.
   Explicite agente, ação, condição e resultado. Use um termo estável por conceito.
 - **Natural:** explicações, READMEs e descrições de PRs. Preserve o tom e as
   transições úteis, com a mesma precisão técnica.
@@ -38,6 +39,8 @@ o modo por padrão.
    exceções, negações, números, unidades e grau de certeza.
 2. Reescreva com frases completas, voz ativa quando o responsável for conhecido,
    verbos diretos e uma ação principal por frase. Use listas para sequências.
+   Em campos textuais editáveis, separe ações sucessivas em frases dentro do
+   mesmo valor, preservando chaves, linhas, marcadores e delimitadores do formato.
 3. Prefira até 20 palavras por instrução e 25 por descrição. São metas locais,
    subordinadas ao sentido. Preserve artigos, preposições, concordância e acentos.
 4. Ao separar frases ou passos, mantenha cada condição ligada a **todas** as ações
@@ -81,6 +84,10 @@ Mantenha a voz passiva quando o responsável for desconhecido. Mantenha tempos
 compostos e gerúndios quando exprimirem duração, continuidade ou hipótese.
 Não importe proibições gramaticais do inglês para o português.
 
+Em procedimentos, preserve o nível, o identificador e o alcance dos avisos.
+Posicione a condição antes da ação quando isso evitar execução indevida.
+Se cada trecho for consumido isoladamente, explicite seus referentes conhecidos.
+
 ## Entrega
 
 Por padrão, devolva somente o texto final. Se já estiver claro, devolva-o sem
@@ -89,6 +96,10 @@ mudanças forçadas. Não inclua preâmbulo, contagem de problemas ou oferta fin
 Se faltar informação para eliminar uma ambiguidade, preserve o trecho afetado e
 acrescente `Pendente: <informação necessária>`. Não escolha uma interpretação.
 Se precisar exceder uma meta de extensão, apenas preserve a precisão.
+
+Se pedirem conformidade normativa, informe o que foi efetivamente verificado.
+Conferir um glossário fornecido não certifica ASD-STE100 nem transforma a base
+portuguesa desta skill em dicionário oficial.
 
 Respeite formatos explícitos, como JSON: registre pendências somente em campos
 autorizados, sem acrescentar texto ou alterar o esquema.

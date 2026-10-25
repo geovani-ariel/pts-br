@@ -1,6 +1,6 @@
 # Base de referências e critérios de aplicação
 
-As três referências abaixo orientam partes diferentes da skill. Foram consultadas
+As referências abaixo orientam partes diferentes da skill. Foram consultadas
 em 25 de outubro de 2026. São fontes de orientação; a skill não oferece auditoria
 de conformidade nem certificação.
 
@@ -59,6 +59,28 @@ uma estimativa em prazo garantido para satisfazer uma regra de forma.
 Aviso de licença preservado em [LICENSE-PTC](../LICENSE-PTC).
 
 ## Conflitos e precedência
+
+### Base ASD-STE100 e sua adaptação para pt-BR
+
+A [ASD-STE100 Skill](https://github.com/danyuchn/asd-ste100-skill), na versão
+[c7b11cd9258708909d8574c8176d4c70969c8b29](https://github.com/danyuchn/asd-ste100-skill/tree/c7b11cd9258708909d8574c8176d4c70969c8b29),
+orienta a separação de ações, a consistência de termos, a preservação de
+modalidade e a apresentação de condições antes de ações. A rodada complementar
+aplica esses princípios a avisos operacionais e mensagens consumidas por agentes.
+Foram relidos `SKILL.md` e `references/writing-rules.md`.
+
+Essa base descreve regras para inglês e não fornece um dicionário normativo de
+português. Não importamos a proibição de tempos compostos, restrições inglesas
+de classes de palavras ou limites de cadeias nominais para o português.
+
+O PTC complementa essa estrutura com escopo de adjetivos, conectores e léxico.
+As prescrições são adaptadas ao sentido: uma ressalva pode conter informação
+material, e um termo listado como falso amigo pode ter outro uso legítimo.
+Nos pedidos de conformidade, diferencie revisão orientativa, conferência contra
+um glossário fornecido e certificação. A skill executa as duas primeiras quando
+houver base suficiente; não oferece certificação normativa.
+
+### Critério de decisão
 
 1. Preserve o sentido, os contratos técnicos e os elementos literais no escopo do pedido.
 2. Aplique preferências explícitas do usuário e o glossário do projeto.
