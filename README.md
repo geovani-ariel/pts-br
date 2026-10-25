@@ -1,28 +1,48 @@
-# PTS-BR — Português Técnico Simplificado Brasileiro
+# PTS-BR
 
-Skill para escrever, revisar e traduzir textos técnicos em português brasileiro.
-O objetivo é reduzir ambiguidades sem perder fatos, condições, exceções ou grau
-de certeza. Inclui um glossário que distingue traduções preferidas, termos
-mantidos no original e decisões que dependem do contexto.
+Português Técnico Simplificado Brasileiro. Skill para escrever, revisar e
+traduzir procedimentos, documentação, prompts e mensagens para agentes em pt-BR.
+O foco é preservar fatos, condições, exceções, grau de certeza e terminologia.
 
-## Instalação pelo Skills CLI
+[Instalação](#instalação) · [Como usar](#como-usar) · [Glossário](references/glossario.md) · [Exemplos](examples/antes-depois.md) · [Testes](#testes)
 
-Requer Node.js e npm para executar o instalador. A versão do CLI validada foi
-`skills@1.7.4`, com Node.js `>=22.20.0`. A skill em si é Markdown e não exige
-dependências, chave de API ou acesso à rede durante a revisão de um texto.
+## Antes e depois
 
-### Codex — disponível em todos os projetos
+**Antes**
+
+> Somente em homologação e após aprovação, exporte os registros e exclua a cópia temporária apenas se a exportação terminar sem erros.
+
+**Depois**
+
+> Execute estes passos somente em homologação e após aprovação:
+>
+> 1. Exporte os registros.
+> 2. Exclua a cópia temporária apenas se a exportação terminar sem erros.
+
+A condição de homologação e a aprovação continuam valendo para os dois passos.
+A exclusão ainda depende do sucesso da exportação.
+
+## Instalação
+
+Para instalar no Codex e usar em todos os projetos:
 
 ```sh
 npx skills@latest add geovani-ariel/pts-br --skill pts-br --agent codex --global --copy
 ```
 
-`--global` instala para o usuário. `--copy` cria uma cópia, sem depender de um
-link simbólico para a pasta de origem. Abra uma nova conversa após instalar.
+Abra uma nova conversa após instalar. `--global` instala para o usuário;
+`--copy` mantém uma cópia independente da pasta de origem.
+
+O instalador usa Node.js e npm. Os comandos foram validados com `skills@1.7.4`,
+que requer Node.js `>=22.20.0`. A skill é composta por arquivos Markdown e não
+exige dependências, chave de API ou rede para revisar o texto fornecido.
+
+<details>
+<summary>Instalação por projeto, pasta local, atualização e migração</summary>
 
 ### Somente no projeto atual
 
-Na pasta do projeto que vai usar a skill, execute:
+Execute na pasta do projeto:
 
 ```sh
 npx skills@latest add geovani-ariel/pts-br --skill pts-br --agent codex --copy
@@ -36,37 +56,42 @@ Depois de extrair o ZIP, execute na pasta que contém `pts-br`:
 npx skills@latest add ./pts-br --skill pts-br --agent codex --copy
 ```
 
-Para descobrir a skill sem instalar:
+### Descobrir, consultar e atualizar
+
+Liste a skill no repositório sem instalar:
 
 ```sh
 npx skills@latest add geovani-ariel/pts-br --list
 ```
 
-Para consultar e atualizar uma instalação global feita pelo CLI:
+Consulte e atualize uma instalação global feita pelo CLI:
 
 ```sh
 npx skills@latest list --global --agent codex
 npx skills@latest update pts-br --global
 ```
 
-Outros agentes podem ser selecionados por `--agent`, conforme a
-[documentação oficial do Skills CLI](https://github.com/vercel-labs/skills/blob/main/docs/commands.md).
-A validação deste projeto cobre o Codex. Para desativar a telemetria do CLI,
-defina `DISABLE_TELEMETRY=1`, conforme a [documentação de telemetria](https://skills.sh/docs/cli).
+### Migrar de `portugues-claro`
 
-## Uso
-
-### Migração do nome anterior
-
-O identificador anterior era `portugues-claro`. Se você o instalou pelo Skills
-CLI, remova essa instalação e instale `pts-br`, evitando duas cópias da mesma skill:
+Se você instalou a versão com o nome anterior pelo Skills CLI, remova-a e
+instale `pts-br` para evitar cópias duplicadas:
 
 ```sh
 npx skills@latest remove portugues-claro --global --agent codex
 npx skills@latest add geovani-ariel/pts-br --skill pts-br --agent codex --global --copy
 ```
 
-### Pedidos no chat
+### Outros agentes e telemetria
+
+Outros agentes podem ser selecionados por `--agent`, conforme a
+[documentação oficial do Skills CLI](https://github.com/vercel-labs/skills/blob/main/docs/commands.md).
+A instalação deste projeto foi validada no Codex. Para desativar a telemetria
+do CLI, defina `DISABLE_TELEMETRY=1`, conforme a
+[documentação de telemetria](https://skills.sh/docs/cli).
+
+</details>
+
+## Como usar
 
 No chat do agente:
 
@@ -75,7 +100,7 @@ Use $pts-br para revisar este procedimento sem alterar as condições:
 [texto]
 ```
 
-Outros pedidos possíveis:
+Você também pode pedir tradução, escolher o modo ou comparar as alterações:
 
 ```text
 Use $pts-br para traduzir esta descrição de ferramenta para pt-BR.
@@ -83,36 +108,55 @@ Use $pts-br no modo natural e preserve o tom deste comunicado.
 Use $pts-br e mostre antes/depois com os motivos das mudanças.
 ```
 
-A saída padrão contém somente o texto revisado. Quando faltar informação para
-eliminar uma ambiguidade, a skill registra uma pendência. Formatos explícitos,
-como JSON, continuam tendo de respeitar o contrato do pedido.
+Por padrão, a resposta contém somente o texto revisado. Quando a fonte for
+ambígua, a skill registra o que falta esclarecer. Na tradução, pode apresentar
+leituras condicionais no idioma pedido, sem escolher uma intenção para o autor.
+Formatos explícitos, como JSON, devem respeitar o contrato do pedido.
 
-## Exemplo
+## Regras de revisão e tradução
 
-**Antes**
+| Modo | Quando usar |
+|---|---|
+| Rigoroso | Procedimentos, avisos, erros, prompts, ferramentas e mensagens entregues isoladamente a agentes. |
+| Natural | Explicações, documentação e comunicados, preservando tom e autoria. |
 
-> Somente em homologação e após aprovação, exporte os registros e exclua a cópia temporária apenas se a exportação terminar sem erros.
+O glossário distingue termos que devem ser traduzidos, mantidos no original ou
+resolvidos pelo contexto. O glossário do pedido prevalece sobre o do projeto;
+ambos prevalecem sobre a base da skill.
 
-**Depois**
-
-> Execute estes passos somente em homologação e após aprovação:
->
-> 1. Exporte os registros.
-> 2. Exclua a cópia temporária apenas se a exportação terminar sem erros.
-
-O cabeçalho preserva as condições das duas ações. Há outros casos comentados em
-[exemplos](examples/antes-depois.md).
-
-## Como as decisões são tomadas
-
-- **Rigoroso:** instruções, mensagens de erro, prompts e descrições de ferramentas.
-- **Natural:** explicações, documentação e comunicados, preservando o tom.
-- **Tradução:** o glossário do pedido prevalece sobre o do projeto, e ambos sobre
-  a base da skill. Código, identificadores, mensagens literais e rótulos reais
-  de interface permanecem protegidos no escopo da revisão.
+Código, comandos, identificadores, URLs, mensagens literais e rótulos reais de
+interface permanecem protegidos no escopo da revisão. Marcadores temporais e
+negações precisam continuar ligados à mesma ação ou afirmação do original.
 
 Veja [como funciona](docs/como-funciona.md), o [glossário](references/glossario.md)
-e as [regras com exemplos](references/regras.md).
+e as [regras detalhadas](references/regras.md). Os
+[exemplos comentados](examples/antes-depois.md) cobrem condições compartilhadas,
+hipóteses, código, JSON, CSV e traduções ambíguas.
+
+## Testes
+
+O repositório contém 76 casos distintos em três baterias:
+
+| Bateria | Casos | Cobertura |
+|---|---:|---|
+| [Original](docs/testes.md) | 28 | Fidelidade, condições, terminologia, elementos literais e formatos de saída. |
+| [ASD-STE100 e PTC](docs/base-asd-ptc.md) | 24 | Avisos, procedimentos, outros domínios técnicos, conectores e integração com agentes. |
+| [Tradução e ambiguidade](docs/rodada-dificil.md) | 24 | Negação modal, escopo temporal, cardinalidade, marcadores, ICU e pares bilíngues. |
+
+Para conferir as respostas salvas e executar os testes do verificador:
+
+```sh
+python3 tests/verificar.py --selftest
+python3 tests/verificar.py tests/resultados.json
+python3 tests/verificar.py --casos tests/casos-asd.json tests/resultados-asd.json
+python3 tests/verificar.py --casos tests/casos-dificeis.json tests/resultados-dificeis.json
+python3 -B tests/test_verificar.py
+```
+
+O verificador usa apenas a biblioteca padrão do Python e confere contratos e
+literais nas respostas salvas. Não chama modelos nem prova equivalência semântica.
+Os relatórios detalham as revisões manuais, correções e limites das amostras,
+incluindo a comparação inicial de 100 respostas entre versões.
 
 ## Fontes
 
@@ -123,47 +167,17 @@ e as [regras com exemplos](references/regras.md).
 | [Português Técnico Controlado](https://github.com/kayquer/portugues-tecnico-controlado) | Ambiguidades próprias do português e organização do glossário. |
 | [ASD-STE100 Skill](https://github.com/danyuchn/asd-ste100-skill) | Estrutura de instruções, condições, avisos e textos consumidos por agentes. |
 
-As seções e versões consultadas, as adaptações e os conflitos entre fontes estão
-documentados em [referências](references/referencias.md) e
-[proveniência](references/proveniencia.md). As traduções do glossário são
-convenções editáveis, sem alegação de conformidade integral ou certificação.
-
-## Testes
-
-A rodada documentada gerou 100 respostas ao comparar versões. A versão final
-daquela rodada passou nos 28 casos da amostra, com checagens mecânicas e revisão
-semântica manual. Os casos cobrem condições, modalidade, traduções, datas,
-elementos literais e formatos de saída.
-
-```sh
-python3 tests/verificar.py --selftest
-python3 tests/verificar.py tests/resultados.json
-python3 tests/verificar.py --casos tests/casos-asd.json tests/resultados-asd.json
-python3 tests/verificar.py --casos tests/casos-dificeis.json tests/resultados-dificeis.json
-python3 -B tests/test_verificar.py
-```
-
-O verificador usa apenas a biblioteca padrão do Python. Ele confere respostas
-salvas; não chama modelos nem prova equivalência semântica. Veja
-[método e limitações](docs/testes.md).
-
-A bateria complementar acrescenta 24 casos baseados em ASD-STE100 e PTC,
-totalizando 52 casos distintos nas duas baterias. Inclui procedimentos fictícios,
-avisos, mensagens isoladas para agentes, linguagem estatística, glossários de
-outros domínios, CSV, YAML, XML e ambiguidades próprias do português. Veja
-[adaptações e resultados da rodada](docs/base-asd-ptc.md).
-
-Uma terceira bateria acrescenta 24 casos difíceis de tradução e ambiguidade,
-totalizando 76 casos distintos. Ela cobre escopo de negações e qualificadores
-temporais, confirmação versus conclusão, cardinalidade, marcadores repetidos,
-ICU e tradução bilíngue. Veja [problemas encontrados e correções](docs/rodada-dificil.md).
+Consulte as [seções e versões utilizadas](references/referencias.md) e a
+[proveniência da adaptação](references/proveniencia.md). As escolhas do glossário
+são convenções editáveis. A PTS-BR não oferece certificação ou conformidade
+integral com essas referências.
 
 ## Licença
 
 [MIT](LICENSE). Copyright da adaptação: Geovani Paschoini, 2026.
-O aviso de Dustin Yuchen Teng permanece no arquivo principal, e o aviso de
-Kayque Rotondo está preservado em [LICENSE-PTC](LICENSE-PTC).
+O aviso de Dustin Yuchen Teng permanece no arquivo principal; o de Kayque
+Rotondo está preservado em [LICENSE-PTC](LICENSE-PTC).
 
-A licença deste projeto não altera os direitos sobre normas e guias externos.
+A licença do projeto não altera os direitos sobre normas e guias externos.
 O pacote não redistribui a norma ABNT, o guia integral da Microsoft ou o
 dicionário oficial ASD-STE100.
