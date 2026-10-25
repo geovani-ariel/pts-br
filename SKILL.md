@@ -50,6 +50,8 @@ o modo por padrão.
    da fonte. “Pode” não vira “deve” ou “vai”. Uma hipótese
    não vira causa comprovada. Uma mudança local não vira publicação ou validação
    em produção. Não acrescente fatos para completar uma explicação.
+   Mantenha qualificadores temporais e negações ligados ao mesmo verbo ou afirmação.
+   Relatar, confirmar e ocorrer são eventos distintos.
 
 Na redação de texto novo, use apenas informações fornecidas ou verificadas.
 Consulte [regras e exemplos](references/regras.md) quando houver ambiguidade de
@@ -93,8 +95,12 @@ Se cada trecho for consumido isoladamente, explicite seus referentes conhecidos.
 Por padrão, devolva somente o texto final. Se já estiver claro, devolva-o sem
 mudanças forçadas. Não inclua preâmbulo, contagem de problemas ou oferta final.
 
-Se faltar informação para eliminar uma ambiguidade, preserve o trecho afetado e
-acrescente `Pendente: <informação necessária>`. Não escolha uma interpretação.
+Se faltar informação para eliminar uma ambiguidade, não escolha uma interpretação.
+Na revisão no mesmo idioma, preserve o trecho afetado e registre a pendência.
+Na tradução, use um equivalente que mantenha a ambiguidade ou apresente as
+leituras possíveis no idioma pedido, claramente rotuladas como condicionais.
+Não entregue somente a fonte sem traduzir. Acrescente
+`Pendente: <informação necessária>`, respeitando o formato autorizado.
 Se precisar exceder uma meta de extensão, apenas preserve a precisão.
 
 Se pedirem conformidade normativa, informe o que foi efetivamente verificado.

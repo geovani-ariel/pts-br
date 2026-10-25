@@ -157,3 +157,35 @@ Dividir a frase não exige criar outra linha ou coluna.
 **Motivo:** repetir o adjetivo nos dois substantivos escolheria uma interpretação
 que a fonte não estabeleceu. A orientação de desambiguação da PTC é aplicada
 sem criar propriedades para os contratos.
+
+## 11. Momento do relato e momento do evento
+
+**Antes**
+
+> The timeout was reported before the response arrived.
+
+**Depois**
+
+> O timeout foi relatado antes de a resposta chegar.
+
+**Motivo:** “antes” continua qualificando o relato. Mudar para “Foi relatado que
+o timeout ocorreu antes” deixaria o momento do relato indefinido.
+
+## 12. Tradução com leituras condicionais
+
+**Antes**
+
+> Requests may not be retried.
+
+**Contexto:** a fonte não esclarece o sentido de “may not”.
+
+**Depois**
+
+> Se indicar proibição: “As solicitações não podem ser repetidas.”
+>
+> Se indicar possibilidade: “As solicitações podem não ser repetidas.”
+>
+> Pendente: esclarecer qual sentido se aplica.
+
+**Motivo:** as alternativas entregam português sem decidir a intenção da fonte.
+São hipóteses de tradução, não duas instruções simultâneas.

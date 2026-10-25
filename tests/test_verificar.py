@@ -1,4 +1,4 @@
-"""Testa a seleção de uma bateria externa sem silenciar violações."""
+"""Testa baterias externas e contagem de marcadores sem silenciar violações."""
 
 import json
 from pathlib import Path
@@ -6,6 +6,8 @@ import subprocess
 import sys
 import tempfile
 import unittest
+
+from verificar import conferir
 
 
 class BateriaExternaTest(unittest.TestCase):
@@ -29,6 +31,22 @@ class BateriaExternaTest(unittest.TestCase):
     def test_rejeita_literal_alterado_na_bateria_externa(self):
         resultado = self.executar("Execute sem essa opção.")
         self.assertEqual(resultado.returncode, 1, resultado.stderr)
+
+
+class OcorrenciasLiteraisTest(unittest.TestCase):
+    casos = [{"id": "MARCADOR", "ocorrencias_literais": {"{name}": 2}}]
+
+    def conferir_resposta(self, texto):
+        return conferir(self.casos, [{"id": "MARCADOR", "resposta": texto}])
+
+    def test_aceita_as_duas_ocorrencias_exigidas(self):
+        self.assertEqual(self.conferir_resposta("{name} perguntou se {name} pode repetir."), [])
+
+    def test_rejeita_perda_de_uma_ocorrencia(self):
+        self.assertTrue(self.conferir_resposta("{name} perguntou se ele pode repetir."))
+
+    def test_rejeita_uma_ocorrencia_adicional(self):
+        self.assertTrue(self.conferir_resposta("{name} perguntou a {name} se {name} pode repetir."))
 
 
 if __name__ == "__main__":

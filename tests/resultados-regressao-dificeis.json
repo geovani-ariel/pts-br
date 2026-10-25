@@ -1,0 +1,18 @@
+[
+  {
+    "id": "S02",
+    "resposta": "Execute estes passos somente em homologação e após autorização por escrito:\n\n1. Exporte os registros.\n2. Exclua a cópia temporária apenas se a exportação terminar sem erros.\n\nNunca exclua o arquivo original."
+  },
+  {
+    "id": "S06",
+    "resposta": "O serviço está ativo desde a instalação.\nO operador pode reiniciar o serviço somente se tiver aprovação."
+  },
+  {
+    "id": "S08",
+    "resposta": "A correção está sendo testada desde ontem.\nO commit foi enviado, mas o deploy ainda não começou.\nOs testes locais passaram, mas isso não comprova que a falha em produção foi resolvida."
+  },
+  {
+    "id": "F03",
+    "resposta": "{\"text\":\"O prazo é 04/05/2026\",\"pendencias\":[\"Pendente: informar se a data usa a convenção dia/mês/ano ou mês/dia/ano.\"]}"
+  }
+]

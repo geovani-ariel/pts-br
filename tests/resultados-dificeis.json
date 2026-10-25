@@ -1,0 +1,98 @@
+[
+  {
+    "id": "D01",
+    "resposta": "O cliente não precisa repetir a requisição, mas não deve descartar a requisição pendente."
+  },
+  {
+    "id": "D02",
+    "resposta": "Leituras condicionais:\n\n- Se indicar proibição: “As requisições não podem ser repetidas.”\n- Se indicar possibilidade de não haver nova tentativa: “As requisições podem não ser repetidas.”\n\nPendente: esclarecer qual dos dois sentidos de “may not” se aplica."
+  },
+  {
+    "id": "D03",
+    "resposta": "Não publique o pacote antes de os testes A e B terminarem. O término dos dois testes, por si só, não exige a publicação."
+  },
+  {
+    "id": "D04",
+    "resposta": "O recebimento de todos os registros, exceto dois, foi confirmado. A confirmação de recebimento não comprova que a operação correspondente terminou."
+  },
+  {
+    "id": "D05",
+    "resposta": "Cada cache pertence a exatamente um espaço de trabalho. Um espaço de trabalho pode ter zero ou mais caches. Excluir um espaço de trabalho não necessariamente exclui seus caches."
+  },
+  {
+    "id": "D06",
+    "resposta": "O servidor não confirmou que a autenticação falhou. Isso não significa que a autenticação tenha sido bem-sucedida."
+  },
+  {
+    "id": "D07",
+    "resposta": "Não libere o relatório antes de terem passado pelo menos 48 horas desde o recebimento da amostra. A análise ainda pode estar incompleta nesse momento."
+  },
+  {
+    "id": "D08",
+    "resposta": "O produtor avisou o consumidor depois que ele fechou a fila.\n\nPendente: informar se quem fechou a fila foi o produtor ou o consumidor."
+  },
+  {
+    "id": "D09",
+    "resposta": "O relato de que o tempo limite foi excedido ocorreu antes de a resposta chegar. A resposta acabou sendo concluída, mas ninguém confirmou se o cliente a recebeu."
+  },
+  {
+    "id": "D10",
+    "resposta": "Considerando apenas a amostra de ontem, ainda é possível que alguns arquivos não tenham sido enviados. Não temos acesso ao estado atual."
+  },
+  {
+    "id": "D11",
+    "resposta": "A redução medida foi de 5%, não de 5 pontos percentuais. A taxa original era de 20%. Não deduza uma nova taxa dessas afirmações."
+  },
+  {
+    "id": "D12",
+    "resposta": "O armazenamento tem consistência eventual. Uma leitura pode retornar um valor mais antigo mesmo após a confirmação de uma gravação. A confirmação não significa que a gravação foi replicada para todos os nós."
+  },
+  {
+    "id": "D13",
+    "resposta": "O bloqueio expira se sua concessão temporária não for renovada. A expiração libera o bloqueio. Ela não exclui o registro protegido."
+  },
+  {
+    "id": "D14",
+    "resposta": "A versão é 1.10.0, o ID é 00042 e o limite é 1e3 bytes. Aqui, 1e3 significa mil, não uma versão."
+  },
+  {
+    "id": "D15",
+    "resposta": "{\"message\":\"{name} perguntou se {name} pode tentar novamente.\",\"id\":\"repeat_name\"}"
+  },
+  {
+    "id": "D16",
+    "resposta": "```sh\n# Não é necessário tentar novamente.\nretry=0\nmessage=\"Do not retry\"\n```"
+  },
+  {
+    "id": "D17",
+    "resposta": "{\"message\":\"{count, plural, one {# arquivo está pendente} other {# arquivos estão pendentes}}\",\"id\":\"pending\"}"
+  },
+  {
+    "id": "D18",
+    "resposta": "{\"message\":\"O coeficiente é 0,05. Isso não é um nível de confiança.\",\"coefficient\":0.05,\"id\":\"v0.05\",\"command\":\"tool --coefficient 0.05\"}"
+  },
+  {
+    "id": "D19",
+    "resposta": "{\"en\":\"The report should be sent after validation.\",\"pt\":\"O relatório deve ser enviado após a validação.\",\"pendencias\":[\"Esclarecer quem deve enviar o relatório.\",\"Esclarecer o que deve ser validado.\",\"Esclarecer se “should” expressa obrigação, recomendação ou expectativa; “deve” mantém essa leitura em aberto.\"]}"
+  },
+  {
+    "id": "D20",
+    "resposta": "Somente os revisores que assinaram o acordo podem ver os rascunhos. Os revisores que não assinaram ainda podem ver os relatórios publicados."
+  },
+  {
+    "id": "D21",
+    "resposta": "Na terça-feira, o inspetor confirmou que o teste havia terminado na segunda-feira."
+  },
+  {
+    "id": "D22",
+    "resposta": "A alegação de uma falha no sensor foi feita após o desligamento, e não antes dele. A alegação não foi verificada de forma independente."
+  },
+  {
+    "id": "D23",
+    "resposta": "Antes das 10:00, o cliente confirmou que faria uma nova tentativa após as 10:30. A nova tentativa não foi observada."
+  },
+  {
+    "id": "D24",
+    "resposta": "O log de auditoria informa que o job terminou às 08:00. Esse registro foi gravado às 08:05. Não verificamos se o job realmente terminou."
+  }
+]

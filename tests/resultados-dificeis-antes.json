@@ -1,0 +1,82 @@
+[
+  {
+    "id": "D01",
+    "resposta": "O cliente não precisa tentar a requisição novamente, mas não deve descartar a requisição pendente."
+  },
+  {
+    "id": "D02",
+    "resposta": "Requests may not be retried.\n\nPendente: esclarecer se “may not” proíbe novas tentativas ou indica a possibilidade de não haver nova tentativa."
+  },
+  {
+    "id": "D03",
+    "resposta": "Não publique o pacote antes que os testes A e B tenham terminado. O término dos dois testes não obriga a publicar o pacote."
+  },
+  {
+    "id": "D04",
+    "resposta": "Todos os registros, exceto dois, receberam confirmação. A confirmação não comprova que a operação correspondente foi concluída."
+  },
+  {
+    "id": "D05",
+    "resposta": "Cada cache pertence a exatamente um espaço de trabalho. Um espaço de trabalho pode ter zero ou mais caches. Excluir um espaço de trabalho não exclui necessariamente seus caches."
+  },
+  {
+    "id": "D06",
+    "resposta": "O servidor não confirmou que a autenticação falhou. Isso não significa que a autenticação tenha sido bem-sucedida."
+  },
+  {
+    "id": "D07",
+    "resposta": "Não libere o relatório antes de terem passado pelo menos 48 horas desde o recebimento da amostra. A análise ainda pode estar incompleta nesse momento."
+  },
+  {
+    "id": "D08",
+    "resposta": "O produtor avisou o consumidor depois que ele fechou a fila.\n\nPendente: informar se quem fechou a fila foi o produtor ou o consumidor."
+  },
+  {
+    "id": "D09",
+    "resposta": "Foi informado que o tempo limite havia sido excedido antes de a resposta chegar. A resposta acabou sendo concluída, mas ninguém confirmou se o cliente a recebeu."
+  },
+  {
+    "id": "D10",
+    "resposta": "Considerando apenas a amostra de ontem, é possível que alguns arquivos ainda não tenham sido enviados. Não temos acesso ao estado atual."
+  },
+  {
+    "id": "D11",
+    "resposta": "A redução medida foi de 5%, e não de 5 pontos percentuais. A taxa original era de 20%. Não deduza uma nova taxa a partir dessas afirmações."
+  },
+  {
+    "id": "D12",
+    "resposta": "O armazenamento tem consistência eventual. Uma leitura pode retornar um valor antigo mesmo após a confirmação de uma gravação. A confirmação não significa que a gravação foi replicada para todos os nós."
+  },
+  {
+    "id": "D13",
+    "resposta": "O bloqueio expira se sua concessão temporária não for renovada. A expiração libera o bloqueio. Ela não exclui o registro protegido."
+  },
+  {
+    "id": "D14",
+    "resposta": "A versão é 1.10.0, o ID é 00042 e o limite é 1e3 bytes. Aqui, 1e3 significa mil, e não uma versão."
+  },
+  {
+    "id": "D15",
+    "resposta": "{\"message\":\"{name} perguntou se {name} pode tentar novamente.\",\"id\":\"repeat_name\"}"
+  },
+  {
+    "id": "D16",
+    "resposta": "```sh\n# Não é necessário tentar novamente.\nretry=0\nmessage=\"Do not retry\"\n```"
+  },
+  {
+    "id": "D17",
+    "resposta": "{\"message\":\"{count, plural, one {# arquivo está pendente} other {# arquivos estão pendentes}}\",\"id\":\"pending\"}"
+  },
+  {
+    "id": "D18",
+    "resposta": "{\"message\":\"O coeficiente é 0,05. Esse valor não é um nível de confiança.\",\"coefficient\":0.05,\"id\":\"v0.05\",\"command\":\"tool --coefficient 0.05\"}"
+  },
+  {
+    "id": "D19",
+    "resposta": "{\"en\":\"The report should be sent after validation.\",\"pt\":\"O relatório deve ser enviado após a validação.\",\"pendencias\":[\"Informar quem deve enviar o relatório.\",\"Informar o que deve ser validado.\",\"Esclarecer o sentido de should: obrigação, recomendação ou expectativa.\"]}"
+  },
+  {
+    "id": "D20",
+    "resposta": "Somente os revisores que assinaram o acordo podem ver os rascunhos. Os revisores que não assinaram o acordo ainda podem ver os relatórios publicados."
+  }
+]

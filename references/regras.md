@@ -151,6 +151,24 @@ invente o titular do acesso, mesmo que uma leitura pareça mais provável.
 
 ## Elementos literais
 
+### Tradução com sentido ainda não definido
+
+Preservar a ambiguidade não exige deixar a entrega inteira no idioma de origem.
+Se um equivalente no idioma pedido mantiver a mesma leitura aberta, use-o e
+registre a pendência. Caso contrário, apresente as leituras condicionais, sem
+escolher qual representa a intenção da fonte.
+
+Por exemplo, sem contexto, “Requests may not be retried” pode indicar:
+
+- Proibição: “As solicitações não podem ser repetidas.”
+- Possibilidade: “As solicitações podem não ser repetidas.”
+
+As duas linhas são hipóteses de tradução, não duas instruções simultâneas.
+Registre qual sentido precisa ser esclarecido. Em JSON ou outro contrato,
+coloque alternativas e pendências somente nos campos autorizados.
+
+### Conteúdo que deve permanecer exato
+
 Em “O erro `Permission denied; retry disabled` pode indicar ausência de
 permissão”, preserve a mensagem entre crases. Não traduza a mensagem, retire o
 ponto e vírgula ou converta a hipótese em diagnóstico confirmado.
@@ -159,6 +177,20 @@ Preserve opções como `--retry 0` e URLs que contenham `;`. Uma revisão de pro
 não autoriza alterar a operação de um comando.
 
 ## Revisão final
+
+### Evento, relato e confirmação
+
+Confira qual verbo cada marcador temporal modifica. “O timeout foi relatado antes
+de a resposta chegar” situa o relato antes da chegada. “Foi relatado que o timeout
+ocorreu antes da chegada” pode situar somente o timeout nesse intervalo e deixar
+o momento do relato indefinido. Essa troca perde uma relação temporal.
+
+Ao dividir ou traduzir a frase, preserve separadamente o momento do evento,
+do relato e da confirmação. Uma informação em um log ou uma alegação não se
+torna fato comprovado pela reescrita. Mantenha explícitas as verificações que
+a fonte diz não terem ocorrido.
+
+### Valores e comparação final
 
 Em prosa localizada, ajuste números e datas somente quando a convenção de origem
 estiver estabelecida. Preserve o valor, a unidade e o instante. Prefira data por

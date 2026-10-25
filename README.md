@@ -139,6 +139,7 @@ elementos literais e formatos de saída.
 python3 tests/verificar.py --selftest
 python3 tests/verificar.py tests/resultados.json
 python3 tests/verificar.py --casos tests/casos-asd.json tests/resultados-asd.json
+python3 tests/verificar.py --casos tests/casos-dificeis.json tests/resultados-dificeis.json
 python3 -B tests/test_verificar.py
 ```
 
@@ -151,6 +152,11 @@ totalizando 52 casos distintos nas duas baterias. Inclui procedimentos fictício
 avisos, mensagens isoladas para agentes, linguagem estatística, glossários de
 outros domínios, CSV, YAML, XML e ambiguidades próprias do português. Veja
 [adaptações e resultados da rodada](docs/base-asd-ptc.md).
+
+Uma terceira bateria acrescenta 24 casos difíceis de tradução e ambiguidade,
+totalizando 76 casos distintos. Ela cobre escopo de negações e qualificadores
+temporais, confirmação versus conclusão, cardinalidade, marcadores repetidos,
+ICU e tradução bilíngue. Veja [problemas encontrados e correções](docs/rodada-dificil.md).
 
 ## Licença
 

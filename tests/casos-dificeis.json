@@ -1,0 +1,211 @@
+[
+  {
+    "id": "D01",
+    "prompt": "Traduza para pt-BR: The client need not retry the request, but it must not discard the pending request.",
+    "criterios_semanticos": "Distinguir ausência de obrigação de repetir e proibição de descartar; não proibir retry nem mandar descartar.",
+    "literais": []
+  },
+  {
+    "id": "D02",
+    "prompt": "Traduza para pt-BR: Requests may not be retried. A fonte não esclarece se may not indica proibição ou possibilidade de não haver nova tentativa.",
+    "criterios_semanticos": "Não escolher proibição ou possibilidade; manter ambiguidade e registrar pendência.",
+    "literais": []
+  },
+  {
+    "id": "D03",
+    "prompt": "Reescreva com clareza: Não publique o pacote a menos que os testes A e B tenham terminado. O término dos dois testes, por si só, não exige a publicação.",
+    "criterios_semanticos": "Preservar condição necessária, sem transformá-la em condição suficiente ou obrigação de publicar.",
+    "literais": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "D04",
+    "prompt": "Traduza para pt-BR: All but two records were acknowledged. An acknowledgement does not prove that the corresponding operation completed.",
+    "criterios_semanticos": "Todos exceto dois tiveram confirmação de recebimento; não trocar por só dois nem comprovar conclusão.",
+    "literais": []
+  },
+  {
+    "id": "D05",
+    "prompt": "Traduza para pt-BR: Each cache belongs to exactly one workspace. A workspace can have zero or more caches. Deleting a workspace does not necessarily delete its caches.",
+    "criterios_semanticos": "Preservar cardinalidades 1 e zero-ou-mais, direção de pertencimento e incerteza sobre exclusão.",
+    "literais": []
+  },
+  {
+    "id": "D06",
+    "prompt": "Simplifique: O servidor não confirmou que a autenticação falhou. Isso não significa que a autenticação tenha sido bem-sucedida.",
+    "criterios_semanticos": "Preservar ausência de confirmação e ausência de inferência de sucesso; não afirmar falha.",
+    "literais": []
+  },
+  {
+    "id": "D07",
+    "prompt": "Traduza para pt-BR: Do not release the report until at least 48 hours after the sample was received. The analysis may still be incomplete then.",
+    "criterios_semanticos": "Preservar prazo mínimo após recebimento e possibilidade de análise ainda incompleta.",
+    "literais": [
+      "48"
+    ]
+  },
+  {
+    "id": "D08",
+    "prompt": "Reescreva sem contexto adicional: O produtor avisou o consumidor depois que ele fechou a fila.",
+    "criterios_semanticos": "Não decidir quem fechou a fila; manter ou sinalizar referente ambíguo.",
+    "literais": []
+  },
+  {
+    "id": "D09",
+    "prompt": "Traduza para pt-BR: The timeout was reported before the response arrived. The response eventually completed, but no one has confirmed whether the client received it.",
+    "criterios_semanticos": "Preservar ordem temporal, conclusão posterior da resposta e recebimento não confirmado; não inventar causa da falha.",
+    "literais": []
+  },
+  {
+    "id": "D10",
+    "prompt": "Simplifique: Com base exclusivamente na amostra de ontem, não se pode excluir a possibilidade de que alguns arquivos ainda não tenham sido enviados. Não temos acesso ao estado atual.",
+    "criterios_semanticos": "Preservar amostra limitada e passada, possibilidade e quantificador alguns, envio ainda não ocorrido e estado atual desconhecido.",
+    "literais": []
+  },
+  {
+    "id": "D11",
+    "prompt": "Traduza a prosa para pt-BR. A convenção numérica é en-US: The measured reduction was 5%, not 5 percentage points. The original rate was 20%. Do not infer a new rate from these statements.",
+    "criterios_semanticos": "Distinguir porcentagem de pontos percentuais, preservar 5 e 20 sem calcular ou inventar taxa final.",
+    "literais": [
+      "5",
+      "20"
+    ]
+  },
+  {
+    "id": "D12",
+    "prompt": "Traduza para pt-BR: The store is eventually consistent. A read may return an older value even after a write has been acknowledged. Acknowledged does not mean replicated to every node.",
+    "criterios_semanticos": "Preservar consistência eventual, possibilidade de valor antigo após confirmação e limite da replicação.",
+    "literais": []
+  },
+  {
+    "id": "D13",
+    "prompt": "Use o glossário deste pedido: lease=concessão temporária; lock=bloqueio. Traduza: The lock expires if its lease is not renewed. Expiration releases the lock; it does not delete the protected record.",
+    "criterios_semanticos": "Preservar objetos e glossário; expiração libera bloqueio, não apaga registro protegido.",
+    "literais": []
+  },
+  {
+    "id": "D14",
+    "prompt": "Traduza para pt-BR, sem alterar o formato dos dados: The version is 1.10.0, the ID is 00042, and the limit is 1e3 bytes. Here 1e3 means one thousand, not a version.",
+    "criterios_semanticos": "Preservar versão, zeros do ID e valor científico; não transformar versão em decimal nem ID em 42.",
+    "literais": [
+      "1.10.0",
+      "00042"
+    ]
+  },
+  {
+    "id": "D15",
+    "prompt": "Traduza somente o valor de message e preserve cada ocorrência de {name}, inclusive a repetida. Devolva apenas JSON válido: {\"message\":\"{name} asked whether {name} can retry.\",\"id\":\"repeat_name\"}",
+    "criterios_semanticos": "Preservar duas ocorrências do marcador e pergunta sobre possibilidade, sem substituir a segunda por pronome.",
+    "literais": [
+      "{name}"
+    ],
+    "formato": "json",
+    "chaves": [
+      "message",
+      "id"
+    ],
+    "valores_fixos": {
+      "id": "repeat_name"
+    },
+    "ocorrencias_literais": {
+      "{name}": 2
+    }
+  },
+  {
+    "id": "D16",
+    "prompt": "Traduza somente o comentário deste código. O restante deve ficar literal, inclusive strings: \n```sh\n# Retry is not required.\nretry=0\nmessage=\"Do not retry\"\n```",
+    "criterios_semanticos": "Comentário expressa ausência de obrigação; preservar retry e mensagem, sem traduzir string fora do escopo.",
+    "literais": [
+      "retry=0",
+      "message=\"Do not retry\""
+    ]
+  },
+  {
+    "id": "D17",
+    "prompt": "Traduza só os segmentos de linguagem natural da mensagem ICU para pt-BR. Preserve {count}, os seletores one e other e a estrutura de chaves. Devolva só JSON válido: {\"message\":\"{count, plural, one {# file is pending} other {# files are pending}}\",\"id\":\"pending\"}",
+    "criterios_semanticos": "Preservar gramática ICU, seletores, # e identidade; traduzir singular/plural sem alterar schema.",
+    "literais": [
+      "one",
+      "other",
+      "#"
+    ],
+    "formato": "json",
+    "chaves": [
+      "message",
+      "id"
+    ],
+    "valores_fixos": {
+      "id": "pending"
+    }
+  },
+  {
+    "id": "D18",
+    "prompt": "Traduza para pt-BR somente message. Mantenha o número JSON e os identificadores literais: {\"message\":\"The coefficient is 0.05; this is not a confidence level.\",\"coefficient\":0.05,\"id\":\"v0.05\",\"command\":\"tool --coefficient 0.05\"}. Devolva apenas JSON válido.",
+    "criterios_semanticos": "Localizar coeficiente somente na prosa, preservar valor numérico, versão e comando; manter negação sobre nível de confiança.",
+    "literais": [
+      "tool --coefficient 0.05",
+      "v0.05"
+    ],
+    "formato": "json",
+    "chaves": [
+      "message",
+      "coefficient",
+      "id",
+      "command"
+    ],
+    "valores_fixos": {
+      "coefficient": 0.05,
+      "id": "v0.05",
+      "command": "tool --coefficient 0.05"
+    }
+  },
+  {
+    "id": "D19",
+    "prompt": "Produza um par bilíngue preservando as ambiguidades desta fonte: The report should be sent after validation. Não há contexto sobre ator, objeto da validação ou sentido de should. Devolva apenas JSON com en, pt e pendencias, sendo en e pt strings e pendencias lista de strings.",
+    "criterios_semanticos": "Não escolher obrigação/previsão, ator ou objeto; versões devem manter a mesma força e pendências no campo autorizado.",
+    "literais": [],
+    "formato": "json",
+    "chaves": [
+      "en",
+      "pt",
+      "pendencias"
+    ],
+    "tipos": {
+      "en": "string",
+      "pt": "string",
+      "pendencias": "array"
+    }
+  },
+  {
+    "id": "D20",
+    "prompt": "Traduza para pt-BR e mantenha a mesma interpretação nos dois períodos: Only reviewers who signed the agreement can see drafts. Reviewers who did not sign can still see published reports.",
+    "criterios_semanticos": "Preservar restrição de rascunhos, manutenção do acesso a publicados e distinção entre conteúdos; não restringir todos os relatórios aos signatários.",
+    "literais": []
+  },
+  {
+    "id": "D21",
+    "prompt": "Traduza para pt-BR: The inspector confirmed on Tuesday that the test had ended on Monday.",
+    "criterios_semanticos": "Terça-feira qualifica confirmação; segunda-feira qualifica término do teste; não deslocar datas entre eventos.",
+    "literais": []
+  },
+  {
+    "id": "D22",
+    "prompt": "Traduza para pt-BR: A sensor failure was alleged after the shutdown, not before it. The allegation has not been independently verified.",
+    "criterios_semanticos": "Depois da parada qualifica alegação, não o instante da suposta falha; preservar ausência de verificação independente.",
+    "literais": []
+  },
+  {
+    "id": "D23",
+    "prompt": "Traduza para pt-BR: The client confirmed before 10:00 that it would retry after 10:30. The retry has not been observed.",
+    "criterios_semanticos": "Preservar confirmação antes de 10h, intenção de repetir após 10h30 e ausência de observação; não afirmar execução da tentativa.",
+    "literais": []
+  },
+  {
+    "id": "D24",
+    "prompt": "Traduza para pt-BR: The audit log says the job finished at 08:00; that entry was written at 08:05. We have not checked whether the job actually finished.",
+    "criterios_semanticos": "Preservar horário declarado de término, horário do registro e falta de verificação do término; não transformar relato em fato confirmado.",
+    "literais": []
+  }
+]

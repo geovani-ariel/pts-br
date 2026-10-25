@@ -62,6 +62,11 @@ documenta os ajustes posteriores. Para usar uma bateria própria, passe
 `--casos /caminho/casos.json` ao verificador. O comportamento sem essa opção
 continua usando `tests/casos.json`.
 
+A [rodada de tradução e ambiguidade](rodada-dificil.md) acrescenta outra bateria
+de 24 casos. Quando a repetição de um marcador fizer parte do contrato, o caso
+pode declarar `ocorrencias_literais`, com o texto e a quantidade exata esperada.
+Essa contagem é literal; não é um interpretador de templates.
+
 O verificador não chama modelos nem decide equivalência de sentido. Uma resposta
 pode respeitar o JSON e ainda perder um fato, como ocorreu nas candidatas.
 

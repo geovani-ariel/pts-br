@@ -40,6 +40,10 @@ def conferir(casos, resultados, parcial=False):
         for literal in caso.get("literais", []):
             if literal not in texto:
                 erros.append(f"{id_}: elemento literal alterado ou ausente: {literal!r}")
+        for literal, esperado in caso.get("ocorrencias_literais", {}).items():
+            encontrado = texto.count(literal)
+            if encontrado != esperado:
+                erros.append(f"{id_}: {literal!r} ocorre {encontrado} vezes; esperado: {esperado}")
         formato = caso.get("formato")
         if formato == "exato" and texto != caso["esperado"]:
             erros.append(f"{id_}: saída difere do texto exigido")
