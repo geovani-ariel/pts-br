@@ -1,5 +1,15 @@
 # Histórico de versões
 
+## 0.1.1 — 2026-10-26
+
+- Instruções de atualização, instalação por tag, retorno à versão anterior e
+  migração de cópia local para origem remota.
+- Alerta sobre o comportamento mutável de `check` observado no Skills CLI 1.7.4.
+- Validação de instalação e recuperação em pastas de projeto isoladas.
+
+As regras linguísticas, referências e resultados semânticos da v0.1.0 não foram
+alterados. Procedimento e limites: [guia de atualização](docs/atualizacao.md).
+
 ## 0.1.0 — 2026-10-26
 
 Primeira versão numerada da PTS-BR. As publicações anteriores permanecem

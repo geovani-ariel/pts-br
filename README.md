@@ -4,7 +4,7 @@ Português Técnico Simplificado Brasileiro. Skill para escrever, revisar e
 traduzir procedimentos, documentação, prompts e mensagens para agentes em pt-BR.
 O foco é preservar fatos, condições, exceções, grau de certeza e terminologia.
 
-[Instalação](#instalação) · [Como usar](#como-usar) · [Glossário](references/glossario.md) · [Exemplos](examples/antes-depois.md) · [Testes](#testes) · [Versões](CHANGELOG.md)
+[Instalação](#instalação) · [Atualização](#atualização) · [Como usar](#como-usar) · [Glossário](references/glossario.md) · [Exemplos](examples/antes-depois.md) · [Testes](#testes) · [Versões](CHANGELOG.md)
 
 ## Antes e depois
 
@@ -56,7 +56,7 @@ Depois de extrair o ZIP, execute na pasta que contém `pts-br`:
 npx skills@latest add ./pts-br --skill pts-br --agent codex --copy
 ```
 
-### Descobrir, consultar e atualizar
+### Descobrir e consultar
 
 Liste a skill no repositório sem instalar:
 
@@ -64,11 +64,10 @@ Liste a skill no repositório sem instalar:
 npx skills@latest add geovani-ariel/pts-br --list
 ```
 
-Consulte e atualize uma instalação global feita pelo CLI:
+Liste as skills instaladas globalmente:
 
 ```sh
 npx skills@latest list --global --agent codex
-npx skills@latest update pts-br --global
 ```
 
 ### Migrar de `portugues-claro`
@@ -90,6 +89,40 @@ do CLI, defina `DISABLE_TELEMETRY=1`, conforme a
 [documentação de telemetria](https://skills.sh/docs/cli).
 
 </details>
+
+## Atualização
+
+A PTS-BR não consulta atualizações nem altera a própria instalação durante uma
+revisão de texto. Consulte os [releases](https://github.com/geovani-ariel/pts-br/releases)
+e compare com o arquivo `VERSION` da pasta instalada indicada pelo CLI.
+
+Para atualizar uma instalação global que acompanha a branch padrão do repositório:
+
+```sh
+npx skills@1.7.4 update pts-br --global
+```
+
+Antes de atualizar, guarde suas alterações locais e registre a versão instalada.
+O comando pode substituir os arquivos. Em uma instalação por projeto, execute
+na pasta do projeto e troque `--global` por `--project`.
+
+**No `skills@1.7.4`, `check` pode atualizar arquivos:** ele usa a mesma rotina
+que `update`. Não use esse comando como consulta sem alterações. `@latest`
+seleciona a versão do CLI, não a versão da PTS-BR.
+
+Para instalar uma versão específica, use a URL da tag. Exemplo da versão anterior:
+
+```sh
+npx skills@1.7.4 add https://github.com/geovani-ariel/pts-br/tree/v0.1.0 --skill pts-br --agent codex --global --copy
+```
+
+Reexecutar esse comando também permite retornar à v0.1.0. Uma instalação feita
+por tag continua nessa referência ao usar `update`; para mudar de versão, use
+`add` com a URL da tag desejada. Para voltar a acompanhar a branch padrão,
+reexecute o comando de instalação sem `/tree/v0.1.0`.
+
+Veja o [guia de atualização e recuperação](docs/atualizacao.md) para confirmar
+versão, tratar cópias manuais e consultar o ciclo de instalação testado.
 
 ## Como usar
 
