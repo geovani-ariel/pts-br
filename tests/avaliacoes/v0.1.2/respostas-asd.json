@@ -1,0 +1,98 @@
+[
+  {
+    "id": "P01",
+    "resposta": "AVISO [W-04]: Antes de remover a tampa:\n1. Desligue a alimentação.\n2. Aguarde 90 segundos.\n\nNão toque na superfície quente."
+  },
+  {
+    "id": "P02",
+    "resposta": "1. Receba a autorização e registre o lote antes de reabrir a embalagem.\n2. Reabra a embalagem somente depois de cumprir as duas condições.\n\nSe a autorização for recusada, mantenha a embalagem fechada.\nNão descarte a etiqueta."
+  },
+  {
+    "id": "P03",
+    "resposta": "1. Faça as verificações A e B em qualquer ordem.\n2. Execute C somente depois que A e B passarem.\n\nSe A ou B falhar, não execute C."
+  },
+  {
+    "id": "P04",
+    "resposta": "Não envie o relatório antes de completar 48 horas após o recebimento da amostra. Esse prazo não garante que a análise esteja concluída."
+  },
+  {
+    "id": "P05",
+    "resposta": "O coletor recebeu o arquivo.\nO coletor ainda não verificou o arquivo que recebeu.\nDepois que o coletor verificar o arquivo recebido, o executor poderá processar esse arquivo."
+  },
+  {
+    "id": "P06",
+    "resposta": "CUIDADO [C-02]:\nSe houver vazamento, não inicie o equipamento.\nSe não houver vazamento, o operador pode iniciar o equipamento após a inspeção."
+  },
+  {
+    "id": "L01",
+    "resposta": "O estimador robusto pode apresentar menor variância nesse conjunto de dados. Isso não demonstra superioridade em outras populações."
+  },
+  {
+    "id": "L02",
+    "resposta": "O motorista estacionou o carro. O driver da impressora está indisponível. A porta de rede está aberta, mas a autoridade portuária não autorizou o navio."
+  },
+  {
+    "id": "L03",
+    "resposta": "A válvula de retenção pode estar danificada. A cavitação não foi confirmada."
+  },
+  {
+    "id": "L04",
+    "resposta": "{\"id\":\"pending_files\",\"message\":\"Há {count} arquivos pendentes.\",\"count\":3}"
+  },
+  {
+    "id": "L05",
+    "resposta": "A expectativa é que o serviço volte em breve. Isso não autoriza reiniciar o serviço."
+  },
+  {
+    "id": "L06",
+    "resposta": "O campo usa o tipo uint8_t, um inteiro sem sinal. O valor mínimo é 0 e o máximo inclusivo é 255. Não use valores negativos."
+  },
+  {
+    "id": "C01",
+    "resposta": "code,message\nE1,\"A requisição pode ter falhado. A nova tentativa está desativada.\"\nE2,\"Abra o arquivo. Depois, aguarde.\""
+  },
+  {
+    "id": "C02",
+    "resposta": "name: sync_orders\ndescription: \"O worker pode tentar novamente após a aprovação.\"\nretry: false\ncommand: \"tool --retry 0\""
+  },
+  {
+    "id": "C03",
+    "resposta": "A etapa de validação falhou. A publicação não começou. Os testes anteriores passaram. A aprovação dos testes anteriores não garante que o pacote atual seja válido."
+  },
+  {
+    "id": "C04",
+    "resposta": "<message code=\"E_WAIT\">Aguarde pelo menos {seconds} segundos antes de tentar novamente.</message>"
+  },
+  {
+    "id": "C05",
+    "resposta": "A fonte descreve a solução como moderna, inovadora, robusta e extremamente eficiente. Não apresenta funcionalidades, medições ou condições de operação que permitam avaliar essas alegações."
+  },
+  {
+    "id": "C06",
+    "resposta": "| Trecho original | Versão clara | Motivo |\n|---|---|---|\n| O serviço pode tentar novamente após aprovação. | O serviço pode tentar novamente após aprovação. | O texto já é claro e preserva a possibilidade condicionada à aprovação. |\n\nNão posso certificar conformidade integral com um dicionário oficial ASD-STE100 em português sem acesso a um dicionário autorizado. Esta revisão verificou a clareza do texto. A base portuguesa da PTS-BR é uma adaptação independente e não constitui um dicionário oficial ASD-STE100."
+  },
+  {
+    "id": "R01",
+    "resposta": "Revise os contratos e anexos assinados.\n\nPendente: esclarecer se “assinados” se aplica aos contratos e aos anexos ou apenas aos anexos.\n\nSe ambos precisam estar assinados: “Revise os contratos assinados e os anexos assinados.”\nSe apenas os anexos precisam estar assinados: “Revise os contratos e, entre os anexos, revise os assinados.”"
+  },
+  {
+    "id": "R02",
+    "resposta": "Uma vez que o token expira, renove o token.\n\nPendente: esclarecer se a frase indica uma causa ou o momento da renovação.\n\nSe indicar causa: “Como o token expira, renove o token.”\nSe indicar o momento da renovação: “Quando o token expirar, renove o token.”"
+  },
+  {
+    "id": "R03",
+    "resposta": "O usuário pode enviar só PDF, só CSV ou os dois formatos juntos."
+  },
+  {
+    "id": "R04",
+    "resposta": "Com base apenas no log fornecido, o tempo limite parece ser excedido após a autenticação. Não há acesso a outras fontes."
+  },
+  {
+    "id": "R05",
+    "resposta": "O engenheiro deve assumir a responsabilidade pelo relatório e submeter o material ao ensaio. A estrutura deve suportar a carga especificada."
+  },
+  {
+    "id": "R06",
+    "resposta": "O administrador pediu para logar a operação.\n\nPendente: esclarecer o sentido de “logar a operação”.\n\nSe o pedido for registrar a operação em log: “O administrador pediu para registrar a operação em log.”\nSe o pedido for entrar na conta para executar a operação: “O administrador pediu para entrar na conta e executar a operação.”"
+  }
+]

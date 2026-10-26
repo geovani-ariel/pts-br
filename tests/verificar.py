@@ -64,6 +64,10 @@ def conferir(casos, resultados, parcial=False):
         if not isinstance(objeto, dict) or set(objeto) != set(caso["chaves"]):
             erros.append(f"{id_}: chaves do contrato alteradas")
             continue
+        for chave, limite in caso.get("max_caracteres_campos", {}).items():
+            valor = objeto[chave]
+            if not isinstance(valor, str) or len(valor) > limite:
+                erros.append(f"{id_}: {chave} deve ser string com até {limite} caracteres")
         for chave, esperado in caso.get("valores_fixos", {}).items():
             valor = objeto[chave]
             if type(valor) is not type(esperado) or valor != esperado:

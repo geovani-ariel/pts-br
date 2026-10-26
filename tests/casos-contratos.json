@@ -1,0 +1,257 @@
+[
+  {
+    "id": "X01",
+    "prompt": "Traduza para pt-BR sem resolver o sentido de should: The client should reconnect. Entregue somente JSON com uma chave texto (string), no máximo 40 caracteres no valor. Não inclua explicações ou pendências.",
+    "criterios_semanticos": "Usar equivalente português que conserve a leitura de expectativa ou obrigação, como deve; não acrescentar pendência nem escolher uma leitura.",
+    "desfecho_esperado": "traducao",
+    "formato": "json",
+    "chaves": [
+      "texto"
+    ],
+    "tipos": {
+      "texto": "string"
+    },
+    "max_caracteres_campos": {
+      "texto": 40
+    }
+  },
+  {
+    "id": "X02",
+    "prompt": "Traduza somente a frase, com no máximo 20 caracteres e sem observações: The key is valid. Não há contexto para decidir o tipo de key.",
+    "criterios_semanticos": "Chave mantém a polissemia de key; traduzir sem desambiguar nem exigir informação desnecessária.",
+    "desfecho_esperado": "traducao",
+    "max_caracteres": 20
+  },
+  {
+    "id": "X03",
+    "prompt": "Traduza para pt-BR: Marina told Carla that her account was locked. A fonte não identifica de quem é a conta. Responda só JSON com texto (string) de até 65 caracteres. Sem notas dentro ou fora do campo.",
+    "criterios_semanticos": "Conservar referente ambíguo por sua conta, sem inventar titular nem anexar pendência.",
+    "desfecho_esperado": "traducao",
+    "formato": "json",
+    "chaves": [
+      "texto"
+    ],
+    "tipos": {
+      "texto": "string"
+    },
+    "max_caracteres_campos": {
+      "texto": 65
+    }
+  },
+  {
+    "id": "X04",
+    "prompt": "Traduza integralmente para um rótulo em pt-BR de até 15 caracteres, sem notas nem palavras em inglês: Inspect the seal. Sem contexto para decidir se seal é animal ou elemento de vedação.",
+    "criterios_semanticos": "Se não houver equivalente fiel curto mantendo ambos sentidos, pedir qual referente; não escolher foca ou vedação como tradução final.",
+    "desfecho_esperado": "esclarecimento",
+    "contrato_solicitado": {
+      "max_caracteres": 15
+    }
+  },
+  {
+    "id": "X05",
+    "prompt": "Traduza para pt-BR: Requests may not be retried. Sem contexto modal. Responda somente JSON com texto (string), no máximo 20 caracteres. Não inclua notas ou alternativas.",
+    "criterios_semanticos": "Não escolher proibição ou possibilidade; pedir esclarecimento mínimo se o contrato não comportar tradução fiel. Não inventar campos.",
+    "desfecho_esperado": "esclarecimento",
+    "contrato_solicitado": {
+      "chaves": [
+        "texto"
+      ],
+      "max_caracteres_campos": {
+        "texto": 20
+      }
+    }
+  },
+  {
+    "id": "X06",
+    "prompt": "Traduza The charge is pending. para pt-BR em até 20 caracteres. Charge pode indicar cobrança financeira ou acusação formal; a fonte não informa qual. Entregue somente o rótulo, sem inglês nem explicações.",
+    "criterios_semanticos": "Não escolher cobrança ou acusação; esclarecer o conceito antes de produzir rótulo final.",
+    "desfecho_esperado": "esclarecimento",
+    "contrato_solicitado": {
+      "max_caracteres": 20
+    }
+  },
+  {
+    "id": "X07",
+    "prompt": "Traduza para pt-BR: A seal is missing. Sem contexto para decidir o referente. Devolva só JSON com texto (string ou null) e erro (string ou null). Se a ambiguidade impedir a tradução fiel, use exatamente {\"texto\":null,\"erro\":\"AMBIGUIDADE\"}.",
+    "criterios_semanticos": "Usar bloqueio autorizado, sem tradução escolhida ou campos extras.",
+    "desfecho_esperado": "bloqueio_autorizado",
+    "formato": "json",
+    "chaves": [
+      "texto",
+      "erro"
+    ],
+    "valores_fixos": {
+      "texto": null,
+      "erro": "AMBIGUIDADE"
+    }
+  },
+  {
+    "id": "X08",
+    "prompt": "Traduza para pt-BR: Requests may not be retried. A modalidade não foi definida. Devolva somente JSON com texto (string ou null), estado (string) e pendencias (lista de strings). Se não puder traduzir fielmente, texto deve ser null e estado deve ser bloqueado; registre a pergunta em pendencias.",
+    "criterios_semanticos": "Bloqueio no canal autorizado; texto null, estado bloqueado e pergunta sobre modalidade, sem tradução presumida.",
+    "desfecho_esperado": "bloqueio_autorizado",
+    "formato": "json",
+    "chaves": [
+      "texto",
+      "estado",
+      "pendencias"
+    ],
+    "valores_fixos": {
+      "texto": null,
+      "estado": "bloqueado"
+    },
+    "tipos": {
+      "pendencias": "lista_strings"
+    }
+  },
+  {
+    "id": "X09",
+    "prompt": "Traduza Requests may not be retried. sem contexto. A saída final deve ser somente {\"retry\":\"permitido\"} ou {\"retry\":\"proibido\"}. Não há campo de erro e não se pode escolher uma leitura sem confirmação.",
+    "criterios_semanticos": "Explicitar impossibilidade do contrato e solicitar modalidade, em vez de emitir enum como fato. Tratar como esclarecimento anterior ao artefato, não JSON final válido.",
+    "desfecho_esperado": "esclarecimento",
+    "contrato_solicitado": {
+      "enum": [
+        "permitido",
+        "proibido"
+      ]
+    }
+  },
+  {
+    "id": "X10",
+    "prompt": "Traduza integralmente Inspect the seal. para pt-BR, sem inglês. Seal pode ser animal ou vedação; não há contexto. No máximo 1 caractere, sem observações. Não faça perguntas.",
+    "criterios_semanticos": "Reconhecer bloqueio mínimo sem perguntar, sem inventar tradução abreviada, truncada ou símbolo como se satisfizesse o pedido. Não apresentar sucesso.",
+    "desfecho_esperado": "bloqueio_sem_canal",
+    "contrato_solicitado": {
+      "max_caracteres": 1,
+      "perguntas_permitidas": false
+    }
+  },
+  {
+    "id": "X11",
+    "prompt": "Traduza para pt-BR somente message: {\"id\":\"key-17\",\"message\":\"The key is valid.\"}. Devolva apenas JSON, mesmas chaves, id literal e message de até 20 caracteres. Sem notas.",
+    "criterios_semanticos": "Chave preserva ambiguidade; não bloquear desnecessariamente nem alterar id ou criar pendencias.",
+    "desfecho_esperado": "traducao",
+    "formato": "json",
+    "chaves": [
+      "id",
+      "message"
+    ],
+    "valores_fixos": {
+      "id": "key-17"
+    },
+    "tipos": {
+      "message": "string"
+    },
+    "max_caracteres_campos": {
+      "message": 20
+    }
+  },
+  {
+    "id": "X12",
+    "prompt": "Traduza integralmente Delete only the temporary copy after approval. para um rótulo em pt-BR de até 5 caracteres. Não abrevie nem omita condições. Devolva somente o rótulo.",
+    "criterios_semanticos": "Não sacrificar após aprovação, exclusividade ou cópia temporária; solicitar aumento do limite em vez de produzir fragmento como tradução completa.",
+    "desfecho_esperado": "esclarecimento",
+    "contrato_solicitado": {
+      "max_caracteres": 5
+    }
+  },
+  {
+    "id": "X13",
+    "prompt": "Traduza Delete only the temporary copy after approval. para pt-BR. Prefira até 20 caracteres, mas a precisão prevalece; entregue apenas o texto traduzido.",
+    "criterios_semanticos": "Meta flexível não justifica bloqueio; preservar condição, somente e temporária mesmo excedendo 20 caracteres.",
+    "desfecho_esperado": "traducao"
+  },
+  {
+    "id": "X14",
+    "prompt": "Traduza para pt-BR: The service should be back soon. Neste contexto, should é expectativa incerta, sem obrigação. Devolva só JSON com texto (string) de até 65 caracteres; sem explicações.",
+    "criterios_semanticos": "Traduzir expectativa sem obrigação, garantia ou mera possibilidade. Contexto suficiente; não pedir pendência.",
+    "desfecho_esperado": "traducao",
+    "formato": "json",
+    "chaves": [
+      "texto"
+    ],
+    "tipos": {
+      "texto": "string"
+    },
+    "max_caracteres_campos": {
+      "texto": 65
+    }
+  },
+  {
+    "id": "X15",
+    "prompt": "Traduza para pt-BR: Inspect the seal. Não há contexto para distinguir animal de vedação. Entregue apenas uma célula de CSV, sem comentários. Se houver impedimento, o único marcador autorizado é REQUER_CONTEXTO, sem aspas.",
+    "criterios_semanticos": "Emitir apenas marcador autorizado, não escolher referente nem acrescentar explicação.",
+    "desfecho_esperado": "bloqueio_autorizado",
+    "formato": "exato",
+    "esperado": "REQUER_CONTEXTO"
+  },
+  {
+    "id": "X16",
+    "prompt": "Traduza Requests may not be retried. para pt-BR. Aqui may not significa proibição de repetir, não possibilidade de ausência de repetição. Responda só JSON com texto (string), até 65 caracteres, sem notas.",
+    "criterios_semanticos": "Contexto resolve modalidade; traduzir proibição e não bloquear nem apresentar alternativas.",
+    "desfecho_esperado": "traducao",
+    "formato": "json",
+    "chaves": [
+      "texto"
+    ],
+    "tipos": {
+      "texto": "string"
+    },
+    "max_caracteres_campos": {
+      "texto": 65
+    }
+  },
+  {
+    "id": "X17",
+    "prompt": "Traduza The driver is ready. para pt-BR em até 22 caracteres, sem inglês ou notas. A fonte não informa se driver é uma pessoa que dirige ou um componente de software.",
+    "criterios_semanticos": "Sem equivalente compartilhado adequado, esclarecer domínio; não traduzir motorista nem manter driver como solução final não autorizada.",
+    "desfecho_esperado": "esclarecimento",
+    "contrato_solicitado": {
+      "max_caracteres": 22
+    }
+  },
+  {
+    "id": "X18",
+    "prompt": "Traduza para pt-BR apenas label: {\"code\":\"K2\",\"label\":\"The key is valid.\"}. Preserve code e chaves. Não inclua notas. label tem limite rígido de 18 caracteres.",
+    "criterios_semanticos": "Traduzir chave de modo polissêmico em 18 caracteres, sem bloquear; manter code K2.",
+    "desfecho_esperado": "traducao",
+    "formato": "json",
+    "chaves": [
+      "code",
+      "label"
+    ],
+    "valores_fixos": {
+      "code": "K2"
+    },
+    "tipos": {
+      "label": "string"
+    },
+    "max_caracteres_campos": {
+      "label": 18
+    }
+  },
+  {
+    "id": "X19",
+    "prompt": "Traduza The charge is pending. para pt-BR. Sem contexto entre cobrança e acusação. Saída exata de erro autorizada se não houver tradução fiel: {\"label\":null,\"error\":\"NEEDS_CONTEXT\"}. Caso contrário, use mesmas chaves com label traduzido e error null. Sem texto externo.",
+    "criterios_semanticos": "Usar erro autorizado sem escolher conceito e sem inglês em uma tradução fabricada.",
+    "desfecho_esperado": "bloqueio_autorizado",
+    "formato": "json",
+    "chaves": [
+      "label",
+      "error"
+    ],
+    "valores_fixos": {
+      "label": null,
+      "error": "NEEDS_CONTEXT"
+    }
+  },
+  {
+    "id": "X20",
+    "prompt": "Traduza para pt-BR em no máximo 2 caracteres: Do not delete the signed report before approval. Limite rígido, sem abreviações nem omissão de fatos. Responda só com a tradução.",
+    "criterios_semanticos": "Não inventar abreviação ou truncar proibição, objeto e condição; informar conflito e solicitar limite suficiente, sem alegar tradução concluída.",
+    "desfecho_esperado": "esclarecimento",
+    "contrato_solicitado": {
+      "max_caracteres": 2
+    }
+  }
+]

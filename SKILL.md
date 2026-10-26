@@ -98,12 +98,19 @@ Por padrão, devolva somente o texto final. Se já estiver claro, devolva-o sem
 mudanças forçadas. Não inclua preâmbulo, contagem de problemas ou oferta final.
 
 Se faltar informação para eliminar uma ambiguidade, não escolha uma interpretação.
-Na revisão no mesmo idioma, preserve o trecho afetado e registre a pendência.
-Na tradução, use um equivalente que mantenha a ambiguidade ou apresente as
-leituras possíveis no idioma pedido, claramente rotuladas como condicionais.
-Não entregue somente a fonte sem traduzir. Acrescente
-`Pendente: <informação necessária>`, respeitando o formato autorizado.
-Se precisar exceder uma meta de extensão, apenas preserve a precisão.
+Use um equivalente que preserve as mesmas leituras no idioma pedido, se existir.
+Se o pedido não permitir notas, entregue essa tradução fiel sem pendência adicional.
+Quando for necessário esclarecer o sentido, registre a pendência ou as leituras
+condicionais somente em canais autorizados. Na revisão no mesmo idioma, preserve
+o trecho ainda ambíguo. Não apresente a fonte sem traduzir como tradução concluída.
+
+Se nenhuma tradução fiel couber no contrato, use o sinal de impedimento previsto
+no pedido. Sem esse canal, suspenda o artefato e peça apenas o esclarecimento ou
+ajuste já demonstrado como necessário; se perguntas forem proibidas, informe o impedimento.
+Essa comunicação não é uma tradução entregue no formato solicitado. Não disfarce
+perguntas ou erros em campos reservados à tradução nem invente campos ou marcadores.
+Metas flexíveis de extensão cedem à precisão; limites rígidos não autorizam omissões.
+Para exemplos desse conflito, consulte [regras de entrega](references/regras.md#contratos-incompatíveis).
 
 Se pedirem conformidade normativa, informe o que foi efetivamente verificado.
 Conferir um glossário fornecido não certifica ASD-STE100 nem transforma a base

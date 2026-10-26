@@ -1,0 +1,314 @@
+[
+  {
+    "id": "S01",
+    "resultado": "aprovado",
+    "justificativa": "Preserva a negação parcial do envio, a quantidade não especificada, a hipótese de rejeição e a ausência de confirmação da causa.",
+    "falhas": []
+  },
+  {
+    "id": "S02",
+    "resultado": "aprovado",
+    "justificativa": "O cabeçalho subordina os dois passos à homologação e à autorização escrita; a exclusão continua condicionada à exportação sem erros e o original permanece protegido.",
+    "falhas": []
+  },
+  {
+    "id": "S03",
+    "resultado": "aprovado",
+    "justificativa": "Preserva o evento durante a manutenção e a ausência de responsável informado, sem inventar agente para satisfazer o pedido de explicitação.",
+    "falhas": []
+  },
+  {
+    "id": "S04",
+    "resultado": "aprovado",
+    "justificativa": "Preserva cinco minutos e a frase ambígua; registra previsão versus obrigação como pendência, sem escolher leitura nem criar garantia ou marco temporal.",
+    "falhas": []
+  },
+  {
+    "id": "S05",
+    "resultado": "aprovado",
+    "justificativa": "Preserva alguns registros antigos, mais de 30 dias e a modalidade aberta; a exceção continua abrangendo os registros com exclusão obrigatória.",
+    "falhas": []
+  },
+  {
+    "id": "S06",
+    "resultado": "aprovado",
+    "justificativa": "Distingue continuidade desde a instalação de aprovação como condição do reinício; preserva o operador e a modalidade pode.",
+    "falhas": []
+  },
+  {
+    "id": "S07",
+    "resultado": "aprovado",
+    "justificativa": "Retira redundância sem transformar o teste em avaliação de complexidade; mantém o procedimento certo e a aprovação ainda ausente.",
+    "falhas": []
+  },
+  {
+    "id": "S08",
+    "resultado": "aprovado",
+    "justificativa": "Preserva teste contínuo desde ontem, envio do commit, deploy ainda não iniciado e a limitação dos testes locais sobre produção.",
+    "falhas": []
+  },
+  {
+    "id": "T01",
+    "resultado": "aprovado",
+    "justificativa": "Traduz a prosa para pt-BR e mantém integralmente comando, URL e erro literal; a falha da requisição continua sendo possibilidade passada.",
+    "falhas": []
+  },
+  {
+    "id": "T02",
+    "resultado": "aprovado",
+    "justificativa": "Aplica publicação e ramificação segundo o glossário prioritário do pedido; preserva branch identificada, comando e ordem após a publicação.",
+    "falhas": []
+  },
+  {
+    "id": "T03",
+    "resultado": "aprovado",
+    "justificativa": "Mantém os dois valores ambíguos, a falta de convenções e a impossibilidade de consultar a origem; registra a pendência sem decidir números ou datas.",
+    "falhas": []
+  },
+  {
+    "id": "T04",
+    "resultado": "aprovado",
+    "justificativa": "Mantém a citação em inglês exatamente e traduz somente sua explicação; preserva possibilidade versus falha confirmada.",
+    "falhas": []
+  },
+  {
+    "id": "T05",
+    "resultado": "aprovado",
+    "justificativa": "Mantém o inglês explicitamente exigido, o comando literal e a possibilidade condicionada à aprovação; não introduz autorização anterior.",
+    "falhas": []
+  },
+  {
+    "id": "T06",
+    "resultado": "aprovado",
+    "justificativa": "Preserva atribuição ao suporte técnico, capacidade mecânica de 20 kg, compatibilidade Linux e a ausência de implicação sobre fornecimento de atendimento.",
+    "falhas": []
+  },
+  {
+    "id": "T07",
+    "resultado": "aprovado",
+    "justificativa": "Traduz a vaga de emprego e mantém worker, job e task como abstrações técnicas distintas; preserva ontem, execução e agendamento.",
+    "falhas": []
+  },
+  {
+    "id": "T08",
+    "resultado": "aprovado",
+    "justificativa": "Traduz a prosa e mantém Microsoft Windows, USB e o rótulo exato Start backup; não inventa expansão de sigla.",
+    "falhas": []
+  },
+  {
+    "id": "F01",
+    "resultado": "aprovado",
+    "justificativa": "Devolve exatamente o texto claro solicitado, sem preâmbulo, observações ou alteração das duas ações.",
+    "falhas": []
+  },
+  {
+    "id": "F02",
+    "resultado": "aprovado",
+    "justificativa": "O JSON contém as mesmas chaves e valores fixos; somente message foi traduzido, mantendo a possibilidade de falha passada.",
+    "falhas": []
+  },
+  {
+    "id": "F03",
+    "resultado": "aprovado",
+    "justificativa": "Preserva a data sem escolher convenção e registra suas leituras na lista autorizada de pendências; respeita chaves, tipos e ausência de texto externo.",
+    "falhas": []
+  },
+  {
+    "id": "F04",
+    "resultado": "aprovado",
+    "justificativa": "Simplifica a instrução de execução e preserva Markdown, destino do link e corpo literal do bloco de código.",
+    "falhas": []
+  },
+  {
+    "id": "F05",
+    "resultado": "aprovado",
+    "justificativa": "Apresenta as instruções somente como texto citado revisado; a separação de escrita no arquivo conserva o objeto da ação e o caminho literal.",
+    "falhas": []
+  },
+  {
+    "id": "F06",
+    "resultado": "aprovado",
+    "justificativa": "Entrega a comparação em tabela com motivo; usa verbo direto sem transformar a hipótese de falta de permissão em causa confirmada.",
+    "falhas": []
+  },
+  {
+    "id": "F07",
+    "resultado": "aprovado",
+    "justificativa": "Trata dez palavras como tentativa subordinada à preservação integral; mantém ambiente, autorização escrita do administrador, serviço, 45 segundos e exceção do cancelamento.",
+    "falhas": []
+  },
+  {
+    "id": "F08",
+    "resultado": "aprovado",
+    "justificativa": "Mantém saudação a Ana, autoria coletiva, verificação em andamento, compromisso quando houver resposta e agradecimento, no tom solicitado.",
+    "falhas": []
+  },
+  {
+    "id": "H01",
+    "resultado": "aprovado",
+    "justificativa": "Preserva disponibilidade para download, ausência de entrega aos dispositivos dos clientes e distinção entre entrega e instalação.",
+    "falhas": []
+  },
+  {
+    "id": "H02",
+    "resultado": "aprovado",
+    "justificativa": "Preserva captura de ontem, ausência de acesso ao servidor, latência atual desconhecida e impossibilidade de repetir a medição.",
+    "falhas": []
+  },
+  {
+    "id": "H03",
+    "resultado": "aprovado",
+    "justificativa": "Mantém a data ambígua sem decidir convenção; o único campo message contém string e não há nota externa nem campo adicional.",
+    "falhas": []
+  },
+  {
+    "id": "H04",
+    "resultado": "aprovado",
+    "justificativa": "Localiza somente o coeficiente en-US como 0,05; preserva versão, zeros do identificador e timestamp UTC literalmente.",
+    "falhas": []
+  },
+  {
+    "id": "P01",
+    "resultado": "aprovado",
+    "justificativa": "Preserva AVISO, identificador, desligamento e espera de 90 segundos antes da remoção; mantém a proibição de tocar e não inventa medida técnica.",
+    "falhas": []
+  },
+  {
+    "id": "P02",
+    "resultado": "aprovado",
+    "justificativa": "Mantém autorização recebida e lote registrado como condições cumulativas anteriores à reabertura, além de recusa com embalagem fechada e proibição de descarte da etiqueta.",
+    "falhas": []
+  },
+  {
+    "id": "P03",
+    "resultado": "aprovado",
+    "justificativa": "Permite A e B em qualquer ordem e exige sucesso de ambas antes de C; mantém bloqueio de C se uma falhar.",
+    "falhas": []
+  },
+  {
+    "id": "P04",
+    "resultado": "aprovado",
+    "justificativa": "Preserva 48 horas como limite mínimo contado do recebimento da amostra e mantém que esse prazo não garante conclusão da análise.",
+    "falhas": []
+  },
+  {
+    "id": "P05",
+    "resultado": "aprovado",
+    "justificativa": "Explicita coletor, arquivo recebido e executor em cada linha; mantém verificação ainda não realizada e processamento possível somente depois dela.",
+    "falhas": []
+  },
+  {
+    "id": "P06",
+    "resultado": "aprovado",
+    "justificativa": "Mantém CUIDADO e código, proibição sob vazamento, permissão sob ausência de vazamento e inspeção anterior ao início, sem fatos novos.",
+    "falhas": []
+  },
+  {
+    "id": "L01",
+    "resultado": "aprovado",
+    "justificativa": "Preserva estimador robusto como termo técnico, menor variância possível no conjunto especificado e a limitação sobre outras populações.",
+    "falhas": []
+  },
+  {
+    "id": "L02",
+    "resultado": "aprovado",
+    "justificativa": "Distingue motorista de driver e porta de rede de autoridade portuária; preserva estacionamento, indisponibilidade, abertura e autorização não concedida.",
+    "falhas": []
+  },
+  {
+    "id": "L03",
+    "resultado": "aprovado",
+    "justificativa": "Aplica os dois termos do glossário de manutenção; conserva dano possível e cavitação não confirmada, sem inferir causalidade.",
+    "falhas": []
+  },
+  {
+    "id": "L04",
+    "resultado": "aprovado",
+    "justificativa": "Traduz somente message e preserva marcador {count}, identificador, número 3 e contrato JSON com as mesmas chaves.",
+    "falhas": []
+  },
+  {
+    "id": "L05",
+    "resultado": "aprovado",
+    "justificativa": "Expressa expectativa de retorno em breve sem obrigação, garantia ou prazo inventado; conserva a ausência de autorização para reiniciar.",
+    "falhas": []
+  },
+  {
+    "id": "L06",
+    "resultado": "aprovado",
+    "justificativa": "Mantém inteiro sem sinal, uint8_t, mínimo 0, máximo inclusivo 255 e proibição de valores negativos.",
+    "falhas": []
+  },
+  {
+    "id": "C01",
+    "resultado": "aprovado",
+    "justificativa": "Mantém CSV com cabeçalho, duas linhas e códigos; traduz message preservando hipótese de falha, nova tentativa desativada e abertura anterior à espera.",
+    "falhas": []
+  },
+  {
+    "id": "C02",
+    "resultado": "aprovado",
+    "justificativa": "Mantém YAML, chaves, nome, booleano e comando; traduz somente description com worker, possibilidade de tentar novamente e aprovação anterior.",
+    "falhas": []
+  },
+  {
+    "id": "C03",
+    "resultado": "aprovado",
+    "justificativa": "Preserva validação falha, publicação não iniciada e testes anteriores aprovados; explicita que esses testes não garantem validade do pacote atual.",
+    "falhas": []
+  },
+  {
+    "id": "C04",
+    "resultado": "aprovado",
+    "justificativa": "Mantém elemento XML, atributo code e marcador; traduz espera mínima e sua anterioridade à nova tentativa sem alterar o limite.",
+    "falhas": []
+  },
+  {
+    "id": "C05",
+    "resultado": "aprovado",
+    "justificativa": "Atribui as alegações à fonte e mantém a ausência de funcionalidades, medições e condições operacionais; não inventa comprovação ou desempenho.",
+    "falhas": []
+  },
+  {
+    "id": "C06",
+    "resultado": "aprovado",
+    "justificativa": "Mantém o texto e sua modalidade condicionada; declara o limite de certificação e caracteriza a base portuguesa como adaptação independente sem status de dicionário oficial.",
+    "falhas": []
+  },
+  {
+    "id": "R01",
+    "resultado": "aprovado",
+    "justificativa": "Preserva o trecho ambíguo, registra o alcance desconhecido de assinados e oferece as duas formulações apenas como leituras condicionais.",
+    "falhas": []
+  },
+  {
+    "id": "R02",
+    "resultado": "aprovado",
+    "justificativa": "Preserva a relação ainda ambígua e a necessidade de esclarecer causa versus momento; rotula as alternativas sem escolher uma delas.",
+    "falhas": []
+  },
+  {
+    "id": "R03",
+    "resultado": "aprovado",
+    "justificativa": "Preserva permissão e exatamente as três alternativas: só PDF, só CSV ou ambos, sem exclusividade nem obrigação de envio.",
+    "falhas": []
+  },
+  {
+    "id": "R04",
+    "resultado": "aprovado",
+    "justificativa": "Preserva evidência restrita ao log fornecido, caráter aparente do evento posterior à autenticação e ausência de outras fontes; traduz timeout no sentido de evento.",
+    "falhas": []
+  },
+  {
+    "id": "R05",
+    "resultado": "aprovado",
+    "justificativa": "Preserva obrigações do engenheiro e da estrutura, responsabilidade, ensaio e capacidade mecânica, sem substituir usos legítimos por falsos amigos.",
+    "falhas": []
+  },
+  {
+    "id": "R06",
+    "resultado": "aprovado",
+    "justificativa": "Mantém a solicitação ambígua e registra a pendência; apresenta registro em log e entrada para execução apenas como interpretações condicionais, sem atribuir intenção ao administrador.",
+    "falhas": []
+  }
+]

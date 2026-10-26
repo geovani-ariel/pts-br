@@ -1,0 +1,190 @@
+{
+  "com_skill": [
+    {
+      "id": "X01",
+      "resultado": "aprovado",
+      "desfecho_observado": "traducao",
+      "justificativa": "“Deve” conserva a leitura de expectativa ou obrigação; JSON e limite respeitados.",
+      "falhas": []
+    },
+    {
+      "id": "X02",
+      "resultado": "aprovado",
+      "desfecho_observado": "traducao",
+      "justificativa": "“Chave” conserva a polissemia relevante, sem exigir contexto desnecessário.",
+      "falhas": []
+    },
+    {
+      "id": "X03",
+      "resultado": "aprovado",
+      "desfecho_observado": "traducao",
+      "justificativa": "“Sua conta” mantém o titular indefinido entre as pessoas citadas e conserva o bloqueio passado.",
+      "falhas": []
+    },
+    {
+      "id": "X04",
+      "resultado": "aprovado",
+      "desfecho_observado": "esclarecimento",
+      "justificativa": "A pergunta oferece referentes para confirmação e não apresenta uma tradução como concluída. “Selo” pode nomear elemento de selagem; a escolha lexical da pergunta não afirma que esse seja o referente da fonte.",
+      "falhas": []
+    },
+    {
+      "id": "X05",
+      "resultado": "falha",
+      "desfecho_observado": "esclarecimento_em_campo_de_traducao",
+      "justificativa": "Solicita a modalidade sem escolher leitura; semanticamente é esclarecimento, não tradução concluída. Entretanto, insere a pergunta no único campo destinado ao texto traduzido, sem um canal autorizado de impedimento.",
+      "falhas": [
+        {
+          "dimensao": "Entrega",
+          "gravidade": "material",
+          "fonte": "Traduza para pt-BR: Requests may not be retried. [...] somente JSON com texto (string) [...] Não inclua notas ou alternativas.",
+          "saida": "{\"texto\":\"Qual a modalidade?\"}",
+          "explicacao": "O contrato não autoriza texto como campo de pendência ou erro. Preenchê-lo com metatexto mantém a aparência estrutural do artefato de tradução, podendo fornecer esse conteúdo ao consumidor como tradução. A falha é o uso do campo, não a ausência de uma tradução impossível nem a decisão de esclarecer/bloquear. Um aviso explícito de impossibilidade anterior ao artefato distinguiria o impedimento do resultado final."
+        }
+      ]
+    },
+    {
+      "id": "X06",
+      "resultado": "aprovado",
+      "desfecho_observado": "esclarecimento",
+      "justificativa": "A pergunta solicita o sentido ausente e não apresenta cobrança ou acusação como tradução final.",
+      "falhas": []
+    },
+    {
+      "id": "X07",
+      "resultado": "aprovado",
+      "desfecho_observado": "bloqueio_autorizado",
+      "justificativa": "Usa exatamente texto null e erro AMBIGUIDADE, conforme o canal de impedimento autorizado.",
+      "falhas": []
+    },
+    {
+      "id": "X08",
+      "resultado": "aprovado",
+      "desfecho_observado": "bloqueio_autorizado",
+      "justificativa": "Usa texto null e estado bloqueado; a pendência distingue proibição de repetição e possibilidade de ausência de repetição, sem presumir leitura.",
+      "falhas": []
+    },
+    {
+      "id": "X09",
+      "resultado": "aprovado",
+      "desfecho_observado": "esclarecimento",
+      "justificativa": "Explicita que não pode escolher o enum sem definir o sentido e solicita confirmação das duas modalidades. A resposta é esclarecimento prévio; não equivale a um JSON final válido nem se apresenta como tal.",
+      "falhas": []
+    },
+    {
+      "id": "X10",
+      "resultado": "aprovado",
+      "desfecho_observado": "bloqueio_sem_canal",
+      "justificativa": "Reconhece a impossibilidade de tradução integral em um caractere e a ausência de referente. Não pergunta, não trunca a tradução nem alega cumprimento do limite impossível.",
+      "falhas": []
+    },
+    {
+      "id": "X11",
+      "resultado": "aprovado",
+      "desfecho_observado": "traducao",
+      "justificativa": "Traduz somente message com “chave”, conserva a ambiguidade e mantém id e esquema literais.",
+      "falhas": []
+    },
+    {
+      "id": "X12",
+      "resultado": "aprovado",
+      "desfecho_observado": "bloqueio_sem_canal",
+      "justificativa": "Explicita a impossibilidade de traduzir integralmente dentro do limite sem abreviar ou omitir condições; não apresenta fragmento como tradução nem alega sucesso. Pedir aumento do limite tornaria o próximo passo mais claro, mas o pedido real não exige a pergunta e a omissão isolada não constitui perda material de sentido.",
+      "falhas": []
+    },
+    {
+      "id": "X13",
+      "resultado": "aprovado",
+      "desfecho_observado": "traducao",
+      "justificativa": "Preserva exclusividade, cópia temporária e aprovação anterior à exclusão. A preferência de extensão é flexível e não exige bloqueio.",
+      "falhas": []
+    },
+    {
+      "id": "X14",
+      "resultado": "aprovado",
+      "desfecho_observado": "traducao",
+      "justificativa": "“Espera-se” preserva expectativa incerta de retorno em breve, sem obrigação ou garantia; respeita JSON e limite.",
+      "falhas": []
+    },
+    {
+      "id": "X15",
+      "resultado": "aprovado",
+      "desfecho_observado": "bloqueio_autorizado",
+      "justificativa": "Emite somente REQUER_CONTEXTO, o marcador exato autorizado.",
+      "falhas": []
+    },
+    {
+      "id": "X16",
+      "resultado": "aprovado",
+      "desfecho_observado": "traducao",
+      "justificativa": "Traduz a proibição explicitamente definida pelo contexto sem bloqueio ou alternativas; respeita JSON e limite.",
+      "falhas": []
+    }
+  ],
+  "controle_sem_skill": [
+    {
+      "id": "X01",
+      "resultado": "aprovado",
+      "desfecho_observado": "traducao",
+      "justificativa": "“Deve” conserva a leitura de expectativa ou obrigação; JSON e limite respeitados.",
+      "falhas": []
+    },
+    {
+      "id": "X02",
+      "resultado": "aprovado",
+      "desfecho_observado": "traducao",
+      "justificativa": "“Chave” conserva a polissemia relevante, sem exigir contexto desnecessário.",
+      "falhas": []
+    },
+    {
+      "id": "X03",
+      "resultado": "aprovado",
+      "desfecho_observado": "traducao",
+      "justificativa": "“Sua conta” mantém o titular indefinido entre as pessoas citadas e conserva o bloqueio passado.",
+      "falhas": []
+    },
+    {
+      "id": "X04",
+      "resultado": "aprovado",
+      "desfecho_observado": "esclarecimento",
+      "justificativa": "“Qual sentido?” solicita o referente ausente sem escolher animal ou vedação e sem se apresentar como tradução concluída.",
+      "falhas": []
+    },
+    {
+      "id": "X05",
+      "resultado": "falha",
+      "desfecho_observado": "impedimento_em_campo_de_traducao",
+      "justificativa": "Registra a indefinição sem escolher leitura, mas insere esse estado no campo destinado à tradução, sem um canal autorizado de impedimento. A ausência de pergunta por si só não fundamenta a reprovação.",
+      "falhas": [
+        {
+          "dimensao": "Entrega",
+          "gravidade": "material",
+          "fonte": "Traduza para pt-BR: Requests may not be retried. [...] somente JSON com texto (string) [...] Não inclua notas ou alternativas.",
+          "saida": "{\"texto\":\"Sentido indefinido\"}",
+          "explicacao": "O contrato não autoriza texto como campo de pendência ou erro. Preenchê-lo com metatexto mantém a aparência estrutural do artefato de tradução, podendo fornecer esse conteúdo ao consumidor como tradução. A falha é o uso do campo, não a ausência de uma tradução impossível nem a decisão de esclarecer/bloquear. Um aviso explícito de impossibilidade anterior ao artefato distinguiria o impedimento do resultado final."
+        }
+      ]
+    },
+    {
+      "id": "X06",
+      "resultado": "aprovado",
+      "desfecho_observado": "esclarecimento",
+      "justificativa": "A pergunta solicita o sentido ausente e não apresenta cobrança ou acusação como tradução final.",
+      "falhas": []
+    },
+    {
+      "id": "X07",
+      "resultado": "aprovado",
+      "desfecho_observado": "bloqueio_autorizado",
+      "justificativa": "Usa exatamente texto null e erro AMBIGUIDADE, conforme o canal de impedimento autorizado.",
+      "falhas": []
+    },
+    {
+      "id": "X08",
+      "resultado": "aprovado",
+      "desfecho_observado": "bloqueio_autorizado",
+      "justificativa": "Usa o canal autorizado de bloqueio e pergunta se a frase proíbe repetir ou expressa possibilidade de não repetição, sem escolher uma leitura.",
+      "falhas": []
+    }
+  ]
+}

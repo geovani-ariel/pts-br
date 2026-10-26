@@ -61,13 +61,16 @@ escolher silenciosamente uma interpretação que a fonte não esclarece.
 
 ## Pendências e formatos de saída
 
-Quando faltar informação necessária, a skill preserva o trecho afetado e
-registra a pendência. Ela não inventa um titular para “seu acesso”, uma data
-de referência para “amanhã” ou uma convenção para uma data ambígua.
+Quando faltar informação necessária, a skill conserva as leituras abertas ou
+solicita esclarecimento. Ela não inventa um titular para “seu acesso”, uma data
+de referência para “amanhã” ou uma convenção para uma data ambígua. Na tradução,
+um equivalente fiel pode preservar a ambiguidade sem notas adicionais.
 
-Se houver contrato estruturado, a pendência deve caber nos campos autorizados.
-A revisão não pode acrescentar propriedades ou texto depois de um JSON que
-deveria ser a saída completa.
+Pendências e alternativas usam somente canais autorizados. Se não houver uma
+tradução fiel no contrato, a skill usa o sinal de impedimento previsto no pedido.
+Sem esse canal, suspende o artefato e comunica a necessidade de esclarecimento ou
+ajuste; essa comunicação não é a saída JSON concluída. Perguntas não ocupam campos
+reservados à tradução. Veja os [casos de contratos incompatíveis](contratos-ambiguos.md).
 
 ## Uso das referências
 

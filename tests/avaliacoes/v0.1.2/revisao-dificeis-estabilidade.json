@@ -1,0 +1,218 @@
+[
+  {
+    "id": "D01",
+    "resultado": "aprovado",
+    "justificativa": "Mantém ausência de obrigação de repetir e proibição de descartar a requisição pendente.",
+    "falhas": []
+  },
+  {
+    "id": "D02",
+    "resultado": "aprovado",
+    "justificativa": "Apresenta as duas leituras como hipóteses condicionais em português e registra a pendência sem escolher uma intenção.",
+    "falhas": []
+  },
+  {
+    "id": "D03",
+    "resultado": "aprovado",
+    "justificativa": "Preserva o término dos dois testes como condição necessária e explicita que isso não obriga a publicar.",
+    "falhas": []
+  },
+  {
+    "id": "D04",
+    "resultado": "aprovado",
+    "justificativa": "Mantém todos exceto dois e distingue recebimento confirmado de operação concluída.",
+    "falhas": []
+  },
+  {
+    "id": "D05",
+    "resultado": "aprovado",
+    "justificativa": "Preserva pertencimento a exatamente um espaço, zero ou mais caches por espaço e ausência de garantia de exclusão dos caches.",
+    "falhas": []
+  },
+  {
+    "id": "D06",
+    "resultado": "aprovado",
+    "justificativa": "Mantém ausência de confirmação da falha e ausência de inferência de sucesso.",
+    "falhas": []
+  },
+  {
+    "id": "D07",
+    "resultado": "aprovado",
+    "justificativa": "Preserva prazo mínimo de 48 horas desde o recebimento e possibilidade de análise ainda incompleta.",
+    "falhas": []
+  },
+  {
+    "id": "D08",
+    "resultado": "aprovado",
+    "justificativa": "Mantém o pronome ambíguo e registra os dois referentes possíveis sem escolher quem fechou a fila.",
+    "falhas": []
+  },
+  {
+    "id": "D09",
+    "resultado": "aprovado",
+    "justificativa": "Preserva relato do timeout antes da chegada, conclusão posterior da resposta e recebimento pelo cliente não confirmado. A expressão do timeout é pouco natural, mas mantém o evento relatado.",
+    "falhas": []
+  },
+  {
+    "id": "D10",
+    "resultado": "aprovado",
+    "justificativa": "Mantém limitação à amostra de ontem, possibilidade relativa a alguns arquivos ainda não enviados e falta de acesso ao estado atual.",
+    "falhas": []
+  },
+  {
+    "id": "D11",
+    "resultado": "aprovado",
+    "justificativa": "Distingue 5% de 5 pontos percentuais, mantém 20% e a instrução de não inferir taxa final.",
+    "falhas": []
+  },
+  {
+    "id": "D12",
+    "resultado": "aprovado",
+    "justificativa": "Mantém consistência eventual, leitura possivelmente antiga após confirmação e ausência de garantia de replicação a todos os nós.",
+    "falhas": []
+  },
+  {
+    "id": "D13",
+    "resultado": "aprovado",
+    "justificativa": "Aplica o glossário explícito e distingue expiração, liberação do bloqueio e exclusão do registro protegido, mantendo a condição de não renovação.",
+    "falhas": []
+  },
+  {
+    "id": "D14",
+    "resultado": "aprovado",
+    "justificativa": "Mantém versão 1.10.0, ID 00042 e 1e3 bytes, com explicação do valor mil e distinção de versão.",
+    "falhas": []
+  },
+  {
+    "id": "D15",
+    "resultado": "aprovado",
+    "justificativa": "Traduz apenas message, preserva as duas ocorrências de {name}, a pergunta e id em JSON válido.",
+    "falhas": []
+  },
+  {
+    "id": "D16",
+    "resultado": "aprovado",
+    "justificativa": "Traduz somente o comentário como ausência de obrigação, preservando atribuição, string e estrutura do código.",
+    "falhas": []
+  },
+  {
+    "id": "D17",
+    "resultado": "aprovado",
+    "justificativa": "Traduz singular e plural da linguagem natural, preservando estrutura ICU, count, one, other, # e id em JSON válido.",
+    "falhas": []
+  },
+  {
+    "id": "D18",
+    "resultado": "aprovado",
+    "justificativa": "Localiza o coeficiente somente na prosa, mantém a negação sobre confiança e preserva número JSON, identificador e comando.",
+    "falhas": []
+  },
+  {
+    "id": "D19",
+    "resultado": "aprovado",
+    "justificativa": "Preserva fonte inglesa, voz passiva e ator e objeto desconhecidos. Deve admite leitura normativa ou de expectativa; pendencias explicita a indefinição da modalidade, sem confirmar uma delas. Campos e tipos do JSON correspondem ao pedido.",
+    "falhas": []
+  },
+  {
+    "id": "D20",
+    "resultado": "aprovado",
+    "justificativa": "Mantém rascunhos restritos a signatários e acesso a relatórios publicados também para revisores não signatários.",
+    "falhas": []
+  },
+  {
+    "id": "D21",
+    "resultado": "aprovado",
+    "justificativa": "Liga terça-feira à confirmação e segunda-feira ao término anterior do teste.",
+    "falhas": []
+  },
+  {
+    "id": "D22",
+    "resultado": "aprovado",
+    "justificativa": "Liga após o desligamento à alegação, sem datar a suposta falha, e preserva falta de verificação independente.",
+    "falhas": []
+  },
+  {
+    "id": "D23",
+    "resultado": "aprovado",
+    "justificativa": "Mantém confirmação antes das 10:00, tentativa prospectiva após as 10:30 e ausência de observação, sem afirmar execução.",
+    "falhas": []
+  },
+  {
+    "id": "D24",
+    "resultado": "aprovado",
+    "justificativa": "Mantém 08:00 como término declarado pelo log, 08:05 como escrita da entrada e falta de verificação do término real.",
+    "falhas": []
+  },
+  {
+    "id": "E01",
+    "resultado": "aprovado",
+    "justificativa": "Mantém integralmente a condição de exportação sem erros para excluir a cópia temporária, sem fatos novos.",
+    "falhas": []
+  },
+  {
+    "id": "E02",
+    "resultado": "aprovado",
+    "justificativa": "Preserva homologação, Ana, Bruno, permissão, limite inclusivo de 12 e aprovação anterior.",
+    "falhas": []
+  },
+  {
+    "id": "E03",
+    "resultado": "aprovado",
+    "justificativa": "Mantém a estrutura de E02, substituindo somente os fatos correspondentes por produção, Lia, Caio e 37.",
+    "falhas": []
+  },
+  {
+    "id": "E04",
+    "resultado": "aprovado",
+    "justificativa": "Repete aprovação nas duas ações e mantém exportação dos registros antes do arquivamento do relatório.",
+    "falhas": []
+  },
+  {
+    "id": "E05",
+    "resultado": "aprovado",
+    "justificativa": "Mantém cabeçalho condicional para ambos os passos e sua sequência, com sentido equivalente ao de E04.",
+    "falhas": []
+  },
+  {
+    "id": "E06",
+    "resultado": "aprovado",
+    "justificativa": "Mantém condições e sequência de E04 e E05 dentro de texto, com id, chaves e tipos inalterados em JSON válido.",
+    "falhas": []
+  },
+  {
+    "id": "E07",
+    "resultado": "aprovado",
+    "justificativa": "Entrega ambas as leituras condicionais e a pendência em português no único campo texto autorizado, sem confirmar uma interpretação.",
+    "falhas": []
+  },
+  {
+    "id": "E08",
+    "resultado": "aprovado",
+    "justificativa": "Preserva validade do token como condição necessária, sem ordenar repetição, em rótulo único de 44 caracteres, abaixo do máximo de 45.",
+    "falhas": []
+  },
+  {
+    "id": "E09",
+    "resultado": "aprovado",
+    "justificativa": "Preserva relato, bloqueio e ambiguidade da titularidade da conta, somente no campo texto autorizado.",
+    "falhas": []
+  },
+  {
+    "id": "E10",
+    "resultado": "aprovado",
+    "justificativa": "Mantém conteúdo e formato de E01 integralmente, sem preâmbulo ou fatos novos.",
+    "falhas": []
+  },
+  {
+    "id": "E11",
+    "resultado": "aprovado",
+    "justificativa": "Mantém conteúdo e formato de E02 integralmente, incluindo atores, ambiente, permissão, limite e aprovação anterior.",
+    "falhas": []
+  },
+  {
+    "id": "E12",
+    "resultado": "aprovado",
+    "justificativa": "Mantém o texto estático fornecido e o resultado de E06, com condição para ambas as ações, sequência e esquema JSON preservados.",
+    "falhas": []
+  }
+]

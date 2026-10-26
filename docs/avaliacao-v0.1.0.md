@@ -1,5 +1,9 @@
 # Avaliação v0.1.0
 
+Registro histórico. A [avaliação v0.1.2](contratos-ambiguos.md) contém a rodada
+atual; o comando de checagem da branch principal acompanha essa rodada. Para
+reproduzir as checagens deste registro, use o código da tag v0.1.0.
+
 Rodada de 26 de outubro de 2026. As três baterias existentes foram executadas
 novamente, junto de 12 casos de estabilidade, contra a mesma cópia final de
 `SKILL.md` e das referências. As respostas históricas permanecem preservadas.

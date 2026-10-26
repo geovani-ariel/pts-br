@@ -1,6 +1,6 @@
 # Testes e limites da avaliação
 
-Para a execução completa mais recente, veja a [avaliação v0.1.0](avaliacao-v0.1.0.md)
+Para a execução completa mais recente, veja a [avaliação v0.1.2](contratos-ambiguos.md)
 e a [ficha de avaliação semântica](avaliacao-semantica.md). As seções abaixo
 preservam o registro da rodada original.
 

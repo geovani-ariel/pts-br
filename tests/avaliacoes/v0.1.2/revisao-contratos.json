@@ -1,0 +1,142 @@
+[
+  {
+    "id": "X01",
+    "resultado": "aprovado",
+    "desfecho_observado": "traducao",
+    "justificativa": "“Deve se reconectar” mantém as leituras de expectativa e obrigação de should. O campo texto contém somente a tradução, dentro do limite de 40 caracteres.",
+    "falhas": []
+  },
+  {
+    "id": "X02",
+    "resultado": "aprovado",
+    "desfecho_observado": "traducao",
+    "justificativa": "“Chave” preserva a polissemia relevante de key. A frase está integralmente em pt-BR, cabe em 20 caracteres e não acrescenta nota ou impedimento desnecessário.",
+    "falhas": []
+  },
+  {
+    "id": "X03",
+    "resultado": "aprovado",
+    "desfecho_observado": "traducao",
+    "justificativa": "“Sua conta” não atribui a titularidade exclusivamente a Marina ou Carla. O relato e o estado de bloqueio foram preservados; o JSON tem apenas texto e respeita 65 caracteres.",
+    "falhas": []
+  },
+  {
+    "id": "X04",
+    "resultado": "aprovado",
+    "desfecho_observado": "esclarecimento",
+    "justificativa": "A pergunta esclarece o referente que exige palavras distintas em português. Não apresenta animal ou vedação como tradução escolhida, nem simula cumprimento do rótulo de 15 caracteres.",
+    "falhas": []
+  },
+  {
+    "id": "X05",
+    "resultado": "aprovado",
+    "desfecho_observado": "esclarecimento",
+    "justificativa": "A pergunta distingue proibição de repetir e possibilidade de não repetição. Como a modalidade indefinida não cabe fielmente no campo restrito, a suspensão ocorre antes do JSON, sem usar texto como canal de pergunta.",
+    "falhas": []
+  },
+  {
+    "id": "X06",
+    "resultado": "aprovado",
+    "desfecho_observado": "esclarecimento",
+    "justificativa": "A pergunta distingue os dois conceitos fornecidos, cobrança financeira e acusação formal. Não escolhe um deles nem fabrica rótulo final dentro de 20 caracteres.",
+    "falhas": []
+  },
+  {
+    "id": "X07",
+    "resultado": "aprovado",
+    "desfecho_observado": "bloqueio_autorizado",
+    "justificativa": "Usa exatamente o objeto de impedimento autorizado. Não escolhe o sentido de seal, não inventa campos e não trata texto null como tradução concluída.",
+    "falhas": []
+  },
+  {
+    "id": "X08",
+    "resultado": "aprovado",
+    "desfecho_observado": "bloqueio_autorizado",
+    "justificativa": "Usa texto null e estado bloqueado e coloca a pergunta sobre modalidade na lista pendencias autorizada. Não presume proibição nem possibilidade como conteúdo traduzido.",
+    "falhas": []
+  },
+  {
+    "id": "X09",
+    "resultado": "aprovado",
+    "desfecho_observado": "esclarecimento",
+    "justificativa": "A pergunta suspende o artefato e solicita a modalidade indispensável, sem emitir permitido ou proibido como fato. O contrato fechado não oferece tradução fiel para a leitura ainda desconhecida; a pergunta não é apresentada como JSON final válido.",
+    "falhas": []
+  },
+  {
+    "id": "X10",
+    "resultado": "aprovado",
+    "desfecho_observado": "bloqueio_sem_canal",
+    "justificativa": "Informa os impedimentos reais: referente desconhecido e limite de um caractere incompatível com tradução integral. Não pergunta, não usa símbolo ou fragmento como tradução e não alega cumprir o contrato. A comunicação de impossibilidade não conta como rótulo entregue.",
+    "falhas": []
+  },
+  {
+    "id": "X11",
+    "resultado": "aprovado",
+    "desfecho_observado": "traducao",
+    "justificativa": "Traduz somente message com o equivalente polissêmico chave. Preserva id key-17, as duas chaves e o limite, sem nota ou campo adicional.",
+    "falhas": []
+  },
+  {
+    "id": "X12",
+    "resultado": "aprovado",
+    "desfecho_observado": "esclarecimento",
+    "justificativa": "Solicita ampliação do limite rígido, necessária para preservar ação, exclusividade, cópia temporária e condição de aprovação. A tradução citada demonstra o conteúdo que requer espaço, dentro de uma solicitação anterior ao artefato, sem declarar entregue o rótulo de cinco caracteres.",
+    "falhas": []
+  },
+  {
+    "id": "X13",
+    "resultado": "aprovado",
+    "desfecho_observado": "traducao",
+    "justificativa": "A tradução preserva a ação, somente, cópia temporária e após a aprovação. Excede justificadamente a preferência flexível de 20 caracteres, conforme a prioridade explícita da precisão; entrega apenas o texto traduzido.",
+    "falhas": []
+  },
+  {
+    "id": "X14",
+    "resultado": "aprovado",
+    "desfecho_observado": "traducao",
+    "justificativa": "“Deve voltar em breve” exprime expectativa incerta no contexto de retorno do serviço e preserva soon. Não atribui obrigação operacional nem promete retorno garantido. O JSON e o limite foram respeitados.",
+    "falhas": []
+  },
+  {
+    "id": "X15",
+    "resultado": "aprovado",
+    "desfecho_observado": "bloqueio_autorizado",
+    "justificativa": "Emite exclusivamente REQUER_CONTEXTO, sem aspas, conforme o marcador autorizado para o impedimento real de referente. Não acrescenta comentário nem escolhe uma tradução.",
+    "falhas": []
+  },
+  {
+    "id": "X16",
+    "resultado": "aprovado",
+    "desfecho_observado": "traducao",
+    "justificativa": "“Não podem ser repetidas” transmite a proibição explicitamente definida pelo contexto. Não substitui a proibição por possibilidade de não repetição. O objeto contém somente texto e cabe em 65 caracteres.",
+    "falhas": []
+  },
+  {
+    "id": "X17",
+    "resultado": "aprovado",
+    "desfecho_observado": "esclarecimento",
+    "justificativa": "Solicita o domínio necessário para distinguir pessoa de componente de software. Não escolhe motorista nem mantém inglês em uma tradução final que o proíbe; a suspensão é pertinente.",
+    "falhas": []
+  },
+  {
+    "id": "X18",
+    "resultado": "aprovado",
+    "desfecho_observado": "traducao",
+    "justificativa": "“A chave é válida.” conserva o sentido aberto, cabe no limite rígido de 18 caracteres e traduz somente label. Preserva code K2 e as chaves, sem pendência desnecessária.",
+    "falhas": []
+  },
+  {
+    "id": "X19",
+    "resultado": "aprovado",
+    "desfecho_observado": "bloqueio_autorizado",
+    "justificativa": "Usa exatamente label null e error NEEDS_CONTEXT, que o pedido autoriza para falta de conceito. O inglês pertence ao marcador literal de erro, não a uma tradução fabricada; não há texto externo.",
+    "falhas": []
+  },
+  {
+    "id": "X20",
+    "resultado": "aprovado",
+    "desfecho_observado": "esclarecimento",
+    "justificativa": "Solicita espaço suficiente diante do limite rígido de dois caracteres. A frase citada mantém proibição, relatório assinado e condição temporal antes da aprovação; é exemplo na solicitação de ajuste, sem alegar tradução final conforme ao limite.",
+    "falhas": []
+  }
+]

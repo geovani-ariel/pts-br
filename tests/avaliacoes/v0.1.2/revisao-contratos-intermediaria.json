@@ -1,0 +1,150 @@
+[
+  {
+    "id": "X01",
+    "resultado": "aprovado",
+    "desfecho_observado": "traducao",
+    "justificativa": "Deve preserva a leitura aberta entre expectativa e obrigação. A resposta respeita o JSON, o campo autorizado e o limite.",
+    "falhas": []
+  },
+  {
+    "id": "X02",
+    "resultado": "aprovado",
+    "desfecho_observado": "traducao",
+    "justificativa": "Chave preserva a polissemia relevante de key. A frase completa cabe no limite e não acrescenta observações.",
+    "falhas": []
+  },
+  {
+    "id": "X03",
+    "resultado": "aprovado",
+    "desfecho_observado": "traducao",
+    "justificativa": "Sua conta conserva o referente não definido entre Marina e Carla; o relato e o estado passado permanecem ligados corretamente. JSON e limite respeitados.",
+    "falhas": []
+  },
+  {
+    "id": "X04",
+    "resultado": "aprovado",
+    "desfecho_observado": "esclarecimento",
+    "justificativa": "Suspende o rótulo e solicita o referente necessário, sem escolher animal ou vedação. A pergunta é comunicação anterior ao artefato; o limite do rótulo não se aplica à suspensão.",
+    "falhas": []
+  },
+  {
+    "id": "X05",
+    "resultado": "falha",
+    "desfecho_observado": "esclarecimento",
+    "justificativa": "A pergunta sobre modalidade suspende corretamente o artefato, mas a exigência categórica de ampliar o limite acrescenta uma restrição não demonstrada: ao menos a leitura proibitiva admite formulação fiel de até 20 caracteres.",
+    "falhas": [
+      {
+        "dimensao": "Fatos e evidência",
+        "gravidade": "material",
+        "fonte": "Requests may not be retried. Sem contexto modal. [...] no máximo 20 caracteres.",
+        "saida": "O limite de 20 caracteres também precisa ser ampliado para preservar o sentido integral.",
+        "explicacao": "A necessidade de ampliar o limite é afirmada antes de esclarecer a modalidade. Se a leitura confirmada for proibição, uma formulação como “Não repetir pedidos.” tem 20 caracteres e preserva essa leitura. O impedimento modal é real, mas não demonstra que ampliar o limite seja necessariamente outra condição para a entrega. A ficha exige conferir restrições impossíveis declaradas sem fundamento."
+      }
+    ]
+  },
+  {
+    "id": "X06",
+    "resultado": "aprovado",
+    "desfecho_observado": "esclarecimento",
+    "justificativa": "Pergunta qual conceito corresponde a charge antes de produzir o rótulo e não escolhe uma leitura como fato.",
+    "falhas": []
+  },
+  {
+    "id": "X07",
+    "resultado": "aprovado",
+    "desfecho_observado": "bloqueio_autorizado",
+    "justificativa": "Usa exatamente o sinal de impedimento previsto, preservando texto nulo e erro AMBIGUIDADE sem campos extras.",
+    "falhas": []
+  },
+  {
+    "id": "X08",
+    "resultado": "aprovado",
+    "desfecho_observado": "bloqueio_autorizado",
+    "justificativa": "Mantém texto nulo e estado bloqueado; registra somente no canal autorizado a pergunta que distingue proibição e possibilidade.",
+    "falhas": []
+  },
+  {
+    "id": "X09",
+    "resultado": "aprovado",
+    "desfecho_observado": "esclarecimento",
+    "justificativa": "A pergunta modal antecede o artefato e evita emitir um enum sem confirmação. Não se apresenta como JSON concluído; a ausência de explicação adicional da incompatibilidade não cria uma falha material após o impedimento claro.",
+    "falhas": []
+  },
+  {
+    "id": "X10",
+    "resultado": "aprovado",
+    "desfecho_observado": "bloqueio_sem_canal",
+    "justificativa": "Comunica os impedimentos de extensão e referente, sem perguntar nem fabricar tradução ou marcador. É conduta adequada de suspensão, sem cumprimento do limite de um caractere ou tradução concluída.",
+    "falhas": []
+  },
+  {
+    "id": "X11",
+    "resultado": "aprovado",
+    "desfecho_observado": "traducao",
+    "justificativa": "Traduz somente message, preserva a polissemia de chave, mantém id literal e respeita chaves e limite.",
+    "falhas": []
+  },
+  {
+    "id": "X12",
+    "resultado": "aprovado",
+    "desfecho_observado": "esclarecimento",
+    "justificativa": "Solicita ampliar o limite rígido antes de produzir o rótulo, evitando omitir exclusividade, objeto ou condição de aprovação.",
+    "falhas": []
+  },
+  {
+    "id": "X13",
+    "resultado": "aprovado",
+    "desfecho_observado": "traducao",
+    "justificativa": "Preserva a condição temporal de aprovação, somente e cópia temporária. O limite é uma preferência subordinada à precisão, portanto o excesso é autorizado.",
+    "falhas": []
+  },
+  {
+    "id": "X14",
+    "resultado": "aprovado",
+    "desfecho_observado": "traducao",
+    "justificativa": "Deve voltar em breve exprime naturalmente a expectativa incerta fornecida pelo contexto, sem garantir retorno ou reduzir a afirmação a mera possibilidade. Respeita JSON e limite.",
+    "falhas": []
+  },
+  {
+    "id": "X15",
+    "resultado": "aprovado",
+    "desfecho_observado": "bloqueio_autorizado",
+    "justificativa": "Emite somente REQUER_CONTEXTO, exatamente como autorizado para a célula CSV, sem escolher referente.",
+    "falhas": []
+  },
+  {
+    "id": "X16",
+    "resultado": "aprovado",
+    "desfecho_observado": "traducao",
+    "justificativa": "Não podem ser repetidas preserva a proibição explicitamente definida pelo pedido; não reabre a ambiguidade já resolvida. JSON e limite respeitados.",
+    "falhas": []
+  },
+  {
+    "id": "X17",
+    "resultado": "aprovado",
+    "desfecho_observado": "esclarecimento",
+    "justificativa": "Solicita o domínio necessário e não escolhe motorista nem mantém driver como tradução final. A comunicação suspende o artefato.",
+    "falhas": []
+  },
+  {
+    "id": "X18",
+    "resultado": "aprovado",
+    "desfecho_observado": "traducao",
+    "justificativa": "Chave preserva a polissemia, o valor tem 17 caracteres e o JSON mantém code K2 e as mesmas chaves.",
+    "falhas": []
+  },
+  {
+    "id": "X19",
+    "resultado": "aprovado",
+    "desfecho_observado": "bloqueio_autorizado",
+    "justificativa": "Usa exatamente o erro autorizado, com label nulo e error NEEDS_CONTEXT; não escolhe cobrança ou acusação nem acrescenta texto externo.",
+    "falhas": []
+  },
+  {
+    "id": "X20",
+    "resultado": "aprovado",
+    "desfecho_observado": "esclarecimento",
+    "justificativa": "Explicita a incompatibilidade do limite rígido com a tradução integral sem abreviações ou omissões. Não apresenta fragmento como tradução; a ficha não exige uma pergunta adicional depois do impedimento claro.",
+    "falhas": []
+  }
+]

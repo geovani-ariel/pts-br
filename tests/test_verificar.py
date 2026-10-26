@@ -63,5 +63,25 @@ class LimiteCaracteresTest(unittest.TestCase):
         ))
 
 
+class LimiteCampoJsonTest(unittest.TestCase):
+    caso = {"id": "UI", "formato": "json", "chaves": ["texto"],
+            "max_caracteres_campos": {"texto": 4}}
+
+    def test_conta_valor_decodificado_sem_sintaxe_json(self):
+        self.assertEqual(conferir([self.caso], [
+            {"id": "UI", "resposta": '{"texto":"a\\u00e7\\u00e3o"}'},
+        ]), [])
+
+    def test_rejeita_valor_acima_do_limite(self):
+        self.assertTrue(conferir([self.caso], [
+            {"id": "UI", "resposta": '{"texto":"ações"}'},
+        ]))
+
+    def test_rejeita_valor_nao_textual(self):
+        self.assertTrue(conferir([self.caso], [
+            {"id": "UI", "resposta": '{"texto":null}'},
+        ]))
+
+
 if __name__ == "__main__":
     unittest.main()

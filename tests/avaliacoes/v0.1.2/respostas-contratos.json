@@ -1,0 +1,82 @@
+[
+  {
+    "id": "X01",
+    "resposta": "{\"texto\":\"O cliente deve se reconectar.\"}"
+  },
+  {
+    "id": "X02",
+    "resposta": "A chave é válida."
+  },
+  {
+    "id": "X03",
+    "resposta": "{\"texto\":\"Marina disse a Carla que sua conta estava bloqueada.\"}"
+  },
+  {
+    "id": "X04",
+    "resposta": "O termo se refere ao animal ou a um elemento de vedação?"
+  },
+  {
+    "id": "X05",
+    "resposta": "A frase proíbe repetir as solicitações ou indica que elas podem não ser repetidas?"
+  },
+  {
+    "id": "X06",
+    "resposta": "Trata-se de cobrança financeira ou acusação formal?"
+  },
+  {
+    "id": "X07",
+    "resposta": "{\"texto\":null,\"erro\":\"AMBIGUIDADE\"}"
+  },
+  {
+    "id": "X08",
+    "resposta": "{\"texto\":null,\"estado\":\"bloqueado\",\"pendencias\":[\"A frase proíbe repetir as solicitações ou indica que elas podem não ser repetidas?\"]}"
+  },
+  {
+    "id": "X09",
+    "resposta": "A frase proíbe repetir as solicitações ou indica que elas podem não ser repetidas?"
+  },
+  {
+    "id": "X10",
+    "resposta": "Não é possível traduzir fielmente sem esclarecer se o termo indica animal ou vedação. O limite de 1 caractere também impede a tradução integral."
+  },
+  {
+    "id": "X11",
+    "resposta": "{\"id\":\"key-17\",\"message\":\"A chave é válida.\"}"
+  },
+  {
+    "id": "X12",
+    "resposta": "Pode ampliar o limite para comportar a tradução integral: “Exclua somente a cópia temporária após a aprovação”?"
+  },
+  {
+    "id": "X13",
+    "resposta": "Exclua somente a cópia temporária após a aprovação."
+  },
+  {
+    "id": "X14",
+    "resposta": "{\"texto\":\"O serviço deve voltar em breve.\"}"
+  },
+  {
+    "id": "X15",
+    "resposta": "REQUER_CONTEXTO"
+  },
+  {
+    "id": "X16",
+    "resposta": "{\"texto\":\"As solicitações não podem ser repetidas.\"}"
+  },
+  {
+    "id": "X17",
+    "resposta": "O termo se refere a uma pessoa que dirige ou a um componente de software?"
+  },
+  {
+    "id": "X18",
+    "resposta": "{\"code\":\"K2\",\"label\":\"A chave é válida.\"}"
+  },
+  {
+    "id": "X19",
+    "resposta": "{\"label\":null,\"error\":\"NEEDS_CONTEXT\"}"
+  },
+  {
+    "id": "X20",
+    "resposta": "Pode ampliar o limite para comportar a tradução integral: “Não exclua o relatório assinado antes da aprovação”?"
+  }
+]

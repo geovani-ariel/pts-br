@@ -1,0 +1,79 @@
+{
+  "versao": "0.1.2",
+  "data": "2026-10-26",
+  "commit_de_partida": "4b5e9bcf2ff9e9a63b785000666ea4db6e92c0fb",
+  "executor": "Subagentes do Codex com configuração herdada",
+  "modelo_id": null,
+  "modelo_revisao": null,
+  "parametros_amostragem": null,
+  "limite_identificacao_modelo": "ID exato, revisão e parâmetros não são expostos pela ferramenta de subagentes.",
+  "metodo": "Pedidos e IDs sem critérios aos geradores. Quatro contextos finais: 20 contratos, 28 originais, 24 ASD/PTC, 36 difíceis/estabilidade. Três revisores novos: 20, 52 e 36 casos. Pedidos estáticos da estabilidade mantidos.",
+  "desfechos_contratos": {
+    "traducao": 8,
+    "bloqueio_autorizado": 4,
+    "esclarecimento": 7,
+    "bloqueio_sem_canal": 1
+  },
+  "fases_anteriores": {
+    "base": "v0.1.1: 16 casos com skill; controle sem skill com oito casos.",
+    "intermediaria": "20 casos com primeira correção; os 88 casos anteriores também foram executados e revisados nessa candidata. A publicação preserva as evidências dos contratos que orientaram o ajuste.",
+    "instrucoes_intermediarias": [
+      "tests/avaliacoes/v0.1.2/skill-intermediaria.txt",
+      "tests/avaliacoes/v0.1.2/regras-intermediarias.txt"
+    ]
+  },
+  "baterias": [
+    {
+      "casos": "tests/casos.json",
+      "resultados": "tests/avaliacoes/v0.1.2/respostas-original.json"
+    },
+    {
+      "casos": "tests/casos-asd.json",
+      "resultados": "tests/avaliacoes/v0.1.2/respostas-asd.json"
+    },
+    {
+      "casos": "tests/casos-dificeis.json",
+      "resultados": "tests/avaliacoes/v0.1.2/respostas-dificeis.json"
+    },
+    {
+      "casos": "tests/casos-estabilidade.json",
+      "resultados": "tests/avaliacoes/v0.1.2/respostas-estabilidade.json"
+    },
+    {
+      "casos": "tests/casos-contratos.json",
+      "resultados": "tests/avaliacoes/v0.1.2/respostas-contratos.json"
+    }
+  ],
+  "revisoes": [
+    "tests/avaliacoes/v0.1.2/revisao-original-asd.json",
+    "tests/avaliacoes/v0.1.2/revisao-dificeis-estabilidade.json",
+    "tests/avaliacoes/v0.1.2/revisao-contratos.json"
+  ],
+  "arquivos_sha256": {
+    "SKILL.md": "b3204ba5419327789e9873ec6888b0292352f1083ac3ea799b29a0cb09ba3c09",
+    "references/glossario.md": "1e5af8d123b217ee2a5582106c9c7e1d18f66848c1b0b2a8b56e999bac6ea8cf",
+    "references/proveniencia.md": "f0704c0e11ada6828385b4d347c6fcc54e73f03392bd54e8c2877ab44c1dbf05",
+    "references/referencias.md": "e61fa6586f85d7cab95e27bb845bfb978543285dfb717f02f36471cb410410f7",
+    "references/regras.md": "e3470dbdddcf4431036a600d86a2e1a377b942b6f258570d42421884058b9e28",
+    "tests/avaliacoes/v0.1.2/controle-sem-skill.json": "4a000572300ef520657ba55abe9844fe2574d4f17d20a1b99543131baf757509",
+    "tests/avaliacoes/v0.1.2/respostas-asd.json": "fa29fbeab5dc1dbd20cde526acb330c1fe3098647546bbd298a034a1f90e514d",
+    "tests/avaliacoes/v0.1.2/respostas-contratos-antes.json": "8c97e01a17a2f08edf3c44742e5440ccb70a4986577525b367b1e498ac1b7fb4",
+    "tests/avaliacoes/v0.1.2/respostas-contratos-intermediarias.json": "86b64c8adeda232a0bfaf9410bbe33c655938e02919c1f4fb3d23f154333952c",
+    "tests/avaliacoes/v0.1.2/respostas-contratos.json": "a1a405206b3b39ee6b3d2ef2de2ae0ecef0f4bb8735fe8b43046af2192fe2941",
+    "tests/avaliacoes/v0.1.2/respostas-dificeis.json": "92b9e6579a664e90c4d756b04438a232a6aacb1840f2b0a93f1e3cf11a580794",
+    "tests/avaliacoes/v0.1.2/respostas-estabilidade.json": "370da25a068e550dbcf3c75c8947fedb9aedc29ea7a129bc3801072a26933570",
+    "tests/avaliacoes/v0.1.2/respostas-original.json": "5c4e02b94e8e8566fc48bf35a5c9b4d2211a8bfbd77274925b90035041c23c34",
+    "tests/avaliacoes/v0.1.2/revisao-contratos-antes.json": "4848795ae7b625931c189b7057ff96a70c19590c5d49cd4951b63e96d32fe25f",
+    "tests/avaliacoes/v0.1.2/revisao-contratos-intermediaria.json": "92e333b3db3216260fb188ca44f2ba88a97ecc8c7f04d271b00656254968b7ef",
+    "tests/avaliacoes/v0.1.2/revisao-contratos.json": "e6720bda1ee54da9cb18330553e56cd8a869a8f3aeb79f6a2d261ac001bf0526",
+    "tests/avaliacoes/v0.1.2/revisao-dificeis-estabilidade.json": "765dc775670dd383c270539ca2fa9b845877edb85e6ee3efbfbf87851c63d7c5",
+    "tests/avaliacoes/v0.1.2/revisao-original-asd.json": "5d1108bc50ccdcfe1dc4692b614d8c9f8136b2fe8d76962c113428d06ae5392a",
+    "tests/casos-asd.json": "e2b69ef074a48ad19e865add199a9c382524c84b9bed207a9174550012898ee6",
+    "tests/casos-contratos.json": "718b9e2955e3a49cda2b75e4e8675d9a282672fb79f4549e9f66e81f7d70ddc6",
+    "tests/casos-dificeis.json": "2de8d15d4b2cd3c29939c759d6aa290d6e387bea027cb261d80c6ea8f0035efc",
+    "tests/casos-estabilidade.json": "22d5dfd21734bda59e5e49c32207bea0ee89984291c11c6f14c24772b46c006d",
+    "tests/casos.json": "8d40d9a18b5988d0465b37480ba707f3830ed4ff95ebc59dcfec805612bee16f",
+    "tests/avaliacoes/v0.1.2/skill-intermediaria.txt": "1a329e214653e73694598ccd161f0e2497b5df5afb187ccf97b7a6926fb7bb86",
+    "tests/avaliacoes/v0.1.2/regras-intermediarias.txt": "aed6cdae885ee9cb4ff1762e19712aeaf9b7277ed1d5cecfcfe678bb60e82dcc"
+  }
+}

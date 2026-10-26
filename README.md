@@ -110,7 +110,7 @@ na pasta do projeto e troque `--global` por `--project`.
 que `update`. Não use esse comando como consulta sem alterações. `@latest`
 seleciona a versão do CLI, não a versão da PTS-BR.
 
-Para instalar uma versão específica, use a URL da tag. Exemplo da versão anterior:
+Para instalar uma versão específica, use a URL da tag. Exemplo de versão publicada:
 
 ```sh
 npx skills@1.7.4 add https://github.com/geovani-ariel/pts-br/tree/v0.1.0 --skill pts-br --agent codex --global --copy
@@ -142,9 +142,10 @@ Use $pts-br e mostre antes/depois com os motivos das mudanças.
 ```
 
 Por padrão, a resposta contém somente o texto revisado. Quando a fonte for
-ambígua, a skill registra o que falta esclarecer. Na tradução, pode apresentar
-leituras condicionais no idioma pedido, sem escolher uma intenção para o autor.
-Formatos explícitos, como JSON, devem respeitar o contrato do pedido.
+ambígua, a skill conserva as leituras abertas ou indica o que falta esclarecer.
+Notas e alternativas usam canais autorizados. Se não houver uma tradução fiel
+no contrato nem um sinal de falha previsto, a skill suspende o artefato e pede
+apenas o contexto ou ajuste necessário. Veja os [casos de contrato incompatível](docs/contratos-ambiguos.md).
 
 ## Regras de revisão e tradução
 
@@ -170,8 +171,8 @@ hipóteses, código, JSON, CSV e traduções ambíguas.
 
 ## Testes
 
-O repositório contém 88 casos em quatro baterias. A
-[avaliação v0.1.0](docs/avaliacao-v0.1.0.md) executa todos contra a mesma cópia
+O repositório contém 108 casos em cinco baterias. A
+[avaliação v0.1.2](docs/contratos-ambiguos.md) executa todos contra a mesma cópia
 das instruções e registra os hashes dos arquivos avaliados:
 
 | Bateria | Casos | Cobertura |
@@ -180,6 +181,7 @@ das instruções e registra os hashes dos arquivos avaliados:
 | [ASD-STE100 e PTC](docs/base-asd-ptc.md) | 24 | Avisos, procedimentos, outros domínios técnicos, conectores e integração com agentes. |
 | [Tradução e ambiguidade](docs/rodada-dificil.md) | 24 | Negação modal, escopo temporal, cardinalidade, marcadores, ICU e pares bilíngues. |
 | [Estabilidade](docs/avaliacao-v0.1.0.md) | 12 | Reaplicação, substituição de nomes e valores, formatos equivalentes e ambiguidade em campos fechados. |
+| [Ambiguidade e contratos incompatíveis](docs/contratos-ambiguos.md) | 20 | Tradução sem notas, limites rígidos e flexíveis, falha autorizada e suspensão antes de um artefato impossível. |
 
 Para conferir as respostas salvas e executar os testes do verificador:
 
@@ -189,6 +191,9 @@ python3 -B tests/checar.py
 
 O verificador usa apenas a biblioteca padrão do Python e confere contratos e
 literais nas respostas salvas. Não chama modelos nem prova equivalência semântica.
+Os 20 casos novos distinguem traduções entregues, impedimentos previstos no
+contrato e comunicações de suspensão; essas últimas não contam como traduções
+concluídas nem como cumprimento do formato impossível.
 Os relatórios detalham as revisões manuais, correções e limites das amostras,
 incluindo a comparação inicial de 100 respostas entre versões. A
 [ficha de avaliação semântica](docs/avaliacao-semantica.md) padroniza os critérios

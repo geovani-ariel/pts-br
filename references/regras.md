@@ -20,7 +20,7 @@ Aplicação dos princípios de linguagem simples: [base de referências](referen
 | Conceitos diferentes | Preserve a distinção entre salvar, enviar, publicar e implantar. Não uniformize termos apenas por semelhança. |
 | Sujeito conhecido | Prefira “O servidor rejeitou a solicitação” a “A solicitação foi rejeitada pelo servidor”. |
 | Sujeito desconhecido | Preserve “O arquivo foi removido”. Não atribua a remoção ao servidor sem evidência. |
-| Pronome com mais de um referente | Repita o nome quando o referente estiver estabelecido. Caso contrário, registre a pendência. |
+| Pronome com mais de um referente | Repita o nome quando o referente estiver estabelecido. Caso contrário, preserve a ambiguidade e registre a pendência se houver canal autorizado. |
 | Jargão necessário | Siga o [glossário de tradução](glossario.md). Explique o termo se houver uma definição segura e isso ajudar o público. |
 | Expressão burocrática | “Para” pode substituir “com a finalidade de”. “Em caso de” pode virar “se”. |
 | Alegação de qualidade sem conteúdo concreto | Retire apenas o adjetivo ornamental. Preserve alegações técnicas. Não invente uma medição para justificá-las. |
@@ -154,9 +154,11 @@ invente o titular do acesso, mesmo que uma leitura pareça mais provável.
 ### Tradução com sentido ainda não definido
 
 Preservar a ambiguidade não exige deixar a entrega inteira no idioma de origem.
-Se um equivalente no idioma pedido mantiver a mesma leitura aberta, use-o e
-registre a pendência. Caso contrário, apresente as leituras condicionais, sem
-escolher qual representa a intenção da fonte.
+Se um equivalente no idioma pedido mantiver as mesmas leituras abertas, use-o.
+“The key is valid” pode ser traduzido como “A chave é válida” sem decidir o tipo
+de chave. Quando notas forem proibidas, não acrescente pendência a uma tradução
+que já preserva o sentido aberto. Caso contrário, apresente as leituras
+condicionais em canal autorizado, sem escolher a intenção da fonte.
 
 Por exemplo, sem contexto, “Requests may not be retried” pode indicar:
 
@@ -166,6 +168,39 @@ Por exemplo, sem contexto, “Requests may not be retried” pode indicar:
 As duas linhas são hipóteses de tradução, não duas instruções simultâneas.
 Registre qual sentido precisa ser esclarecido. Em JSON ou outro contrato,
 coloque alternativas e pendências somente nos campos autorizados.
+
+### Contratos incompatíveis
+
+Um limite rígido ou um esquema fechado pode impedir tanto uma tradução fiel
+quanto a explicação da ambiguidade. Confira primeiro se há um equivalente que
+conserve as mesmas leituras; a falta de contexto não exige bloquear toda tradução.
+Distinga também um limite obrigatório de uma preferência de extensão.
+
+Se for necessário escolher um sentido e o pedido definir um sinal de impedimento,
+use-o com o significado autorizado. Por exemplo, `{"texto":null,"erro":"AMBIGUIDADE"}`
+só é uma saída de impedimento quando esse contrato estiver previsto no pedido.
+Não invente um campo `erro`, um marcador ou o significado de um valor nulo.
+
+Sem canal de impedimento, pare antes de produzir o artefato. Uma pergunta como
+“A frase proíbe repetir ou indica que a repetição pode não ocorrer?” é um pedido
+de esclarecimento anterior à tradução. Não a coloque em `texto` se esse campo
+for reservado à tradução e não aceitar notas. A forma
+`{"texto":"Qual é a modalidade?"}` pode passar no parser e ainda ser exibida
+por um sistema como se fosse o texto traduzido.
+
+Se o usuário proibir perguntas, informe brevemente por que não há uma tradução
+fiel no contrato. Não apresente essa comunicação como saída final conforme ao
+esquema ou limite impossível. Se houver um canal de falha autorizado, preserve-o
+em vez de usar texto externo. A suspensão não escolhe um sentido para a fonte
+e não conta como tradução bem-sucedida.
+
+Quando o impedimento for apenas o limite, solicite espaço suficiente; não trunque
+uma condição ou uma negação. A ambiguidade, sozinha, não comprova que o limite
+precisa aumentar. Se o tamanho depender da leitura, esclareça o sentido primeiro.
+“Prefira até 20 caracteres” permite uma tradução
+mais longa se a precisão prevalecer; “no máximo 5 caracteres, sem omissões” pode
+exigir suspender a entrega. Depois do esclarecimento ou ajuste do contrato,
+retome a tradução sem tratar a interpretação anterior como confirmada.
 
 ### Conteúdo que deve permanecer exato
 

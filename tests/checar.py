@@ -11,21 +11,22 @@ from urllib.parse import unquote, urlsplit
 from verificar import conferir
 
 RAIZ = Path(__file__).resolve().parents[1]
-AVALIACAO = Path('tests/avaliacoes/v0.1.0')
+AVALIACAO = Path('tests/avaliacoes/v0.1.2')
 BATERIAS = [
     {'casos': f'tests/{casos}.json',
      'resultados': (AVALIACAO / f'respostas-{nome}.json').as_posix()}
     for casos, nome in [('casos', 'original'), ('casos-asd', 'asd'),
-                        ('casos-dificeis', 'dificeis'), ('casos-estabilidade', 'estabilidade')]
+                        ('casos-dificeis', 'dificeis'), ('casos-estabilidade', 'estabilidade'),
+                        ('casos-contratos', 'contratos')]
 ]
 REVISOES = [(AVALIACAO / f'revisao-{nome}.json').as_posix()
-            for nome in ['original-asd', 'dificeis-estabilidade']]
+            for nome in ['original-asd', 'dificeis-estabilidade', 'contratos']]
 
 
 def conferir_manifesto(raiz, manifesto):
     erros = []
     if manifesto['baterias'] != BATERIAS or manifesto['revisoes'] != REVISOES:
-        erros.append('Manifesto deve registrar as quatro baterias e as duas revisões da versão')
+        erros.append('Manifesto deve registrar todas as baterias e revisões da versão')
     obrigatorios = {'SKILL.md', *REVISOES}
     obrigatorios.update(p.relative_to(raiz).as_posix() for p in (raiz / 'references').glob('*.md'))
     obrigatorios.update(nome for bateria in BATERIAS for nome in bateria.values())

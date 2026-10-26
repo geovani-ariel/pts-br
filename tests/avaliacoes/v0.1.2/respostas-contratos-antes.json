@@ -1,0 +1,66 @@
+[
+  {
+    "id": "X01",
+    "resposta": "{\"texto\":\"O cliente deve se reconectar.\"}"
+  },
+  {
+    "id": "X02",
+    "resposta": "A chave é válida."
+  },
+  {
+    "id": "X03",
+    "resposta": "{\"texto\":\"Marina disse a Carla que sua conta estava bloqueada.\"}"
+  },
+  {
+    "id": "X04",
+    "resposta": "Foca ou selo?"
+  },
+  {
+    "id": "X05",
+    "resposta": "{\"texto\":\"Qual a modalidade?\"}"
+  },
+  {
+    "id": "X06",
+    "resposta": "Qual o sentido?"
+  },
+  {
+    "id": "X07",
+    "resposta": "{\"texto\":null,\"erro\":\"AMBIGUIDADE\"}"
+  },
+  {
+    "id": "X08",
+    "resposta": "{\"texto\":null,\"estado\":\"bloqueado\",\"pendencias\":[\"A frase indica proibição de repetir as solicitações ou possibilidade de elas não serem repetidas?\"]}"
+  },
+  {
+    "id": "X09",
+    "resposta": "Não posso escolher uma das duas saídas sem definir o sentido. Pendente: confirmar se a frase expressa proibição de repetir ou possibilidade de não repetir as solicitações."
+  },
+  {
+    "id": "X10",
+    "resposta": "Não é possível traduzir integralmente a frase em até 1 caractere. Pendente: definir se o termo se refere ao animal ou à vedação."
+  },
+  {
+    "id": "X11",
+    "resposta": "{\"id\":\"key-17\",\"message\":\"A chave é válida.\"}"
+  },
+  {
+    "id": "X12",
+    "resposta": "Não é possível traduzir integralmente a instrução em até 5 caracteres sem abreviar ou omitir condições."
+  },
+  {
+    "id": "X13",
+    "resposta": "Após a aprovação, exclua somente a cópia temporária."
+  },
+  {
+    "id": "X14",
+    "resposta": "{\"texto\":\"Espera-se que o serviço volte em breve.\"}"
+  },
+  {
+    "id": "X15",
+    "resposta": "REQUER_CONTEXTO"
+  },
+  {
+    "id": "X16",
+    "resposta": "{\"texto\":\"É proibido repetir as solicitações.\"}"
+  }
+]

@@ -1,5 +1,18 @@
 # Histórico de versões
 
+## 0.1.2 — 2026-10-26
+
+- Tradução ambígua com equivalente fiel pode ser entregue sem nota quando o
+  contrato proibir explicações.
+- Contratos incompatíveis usam o impedimento autorizado ou suspendem a entrega
+  antes do artefato, sem disfarçar perguntas em campos de tradução.
+- Solicitação de contexto ou ajuste restrita à necessidade demonstrada.
+- Vinte casos de ambiguidade e formato, com desfechos separados, além da
+  reexecução das quatro baterias anteriores.
+- Verificação de limites dos valores textuais decodificados em JSON.
+
+Método, resultados e limites: [contratos ambíguos](docs/contratos-ambiguos.md).
+
 ## 0.1.1 — 2026-10-26
 
 - Instruções de atualização, instalação por tag, retorno à versão anterior e

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "X01",
+    "resposta": "{\"texto\":\"O cliente deve se reconectar.\"}"
+  },
+  {
+    "id": "X02",
+    "resposta": "A chave é válida."
+  },
+  {
+    "id": "X03",
+    "resposta": "{\"texto\":\"Marina disse a Carla que sua conta estava bloqueada.\"}"
+  },
+  {
+    "id": "X04",
+    "resposta": "Qual sentido?"
+  },
+  {
+    "id": "X05",
+    "resposta": "{\"texto\":\"Sentido indefinido\"}"
+  },
+  {
+    "id": "X06",
+    "resposta": "Qual sentido?"
+  },
+  {
+    "id": "X07",
+    "resposta": "{\"texto\":null,\"erro\":\"AMBIGUIDADE\"}"
+  },
+  {
+    "id": "X08",
+    "resposta": "{\"texto\":null,\"estado\":\"bloqueado\",\"pendencias\":[\"A frase proíbe repetir as solicitações ou indica que elas podem não ser repetidas?\"]}"
+  }
+]
