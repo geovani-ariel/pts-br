@@ -37,6 +37,9 @@ def conferir(casos, resultados, parcial=False):
         if not isinstance(texto, str):
             erros.append(f"{id_}: resposta deve ser string")
             continue
+        limite = caso.get("max_caracteres")
+        if limite is not None and len(texto) > limite:
+            erros.append(f"{id_}: resposta tem {len(texto)} caracteres; limite: {limite}")
         for literal in caso.get("literais", []):
             if literal not in texto:
                 erros.append(f"{id_}: elemento literal alterado ou ausente: {literal!r}")

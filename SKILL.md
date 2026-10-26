@@ -47,11 +47,13 @@ o modo por padrão.
    que ela restringe. Repita a condição ou crie um escopo explícito para a lista.
    Preserve também a ordem e o alcance de “e”, “ou”, “somente” e “exceto”.
 5. Compare original e resultado, fato por fato, incluindo contexto e limitações
-   da fonte. “Pode” não vira “deve” ou “vai”. Uma hipótese
+   da fonte. Não fortaleça nem enfraqueça a certeza: uma expectativa não é mera
+   possibilidade nem garantia. “Pode” não vira “deve” ou “vai”. Uma hipótese
    não vira causa comprovada. Uma mudança local não vira publicação ou validação
    em produção. Não acrescente fatos para completar uma explicação.
    Mantenha qualificadores temporais e negações ligados ao mesmo verbo ou afirmação.
    Relatar, confirmar e ocorrer são eventos distintos.
+   Mantenha cada atributo ligado à entidade que ele qualifica na fonte.
 
 Na redação de texto novo, use apenas informações fornecidas ou verificadas.
 Consulte [regras e exemplos](references/regras.md) quando houver ambiguidade de

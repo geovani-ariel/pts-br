@@ -1,0 +1,218 @@
+[
+  {
+    "id": "D01",
+    "resultado": "aprovado",
+    "justificativa": "Preserva ausência de obrigação de repetir e proibição de descartar a requisição pendente.",
+    "falhas": []
+  },
+  {
+    "id": "D02",
+    "resultado": "aprovado",
+    "justificativa": "Expõe duas leituras condicionais em português e registra a pendência sem confirmar uma delas.",
+    "falhas": []
+  },
+  {
+    "id": "D03",
+    "resultado": "aprovado",
+    "justificativa": "Mantém término de A e B como condição necessária, sem obrigar a publicar.",
+    "falhas": []
+  },
+  {
+    "id": "D04",
+    "resultado": "aprovado",
+    "justificativa": "Mantém todos exceto dois e distingue confirmação de recebimento de prova de conclusão.",
+    "falhas": []
+  },
+  {
+    "id": "D05",
+    "resultado": "aprovado",
+    "justificativa": "Mantém exatamente um espaço por cache, zero ou mais caches por espaço e exclusão não garantida.",
+    "falhas": []
+  },
+  {
+    "id": "D06",
+    "resultado": "aprovado",
+    "justificativa": "Mantém ausência de confirmação de falha sem inferir sucesso nem afirmar falha.",
+    "falhas": []
+  },
+  {
+    "id": "D07",
+    "resultado": "aprovado",
+    "justificativa": "Mantém mínimo de 48 horas após recebimento e possibilidade de análise ainda incompleta.",
+    "falhas": []
+  },
+  {
+    "id": "D08",
+    "resultado": "aprovado",
+    "justificativa": "Mantém referente ambíguo e pede identificação de quem fechou a fila sem escolher um ator.",
+    "falhas": []
+  },
+  {
+    "id": "D09",
+    "resultado": "aprovado",
+    "justificativa": "Mantém relato do estouro anterior à chegada, conclusão posterior e recebimento sem confirmação, sem causa inventada.",
+    "falhas": []
+  },
+  {
+    "id": "D10",
+    "resultado": "aprovado",
+    "justificativa": "Mantém amostra exclusivamente de ontem, possibilidade de alguns arquivos ainda não enviados e estado atual inacessível.",
+    "falhas": []
+  },
+  {
+    "id": "D11",
+    "resultado": "aprovado",
+    "justificativa": "Preserva 5%, distinção de 5 pontos percentuais e taxa original de 20%, sem calcular taxa final.",
+    "falhas": []
+  },
+  {
+    "id": "D12",
+    "resultado": "aprovado",
+    "justificativa": "Preserva consistência eventual, possível leitura antiga após confirmação e falta de garantia de replicação em todos os nós.",
+    "falhas": []
+  },
+  {
+    "id": "D13",
+    "resultado": "aprovado",
+    "justificativa": "Aplica glossário fornecido, mantém condição de renovação e distingue liberar bloqueio de excluir registro protegido.",
+    "falhas": []
+  },
+  {
+    "id": "D14",
+    "resultado": "aprovado",
+    "justificativa": "Preserva 1.10.0, 00042, 1e3 bytes e significado mil sem tratar o valor como versão.",
+    "falhas": []
+  },
+  {
+    "id": "D15",
+    "resultado": "aprovado",
+    "justificativa": "JSON válido com id preservado e duas ocorrências de {name}; traduz apenas message e mantém pergunta sobre possibilidade.",
+    "falhas": []
+  },
+  {
+    "id": "D16",
+    "resultado": "aprovado",
+    "justificativa": "Traduz apenas comentário como ausência de obrigação e preserva literalmente retry=0 e a string da mensagem.",
+    "falhas": []
+  },
+  {
+    "id": "D17",
+    "resultado": "aprovado",
+    "justificativa": "JSON válido com id e estrutura ICU preservados, incluindo count, one, other e #; singular e plural traduzidos.",
+    "falhas": []
+  },
+  {
+    "id": "D18",
+    "resultado": "aprovado",
+    "justificativa": "JSON válido; coeficiente localizado somente na prosa e número, id e command preservados; mantém negação sobre nível de confiança.",
+    "falhas": []
+  },
+  {
+    "id": "D19",
+    "resultado": "aprovado",
+    "justificativa": "Mantém inglês literal e deve em português, que admite leitura modal e epistêmica; explicita pendências sobre força de should, ator e objeto nos campos autorizados.",
+    "falhas": []
+  },
+  {
+    "id": "D20",
+    "resultado": "aprovado",
+    "justificativa": "Mantém rascunhos restritos a signatários e acesso de não signatários a relatórios publicados, sem unificar conteúdos.",
+    "falhas": []
+  },
+  {
+    "id": "D21",
+    "resultado": "aprovado",
+    "justificativa": "Liga terça-feira à confirmação pelo inspetor e segunda-feira ao término anterior do teste.",
+    "falhas": []
+  },
+  {
+    "id": "D22",
+    "resultado": "aprovado",
+    "justificativa": "Mantém alegação posterior ao desligamento, não anterior, e falta de verificação independente; não afirma ocorrência da falha.",
+    "falhas": []
+  },
+  {
+    "id": "D23",
+    "resultado": "aprovado",
+    "justificativa": "Mantém confirmação antes das 10:00, intenção de repetir após 10:30 e ausência de observação da tentativa.",
+    "falhas": []
+  },
+  {
+    "id": "D24",
+    "resultado": "aprovado",
+    "justificativa": "Distingue término relatado às 08:00, entrada gravada às 08:05 e falta de verificação do término real.",
+    "falhas": []
+  },
+  {
+    "id": "E01",
+    "resultado": "aprovado",
+    "justificativa": "Preserva literalmente condição de exportação sem erros para excluir cópia temporária, sem novos fatos ou atores.",
+    "falhas": []
+  },
+  {
+    "id": "E02",
+    "resultado": "aprovado",
+    "justificativa": "Mantém homologação exclusiva, Ana, permissão, limite inclusivo de 12 e aprovação anterior por Bruno; E11 preserva o mesmo conteúdo.",
+    "falhas": []
+  },
+  {
+    "id": "E03",
+    "resultado": "aprovado",
+    "justificativa": "Em relação a E02, altera somente ambiente para produção, Ana para Lia, 12 para 37 e Bruno para Caio, preservando estrutura, modalidade e condições.",
+    "falhas": []
+  },
+  {
+    "id": "E04",
+    "resultado": "aprovado",
+    "justificativa": "A aprovação rege ambos os passos; lista mantém exportação dos registros antes do arquivamento do relatório.",
+    "falhas": []
+  },
+  {
+    "id": "E05",
+    "resultado": "aprovado",
+    "justificativa": "Mantém escopo comum da aprovação, dois objetos e ordem dos passos, com conteúdo equivalente a E04.",
+    "falhas": []
+  },
+  {
+    "id": "E06",
+    "resultado": "aprovado",
+    "justificativa": "JSON válido com mesmas chaves, tipos e id op-17; condição repetida nas duas ações e ordem textual de exportar e arquivar preservada, equivalente a E04/E05.",
+    "falhas": []
+  },
+  {
+    "id": "E07",
+    "resultado": "aprovado",
+    "justificativa": "JSON válido com apenas texto string; duas leituras condicionais em português e pendência no campo autorizado, sem escolher intenção.",
+    "falhas": []
+  },
+  {
+    "id": "E08",
+    "resultado": "aprovado",
+    "justificativa": "Rótulo de 40 caracteres, dentro do máximo de 45; validade do token continua condição necessária, sem obrigação ou garantia de nova tentativa.",
+    "falhas": []
+  },
+  {
+    "id": "E09",
+    "resultado": "aprovado",
+    "justificativa": "JSON válido com apenas texto string; preserva relato e possessivo ambíguo, com pendência no mesmo campo e sem escolher titular.",
+    "falhas": []
+  },
+  {
+    "id": "E10",
+    "resultado": "aprovado",
+    "justificativa": "Repete E01 literalmente, preservando condição, ação, objeto e formato, sem preâmbulo ou novos fatos.",
+    "falhas": []
+  },
+  {
+    "id": "E11",
+    "resultado": "aprovado",
+    "justificativa": "Repete E02 literalmente, preservando ambiente, atores, permissão, limite e aprovação anterior, sem novos fatos.",
+    "falhas": []
+  },
+  {
+    "id": "E12",
+    "resultado": "aprovado",
+    "justificativa": "Repete E06 literalmente em JSON válido com mesmas chaves, tipos e id; preserva condição em ambas as ações e ordem textual da sequência.",
+    "falhas": []
+  }
+]

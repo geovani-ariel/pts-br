@@ -1,5 +1,9 @@
 # Testes e limites da avaliação
 
+Para a execução completa mais recente, veja a [avaliação v0.1.0](avaliacao-v0.1.0.md)
+e a [ficha de avaliação semântica](avaliacao-semantica.md). As seções abaixo
+preservam o registro da rodada original.
+
 ## Rodada documentada
 
 Na rodada de 25 de outubro de 2026, foram geradas e revisadas 100 respostas:

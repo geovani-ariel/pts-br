@@ -49,5 +49,19 @@ class OcorrenciasLiteraisTest(unittest.TestCase):
         self.assertTrue(self.conferir_resposta("{name} perguntou a {name} se {name} pode repetir."))
 
 
+class LimiteCaracteresTest(unittest.TestCase):
+    def test_aceita_limite_inclusivo(self):
+        self.assertEqual(conferir(
+            [{"id": "UI", "max_caracteres": 4}],
+            [{"id": "UI", "resposta": "ação"}],
+        ), [])
+
+    def test_rejeita_texto_acima_do_limite(self):
+        self.assertTrue(conferir(
+            [{"id": "UI", "max_caracteres": 4}],
+            [{"id": "UI", "resposta": "ações"}],
+        ))
+
+
 if __name__ == "__main__":
     unittest.main()

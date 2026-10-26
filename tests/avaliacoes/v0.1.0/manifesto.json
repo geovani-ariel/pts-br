@@ -1,0 +1,56 @@
+{
+  "versao": "0.1.0",
+  "data": "2026-10-26",
+  "commit_de_partida": "80b69331f5407c349ac73174b1cf44ecb24abd87",
+  "executor": "Subagentes do Codex, configuração herdada",
+  "modelo_id": null,
+  "modelo_revisao": null,
+  "parametros_amostragem": null,
+  "limite_identificacao_modelo": "A ferramenta de subagentes não expõe ID exato, revisão ou parâmetros; não foram inferidos.",
+  "metodo": "Um contexto novo por bateria; três reaplicações em outro contexto. Geradores receberam somente IDs e pedidos. Dois revisores com contextos novos avaliaram 52 e 36 casos.",
+  "referencias_consultadas_pelos_geradores": [
+    "SKILL.md",
+    "references/regras.md",
+    "references/glossario.md"
+  ],
+  "baterias": [
+    {
+      "casos": "tests/casos.json",
+      "resultados": "tests/avaliacoes/v0.1.0/respostas-original.json"
+    },
+    {
+      "casos": "tests/casos-asd.json",
+      "resultados": "tests/avaliacoes/v0.1.0/respostas-asd.json"
+    },
+    {
+      "casos": "tests/casos-dificeis.json",
+      "resultados": "tests/avaliacoes/v0.1.0/respostas-dificeis.json"
+    },
+    {
+      "casos": "tests/casos-estabilidade.json",
+      "resultados": "tests/avaliacoes/v0.1.0/respostas-estabilidade.json"
+    }
+  ],
+  "revisoes": [
+    "tests/avaliacoes/v0.1.0/revisao-original-asd.json",
+    "tests/avaliacoes/v0.1.0/revisao-dificeis-estabilidade.json"
+  ],
+  "arquivos_sha256": {
+    "SKILL.md": "dc71f87e2aaed92b7926bb9996bee6276e22da1338baad9fa65045087750d1e8",
+    "references/glossario.md": "1e5af8d123b217ee2a5582106c9c7e1d18f66848c1b0b2a8b56e999bac6ea8cf",
+    "references/proveniencia.md": "f0704c0e11ada6828385b4d347c6fcc54e73f03392bd54e8c2877ab44c1dbf05",
+    "references/referencias.md": "e61fa6586f85d7cab95e27bb845bfb978543285dfb717f02f36471cb410410f7",
+    "references/regras.md": "31564b10da5e12a4180e701ddbd19e21583111ab5c38c65ab19577f784d72f74",
+    "tests/avaliacoes/v0.1.0/ajustes.json": "81183458a04b102f008eaf022a63a35d4e71d220b687b1e127e45cb7a65c3fce",
+    "tests/avaliacoes/v0.1.0/respostas-asd.json": "a9337a259b197d0777579b77c57d51f8612f93117f5818af1bb684f9190ce7e3",
+    "tests/avaliacoes/v0.1.0/respostas-dificeis.json": "62adb858a10274db6de96178e9db7be764789ea9212558ab74e27362483da98f",
+    "tests/avaliacoes/v0.1.0/respostas-estabilidade.json": "bde68566229fd6908b1ec0febacb92898354f09cefd52fd3890edc844fd8275f",
+    "tests/avaliacoes/v0.1.0/respostas-original.json": "5720d0a867e1908d27684b38173be16614f913151cd2cd21470bfdbb33402b67",
+    "tests/avaliacoes/v0.1.0/revisao-dificeis-estabilidade.json": "107361beb7501d3c4442d1675a124309937f067a1ddc26eb936028af0279f55a",
+    "tests/avaliacoes/v0.1.0/revisao-original-asd.json": "920d5727f6bdcccbdaf6485044300f3fce08df6fe08a9c35f9540e1a0a823853",
+    "tests/casos-asd.json": "e2b69ef074a48ad19e865add199a9c382524c84b9bed207a9174550012898ee6",
+    "tests/casos-dificeis.json": "2de8d15d4b2cd3c29939c759d6aa290d6e387bea027cb261d80c6ea8f0035efc",
+    "tests/casos-estabilidade.json": "22d5dfd21734bda59e5e49c32207bea0ee89984291c11c6f14c24772b46c006d",
+    "tests/casos.json": "8d40d9a18b5988d0465b37480ba707f3830ed4ff95ebc59dcfec805612bee16f"
+  }
+}

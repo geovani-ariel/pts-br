@@ -4,7 +4,7 @@ Português Técnico Simplificado Brasileiro. Skill para escrever, revisar e
 traduzir procedimentos, documentação, prompts e mensagens para agentes em pt-BR.
 O foco é preservar fatos, condições, exceções, grau de certeza e terminologia.
 
-[Instalação](#instalação) · [Como usar](#como-usar) · [Glossário](references/glossario.md) · [Exemplos](examples/antes-depois.md) · [Testes](#testes)
+[Instalação](#instalação) · [Como usar](#como-usar) · [Glossário](references/glossario.md) · [Exemplos](examples/antes-depois.md) · [Testes](#testes) · [Versões](CHANGELOG.md)
 
 ## Antes e depois
 
@@ -122,7 +122,9 @@ Formatos explícitos, como JSON, devem respeitar o contrato do pedido.
 
 O glossário distingue termos que devem ser traduzidos, mantidos no original ou
 resolvidos pelo contexto. O glossário do pedido prevalece sobre o do projeto;
-ambos prevalecem sobre a base da skill.
+ambos prevalecem sobre a base da skill. Para adotar decisões da equipe, copie o
+[modelo de glossário do projeto](templates/glossario-projeto.md) e informe seu
+caminho ao agente.
 
 Código, comandos, identificadores, URLs, mensagens literais e rótulos reais de
 interface permanecem protegidos no escopo da revisão. Marcadores temporais e
@@ -135,28 +137,34 @@ hipóteses, código, JSON, CSV e traduções ambíguas.
 
 ## Testes
 
-O repositório contém 76 casos distintos em três baterias:
+O repositório contém 88 casos em quatro baterias. A
+[avaliação v0.1.0](docs/avaliacao-v0.1.0.md) executa todos contra a mesma cópia
+das instruções e registra os hashes dos arquivos avaliados:
 
 | Bateria | Casos | Cobertura |
 |---|---:|---|
 | [Original](docs/testes.md) | 28 | Fidelidade, condições, terminologia, elementos literais e formatos de saída. |
 | [ASD-STE100 e PTC](docs/base-asd-ptc.md) | 24 | Avisos, procedimentos, outros domínios técnicos, conectores e integração com agentes. |
 | [Tradução e ambiguidade](docs/rodada-dificil.md) | 24 | Negação modal, escopo temporal, cardinalidade, marcadores, ICU e pares bilíngues. |
+| [Estabilidade](docs/avaliacao-v0.1.0.md) | 12 | Reaplicação, substituição de nomes e valores, formatos equivalentes e ambiguidade em campos fechados. |
 
 Para conferir as respostas salvas e executar os testes do verificador:
 
 ```sh
-python3 tests/verificar.py --selftest
-python3 tests/verificar.py tests/resultados.json
-python3 tests/verificar.py --casos tests/casos-asd.json tests/resultados-asd.json
-python3 tests/verificar.py --casos tests/casos-dificeis.json tests/resultados-dificeis.json
-python3 -B tests/test_verificar.py
+python3 -B tests/checar.py
 ```
 
 O verificador usa apenas a biblioteca padrão do Python e confere contratos e
 literais nas respostas salvas. Não chama modelos nem prova equivalência semântica.
 Os relatórios detalham as revisões manuais, correções e limites das amostras,
-incluindo a comparação inicial de 100 respostas entre versões.
+incluindo a comparação inicial de 100 respostas entre versões. A
+[ficha de avaliação semântica](docs/avaliacao-semantica.md) padroniza os critérios
+e a gravidade das falhas. O mesmo comando roda no GitHub Actions; ele não gera
+novas respostas nem executa uma nova revisão semântica.
+
+A versão do pacote está em [VERSION](VERSION), com mudanças documentadas no
+[changelog](CHANGELOG.md). Os [releases](https://github.com/geovani-ariel/pts-br/releases)
+identificam o commit publicado.
 
 ## Fontes
 

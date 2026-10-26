@@ -1,0 +1,111 @@
+[
+  {
+    "id": "E01",
+    "prompt": "Revise sem mudar o sentido: Se a exportação terminar sem erros, exclua a cópia temporária.",
+    "criterios_semanticos": "Manter a condição para excluir. Texto já claro; não inventar passos, atores ou confirmação."
+  },
+  {
+    "id": "E02",
+    "prompt": "Reescreva sem mudar o sentido: Somente em homologação, Ana pode exportar até 12 registros após a aprovação de Bruno.",
+    "criterios_semanticos": "Preservar homologação, permissão (não obrigação), limite inclusivo de 12, aprovação anterior e os dois atores."
+  },
+  {
+    "id": "E03",
+    "prompt": "Reescreva sem mudar o sentido: Somente em produção, Lia pode exportar até 37 registros após a aprovação de Caio.",
+    "criterios_semanticos": "Mesma estrutura de E02 com substituições de ambiente, nomes e número; não importar valores de E02."
+  },
+  {
+    "id": "E04",
+    "prompt": "Reescreva sem mudar o sentido: Somente após a aprovação, exporte os registros e arquive o relatório.",
+    "criterios_semanticos": "A aprovação restringe ambas as ações; preservar ordem e os dois objetos."
+  },
+  {
+    "id": "E05",
+    "prompt": "Revise esta lista sem mudar as condições: Somente após a aprovação:\n1. Exporte os registros.\n2. Arquive o relatório.",
+    "criterios_semanticos": "Mesmo sentido de E04; aprovação restringe as duas ações e exportação antecede arquivamento."
+  },
+  {
+    "id": "E06",
+    "prompt": "Revise apenas texto. Devolva somente JSON com as mesmas chaves e tipos: {\"id\":\"op-17\",\"texto\":\"Somente após a aprovação, exporte os registros e arquive o relatório.\"}",
+    "criterios_semanticos": "Mesmo sentido de E04 e E05 dentro de texto; não criar campos ou mudar id.",
+    "formato": "json",
+    "chaves": [
+      "id",
+      "texto"
+    ],
+    "valores_fixos": {
+      "id": "op-17"
+    },
+    "tipos": {
+      "texto": "string"
+    }
+  },
+  {
+    "id": "E07",
+    "prompt": "Traduza Requests may not be retried. para pt-BR. Devolva somente JSON com uma chave texto (string). Não acrescente campos. Se houver leituras diferentes, elas e a pendência podem ser descritas dentro de texto.",
+    "criterios_semanticos": "Não escolher proibição ou possibilidade como intenção confirmada. Entregar tradução ou leituras condicionais em português dentro de texto, sem campos extras.",
+    "formato": "json",
+    "chaves": [
+      "texto"
+    ],
+    "tipos": {
+      "texto": "string"
+    }
+  },
+  {
+    "id": "E08",
+    "prompt": "Traduza para um rótulo de interface de no máximo 45 caracteres. Devolva só o rótulo: Do not retry unless the token is valid.",
+    "criterios_semanticos": "Validade é condição necessária para repetir, não ordem ou garantia de repetição. Respeitar 45 caracteres sem explicação externa.",
+    "max_caracteres": 45
+  },
+  {
+    "id": "E09",
+    "prompt": "Revise em pt-BR: Marina avisou Carla que sua conta foi bloqueada. Devolva somente JSON com uma chave texto (string), sem campos adicionais. Preserve a ambiguidade caso o próprio texto não permita resolvê-la.",
+    "criterios_semanticos": "Não decidir de quem é a conta. Preservar relato e bloqueio; não adicionar campo de pendência ou texto externo.",
+    "formato": "json",
+    "chaves": [
+      "texto"
+    ],
+    "tipos": {
+      "texto": "string"
+    }
+  },
+  {
+    "id": "E10",
+    "prompt": "Revise novamente usando PTS-BR, sem mudar o sentido nem fazer mudanças desnecessárias. Texto:\nSe a exportação terminar sem erros, exclua a cópia temporária.",
+    "criterios_semanticos": "Idempotência semântica de E01: preservar conteúdo, condições e formato; não acrescentar preâmbulo ou fatos.",
+    "relacao": {
+      "tipo": "revisao_repetida",
+      "origem": "E01"
+    }
+  },
+  {
+    "id": "E11",
+    "prompt": "Revise novamente usando PTS-BR, sem mudar o sentido nem fazer mudanças desnecessárias. Texto:\nSomente em homologação, Ana pode exportar até 12 registros após a aprovação de Bruno.",
+    "criterios_semanticos": "Idempotência semântica de E02: preservar conteúdo, condições e formato; não acrescentar preâmbulo ou fatos.",
+    "relacao": {
+      "tipo": "revisao_repetida",
+      "origem": "E02"
+    }
+  },
+  {
+    "id": "E12",
+    "prompt": "Revise novamente usando PTS-BR, sem mudar o sentido nem fazer mudanças desnecessárias. Revise apenas texto e devolva somente JSON com as mesmas chaves, tipos e id. Texto:\n{\"id\":\"op-17\",\"texto\":\"Somente após a aprovação, exporte os registros. Somente após a aprovação, arquive o relatório.\"}",
+    "criterios_semanticos": "Idempotência semântica de E06: preservar conteúdo, condições e formato; não acrescentar preâmbulo ou fatos.",
+    "relacao": {
+      "tipo": "revisao_repetida",
+      "origem": "E06"
+    },
+    "formato": "json",
+    "chaves": [
+      "id",
+      "texto"
+    ],
+    "valores_fixos": {
+      "id": "op-17"
+    },
+    "tipos": {
+      "texto": "string"
+    }
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "E01",
+    "resposta": "Se a exportação terminar sem erros, exclua a cópia temporária."
+  },
+  {
+    "id": "E02",
+    "resposta": "Somente em homologação, Ana pode exportar até 12 registros após a aprovação de Bruno."
+  },
+  {
+    "id": "E03",
+    "resposta": "Somente em produção, Lia pode exportar até 37 registros após a aprovação de Caio."
+  },
+  {
+    "id": "E04",
+    "resposta": "Somente após a aprovação:\n1. Exporte os registros.\n2. Arquive o relatório."
+  },
+  {
+    "id": "E05",
+    "resposta": "Somente após a aprovação:\n1. Exporte os registros.\n2. Arquive o relatório."
+  },
+  {
+    "id": "E06",
+    "resposta": "{\"id\":\"op-17\",\"texto\":\"Somente após a aprovação, exporte os registros. Somente após a aprovação, arquive o relatório.\"}"
+  },
+  {
+    "id": "E07",
+    "resposta": "{\"texto\":\"Se indicar proibição: As solicitações não podem ser repetidas. Se indicar possibilidade: As solicitações podem não ser repetidas. Pendente: informar se a frase indica proibição ou possibilidade.\"}"
+  },
+  {
+    "id": "E08",
+    "resposta": "Não tente novamente sem um token válido."
+  },
+  {
+    "id": "E09",
+    "resposta": "{\"texto\":\"Marina avisou Carla que sua conta foi bloqueada. Pendente: informar se a conta é de Marina ou de Carla.\"}"
+  },
+  {
+    "id": "E10",
+    "resposta": "Se a exportação terminar sem erros, exclua a cópia temporária."
+  },
+  {
+    "id": "E11",
+    "resposta": "Somente em homologação, Ana pode exportar até 12 registros após a aprovação de Bruno."
+  },
+  {
+    "id": "E12",
+    "resposta": "{\"id\":\"op-17\",\"texto\":\"Somente após a aprovação, exporte os registros. Somente após a aprovação, arquive o relatório.\"}"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "C05",
+    "prompt": "Melhore a clareza para documentação técnica sem inventar propriedades: A solução moderna oferece uma experiência inovadora, robusta e extremamente eficiente. A fonte não apresenta funcionalidades, medições ou condições de operação.",
+    "resposta_anterior": "A fonte descreve a solução como moderna, inovadora, robusta e extremamente eficiente. Porém, não apresenta funcionalidades, medições ou condições de operação.",
+    "revisao_anterior": {
+      "id": "C05",
+      "resultado": "falha",
+      "justificativa": "Atribui à solução qualificadores que a fonte atribui à experiência oferecida, embora preserve a ausência de funcionalidades, medições e condições de operação.",
+      "falhas": [
+        {
+          "dimensao": "Responsáveis e referentes",
+          "gravidade": "material",
+          "fonte": "A solução moderna oferece uma experiência inovadora, robusta e extremamente eficiente.",
+          "saida": "A fonte descreve a solução como moderna, inovadora, robusta e extremamente eficiente.",
+          "explicacao": "Inovadora, robusta e extremamente eficiente qualificam a experiência na fonte. A resposta transfere essas propriedades para a solução, alterando o objeto da afirmação mesmo ao atribuí-la à fonte."
+        }
+      ]
+    },
+    "resposta_final": "A fonte descreve uma solução, mas não apresenta funcionalidades, medições ou condições de operação.",
+    "motivo_do_ajuste": "A resposta transferia qualificadores da experiência para a solução."
+  },
+  {
+    "id": "L05",
+    "prompt": "Traduza sem promover expectativa a obrigação: Neste contexto, should indica uma previsão incerta, não uma obrigação. The service should be back soon. This does not authorize restarting the service.",
+    "resposta_anterior": "É possível que o serviço volte a funcionar em breve. Isso não autoriza reiniciar o serviço.",
+    "revisao_anterior": {
+      "id": "L05",
+      "resultado": "falha",
+      "justificativa": "A saída preserva a incerteza e a ausência de autorização, mas reduz a previsão esperada a mera possibilidade.",
+      "falhas": [
+        {
+          "dimensao": "Fatos e evidência / Negação e modalidade",
+          "gravidade": "material",
+          "fonte": "Neste contexto, should indica uma previsão incerta, não uma obrigação. The service should be back soon.",
+          "saida": "É possível que o serviço volte a funcionar em breve.",
+          "explicacao": "A fonte comunica expectativa de retorno próximo, ainda incerta. A saída afirma apenas que esse retorno é possível, o que também caberia quando ele não é esperado. Perde-se a força de previsão explicitada no pedido, embora não se crie obrigação ou certeza."
+        }
+      ]
+    },
+    "resposta_final": "Espera-se que o serviço volte em breve. Isso não autoriza reiniciar o serviço.",
+    "motivo_do_ajuste": "A resposta enfraquecia uma expectativa explicitamente definida para mera possibilidade."
+  }
+]
