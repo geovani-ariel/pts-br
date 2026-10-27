@@ -134,6 +134,10 @@ textos técnicos, registre essa preferência no `AGENTS.md` do seu ambiente.
 A [rodada de uso automático](docs/uso-automatico.md) verificou essa política em
 três documentos completos, sem mencionar a skill nos pedidos de revisão.
 
+O [diagnóstico dos pedidos curtos](docs/diagnostico-pedidos-curtos.md) repetiu os
+casos com duas descrições menores e controles de contexto e raciocínio, sem
+encontrar uma correção comprovada. A descrição original permanece ativa.
+
 A invocação explícita é opcional. No chat do agente:
 
 ```text

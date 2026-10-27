@@ -1,0 +1,67 @@
+[
+  {
+    "arquivo_local": "catalogo-enviado-janela-original.json",
+    "limite": "Reprodução com provedor local, não interceptação das chamadas reais.",
+    "dados": {
+      "model": "gpt-6-astra",
+      "reasoning": {
+        "effort": "low",
+        "context": "all_turns"
+      },
+      "linha_pts_br": [
+        "- pts-br: Use ao escrever ou revisar textos técnicos em português brasileiro que precisam de l (file: r0/pts-br/SKILL.md)"
+      ],
+      "input_approx_chars": 81321,
+      "capturas": 1
+    }
+  },
+  {
+    "arquivo_local": "catalogo-enviado-catalogo-original.json",
+    "limite": "Reprodução com provedor local, não interceptação das chamadas reais.",
+    "dados": {
+      "model": "gpt-6-astra",
+      "reasoning": {
+        "effort": "low",
+        "context": "all_turns"
+      },
+      "linha_pts_br": [
+        "- pts-br: Use ao escrever ou revisar textos técnicos em português brasileiro que precisam de leitura inequívoca: instruções, prompts, descrições de ferramentas, mensagens de erro, status e documentação. Também se aplica a pedidos de simplificar, desambiguar, padronizar traduções técnicas ou usar português técnico claro. Não é uma skill de resumo. (file: r0/pts-br/SKILL.md)"
+      ],
+      "input_approx_chars": 71222,
+      "capturas": 1
+    }
+  },
+  {
+    "arquivo_local": "catalogo-enviado-janela-curta.json",
+    "limite": "Reprodução com provedor local, não interceptação das chamadas reais.",
+    "dados": {
+      "model": "gpt-6-astra",
+      "reasoning": {
+        "effort": "low",
+        "context": "all_turns"
+      },
+      "linha_pts_br": [
+        "- pts-br: Use para escrever, revisar ou traduzir prosa técnica pt-BR, mesmo uma frase. (file: r0/pts-br/SKILL.md)"
+      ],
+      "input_approx_chars": 70870,
+      "capturas": 1
+    }
+  },
+  {
+    "arquivo_local": "catalogo-enviado-janela-explicita.json",
+    "limite": "Reprodução com provedor local, não interceptação das chamadas reais.",
+    "dados": {
+      "model": "gpt-6-astra",
+      "reasoning": {
+        "effort": "low",
+        "context": "all_turns"
+      },
+      "linha_pts_br": [
+        "- pts-br: Use ao escrever ou revisar textos técnicos em português brasileiro que precisam de l (file: r0/pts-br/SKILL.md)"
+      ],
+      "input_approx_chars": 90493,
+      "capturas": 1,
+      "corpo_pts_br_injetado": true
+    }
+  }
+]

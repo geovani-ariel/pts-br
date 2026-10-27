@@ -1,0 +1,26 @@
+{
+  "data": "2026-10-27",
+  "cli_versao": "0.154.0",
+  "modelo": "gpt-6-astra",
+  "repeticoes_por_caso": 5,
+  "controle_explicito_repeticoes": 1,
+  "original_restaurada": true,
+  "candidatas_adotadas": false,
+  "configuracao_global_preservada": true,
+  "AGENTS_limite_bytes": 0,
+  "arquivo_casos": "tests/selecao-descricao/casos.json",
+  "skill_original_sha256": "b3204ba5419327789e9873ec6888b0292352f1083ac3ea799b29a0cb09ba3c09",
+  "snapshots": {
+    "original": "SKILL.md",
+    "curta": "tests/diagnostico-curtos/skill-curta.txt",
+    "leia": "tests/diagnostico-curtos/skill-leia.txt"
+  },
+  "arquivos_sha256": {
+    "tests/diagnostico-curtos/catalogo-local.json": "1236f2d0d60a0b429181c58f6c4ff51f47517758685a609b5586f759f2007b96",
+    "tests/diagnostico-curtos/resultados.json": "1d698537bcbd9accc5d7c85416d1dcfcf7ee21147c12dc4210e446351d7ff7c8",
+    "tests/diagnostico-curtos/revisao-independente.json": "4c12fd3d5ab04d43c848458d12f632c5e129ef78dc9ceca435d0ddabc5f67fae",
+    "tests/diagnostico-curtos/skill-curta.txt": "2f015f4929f73cbeb5f2e912e301c114172a1ca988171ea744b8e4fd4bcac5ea",
+    "tests/diagnostico-curtos/skill-leia.txt": "7421367b990d28fc0294cc3b071707347c1aa1e28c667fab0b6057926453721a",
+    "tests/selecao-descricao/casos.json": "1ffbc62b89e737977cb96efb521916b04ca7c8b3f0a8ff3a1fd6371f0db2d1d2"
+  }
+}

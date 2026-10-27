@@ -1,5 +1,15 @@
 # Histórico de versões
 
+## Não lançado — diagnóstico de pedidos curtos
+
+- 160 turnos implícitos com repetições, duas candidatas rejeitadas e controles
+  de orçamento do catálogo e nível de raciocínio.
+- Dois controles explícitos separados: a injeção interna do corpo pelo runtime
+  não exige comando de leitura e não mede sucesso da seleção implícita.
+- Revisão de 72 respostas técnicas e preservação de oito falhas de causalidade.
+- Cobertura e integridade conferidas sem alterar a skill da v0.1.4 ou alegar
+  correção da seleção. Veja o [diagnóstico](docs/diagnostico-pedidos-curtos.md).
+
 ## 0.1.4 — 2026-10-27
 
 - Avaliação de seleção implícita sem a regra de `AGENTS.md`, com 12 casos,

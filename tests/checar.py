@@ -11,6 +11,7 @@ from urllib.parse import unquote, urlsplit
 from verificar import conferir
 from verificar_documentos import conferir_documentos
 from verificar_selecao import conferir_selecao
+from verificar_diagnostico import conferir_diagnostico
 
 RAIZ = Path(__file__).resolve().parents[1]
 AVALIACAO = Path('tests/avaliacoes/v0.1.2')
@@ -106,6 +107,9 @@ def checar(raiz):
     selecao = ler_json(raiz / 'tests/selecao-descricao/registro.json')
     erros.extend(conferir_integridade(raiz, selecao['arquivos_sha256']))
     erros.extend(conferir_selecao(raiz, selecao))
+    diagnostico = ler_json(raiz / 'tests/diagnostico-curtos/registro.json')
+    erros.extend(conferir_integridade(raiz, diagnostico['arquivos_sha256']))
+    erros.extend(conferir_diagnostico(raiz, diagnostico))
     return erros
 
 

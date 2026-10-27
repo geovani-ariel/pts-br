@@ -1,0 +1,640 @@
+{
+  "data": "2026-10-27",
+  "metodo": "Revisão independente das respostas técnicas contra pedidos e critérios originais; sem novas gerações e sem confundir leitura com correção semântica.",
+  "cobertura": {
+    "original": 20,
+    "curta": 20,
+    "leia": 10,
+    "original-contexto": 10,
+    "original-alto": 10,
+    "explicita": 2
+  },
+  "resultados": [
+    {
+      "fase": "original",
+      "id": "I01",
+      "repeticao": 1,
+      "resposta_sha256": "4a3ef5cbb41387a5efff31d766ac69865a9c3366b912e2dd7d84a969a4ae351d",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original",
+      "id": "I01",
+      "repeticao": 2,
+      "resposta_sha256": "970c2d873406320ff060c64b88ef70874e9e3107a61536d204f6c5cae19809ad",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original",
+      "id": "I01",
+      "repeticao": 3,
+      "resposta_sha256": "970c2d873406320ff060c64b88ef70874e9e3107a61536d204f6c5cae19809ad",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original",
+      "id": "I01",
+      "repeticao": 4,
+      "resposta_sha256": "970c2d873406320ff060c64b88ef70874e9e3107a61536d204f6c5cae19809ad",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original",
+      "id": "I01",
+      "repeticao": 5,
+      "resposta_sha256": "e88a2bbae0a0c7d7a0dd04e772ee0dce7611fa904035b398fa4d9223bb4cb380",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original",
+      "id": "I03",
+      "repeticao": 1,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original",
+      "id": "I03",
+      "repeticao": 2,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original",
+      "id": "I03",
+      "repeticao": 3,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original",
+      "id": "I03",
+      "repeticao": 4,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original",
+      "id": "I03",
+      "repeticao": 5,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original",
+      "id": "I09",
+      "repeticao": 1,
+      "resposta_sha256": "31e954db59c5c1001956c588424f9810ea436e59584f6a9be727a0497f1699f9",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original",
+      "id": "I09",
+      "repeticao": 2,
+      "resposta_sha256": "d0a34125824a66db749ae73bbca00618bc43e8d1c6e7a4994936d9d8cef77249",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original",
+      "id": "I09",
+      "repeticao": 3,
+      "resposta_sha256": "9852e3cb40dc8e92185ec1b89841bd0976ba84ad7acf0e0711186a4d5077c67c",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original",
+      "id": "I09",
+      "repeticao": 4,
+      "resposta_sha256": "31e954db59c5c1001956c588424f9810ea436e59584f6a9be727a0497f1699f9",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original",
+      "id": "I09",
+      "repeticao": 5,
+      "resposta_sha256": "ec9adca6107ee8f27e86d337a1705f019dcd9bcd48cf13eecf229f99908ebc9e",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original",
+      "id": "I10",
+      "repeticao": 1,
+      "resposta_sha256": "09c877b9ae423378b2ff86f8ab767813a3fb9dbe49d0680c2220341bc0a5384d",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original",
+      "id": "I10",
+      "repeticao": 2,
+      "resposta_sha256": "69f949b9664312e58ea085d18cf1d3b6b5208b9880c917c9253c9e69419c5baa",
+      "resultado_semantico": "falha",
+      "falhas": [
+        {
+          "gravidade": "material",
+          "trecho": "pois a correção não foi implantada",
+          "motivo": "Acrescenta relação causal entre ausência de deploy e persistência possível da falha. A fonte relata as afirmações separadamente e não confirma essa relação."
+        }
+      ]
+    },
+    {
+      "fase": "original",
+      "id": "I10",
+      "repeticao": 3,
+      "resposta_sha256": "a5748cec497ed75abd374f5ccc7fc7c7e6ed299a656f3ddcd8961bf6a370a6cf",
+      "resultado_semantico": "falha",
+      "falhas": [
+        {
+          "gravidade": "material",
+          "trecho": "pois a correção ainda não foi implantada",
+          "motivo": "Acrescenta relação causal entre ausência de deploy e persistência possível da falha. A fonte relata as afirmações separadamente e não confirma essa relação."
+        }
+      ]
+    },
+    {
+      "fase": "original",
+      "id": "I10",
+      "repeticao": 4,
+      "resposta_sha256": "124b311f97c036045ee8eca57ec9e2a7aaa556a340fb8c97dc9ef1223952ed08",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original",
+      "id": "I10",
+      "repeticao": 5,
+      "resposta_sha256": "69f949b9664312e58ea085d18cf1d3b6b5208b9880c917c9253c9e69419c5baa",
+      "resultado_semantico": "falha",
+      "falhas": [
+        {
+          "gravidade": "material",
+          "trecho": "pois a correção não foi implantada",
+          "motivo": "Acrescenta relação causal entre ausência de deploy e persistência possível da falha. A fonte relata as afirmações separadamente e não confirma essa relação."
+        }
+      ]
+    },
+    {
+      "fase": "curta",
+      "id": "I01",
+      "repeticao": 1,
+      "resposta_sha256": "970c2d873406320ff060c64b88ef70874e9e3107a61536d204f6c5cae19809ad",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "curta",
+      "id": "I01",
+      "repeticao": 2,
+      "resposta_sha256": "e88a2bbae0a0c7d7a0dd04e772ee0dce7611fa904035b398fa4d9223bb4cb380",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "curta",
+      "id": "I01",
+      "repeticao": 3,
+      "resposta_sha256": "970c2d873406320ff060c64b88ef70874e9e3107a61536d204f6c5cae19809ad",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "curta",
+      "id": "I01",
+      "repeticao": 4,
+      "resposta_sha256": "8d25000f3d110bcbcf5000e5bc65faa1713bdd25ec996cec7a33f5557c1b03f7",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "curta",
+      "id": "I01",
+      "repeticao": 5,
+      "resposta_sha256": "616e37d7d7cc114b5636fb4ee854a48a6da5a25a8537d9d884ad1e6f965cddab",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "curta",
+      "id": "I03",
+      "repeticao": 1,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "curta",
+      "id": "I03",
+      "repeticao": 2,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "curta",
+      "id": "I03",
+      "repeticao": 3,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "curta",
+      "id": "I03",
+      "repeticao": 4,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "curta",
+      "id": "I03",
+      "repeticao": 5,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "curta",
+      "id": "I09",
+      "repeticao": 1,
+      "resposta_sha256": "3009a68209509a64dba86dc1e3390e4c6b2a6e7fe06018ad2130b23cd4250302",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "curta",
+      "id": "I09",
+      "repeticao": 2,
+      "resposta_sha256": "694c29fb5d36fbc8e8349473f3e386fa7f08ea3fb2e811e6da8eb2647e3d5260",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "curta",
+      "id": "I09",
+      "repeticao": 3,
+      "resposta_sha256": "2df02676fbd51ffb8a6d8fe15f3f3147ab0188bd791e204e7193f5f8dcd6c9b2",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "curta",
+      "id": "I09",
+      "repeticao": 4,
+      "resposta_sha256": "9852e3cb40dc8e92185ec1b89841bd0976ba84ad7acf0e0711186a4d5077c67c",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "curta",
+      "id": "I09",
+      "repeticao": 5,
+      "resposta_sha256": "6e20a837a6a808d0e5af527f2383ccd0398ce3e5a0d653a94c133fbb07f647cb",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "curta",
+      "id": "I10",
+      "repeticao": 1,
+      "resposta_sha256": "69f949b9664312e58ea085d18cf1d3b6b5208b9880c917c9253c9e69419c5baa",
+      "resultado_semantico": "falha",
+      "falhas": [
+        {
+          "gravidade": "material",
+          "trecho": "pois a correção não foi implantada",
+          "motivo": "Acrescenta relação causal entre ausência de deploy e persistência possível da falha. A fonte relata as afirmações separadamente e não confirma essa relação."
+        }
+      ]
+    },
+    {
+      "fase": "curta",
+      "id": "I10",
+      "repeticao": 2,
+      "resposta_sha256": "69f949b9664312e58ea085d18cf1d3b6b5208b9880c917c9253c9e69419c5baa",
+      "resultado_semantico": "falha",
+      "falhas": [
+        {
+          "gravidade": "material",
+          "trecho": "pois a correção não foi implantada",
+          "motivo": "Acrescenta relação causal entre ausência de deploy e persistência possível da falha. A fonte relata as afirmações separadamente e não confirma essa relação."
+        }
+      ]
+    },
+    {
+      "fase": "curta",
+      "id": "I10",
+      "repeticao": 3,
+      "resposta_sha256": "69f949b9664312e58ea085d18cf1d3b6b5208b9880c917c9253c9e69419c5baa",
+      "resultado_semantico": "falha",
+      "falhas": [
+        {
+          "gravidade": "material",
+          "trecho": "pois a correção não foi implantada",
+          "motivo": "Acrescenta relação causal entre ausência de deploy e persistência possível da falha. A fonte relata as afirmações separadamente e não confirma essa relação."
+        }
+      ]
+    },
+    {
+      "fase": "curta",
+      "id": "I10",
+      "repeticao": 4,
+      "resposta_sha256": "a5748cec497ed75abd374f5ccc7fc7c7e6ed299a656f3ddcd8961bf6a370a6cf",
+      "resultado_semantico": "falha",
+      "falhas": [
+        {
+          "gravidade": "material",
+          "trecho": "pois a correção ainda não foi implantada",
+          "motivo": "Acrescenta relação causal entre ausência de deploy e persistência possível da falha. A fonte relata as afirmações separadamente e não confirma essa relação."
+        }
+      ]
+    },
+    {
+      "fase": "curta",
+      "id": "I10",
+      "repeticao": 5,
+      "resposta_sha256": "69f949b9664312e58ea085d18cf1d3b6b5208b9880c917c9253c9e69419c5baa",
+      "resultado_semantico": "falha",
+      "falhas": [
+        {
+          "gravidade": "material",
+          "trecho": "pois a correção não foi implantada",
+          "motivo": "Acrescenta relação causal entre ausência de deploy e persistência possível da falha. A fonte relata as afirmações separadamente e não confirma essa relação."
+        }
+      ]
+    },
+    {
+      "fase": "leia",
+      "id": "I01",
+      "repeticao": 1,
+      "resposta_sha256": "970c2d873406320ff060c64b88ef70874e9e3107a61536d204f6c5cae19809ad",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "leia",
+      "id": "I01",
+      "repeticao": 2,
+      "resposta_sha256": "970c2d873406320ff060c64b88ef70874e9e3107a61536d204f6c5cae19809ad",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "leia",
+      "id": "I01",
+      "repeticao": 3,
+      "resposta_sha256": "616e37d7d7cc114b5636fb4ee854a48a6da5a25a8537d9d884ad1e6f965cddab",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "leia",
+      "id": "I01",
+      "repeticao": 4,
+      "resposta_sha256": "616e37d7d7cc114b5636fb4ee854a48a6da5a25a8537d9d884ad1e6f965cddab",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "leia",
+      "id": "I01",
+      "repeticao": 5,
+      "resposta_sha256": "8d25000f3d110bcbcf5000e5bc65faa1713bdd25ec996cec7a33f5557c1b03f7",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "leia",
+      "id": "I03",
+      "repeticao": 1,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "leia",
+      "id": "I03",
+      "repeticao": 2,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "leia",
+      "id": "I03",
+      "repeticao": 3,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "leia",
+      "id": "I03",
+      "repeticao": 4,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "leia",
+      "id": "I03",
+      "repeticao": 5,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-contexto",
+      "id": "I01",
+      "repeticao": 1,
+      "resposta_sha256": "970c2d873406320ff060c64b88ef70874e9e3107a61536d204f6c5cae19809ad",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-contexto",
+      "id": "I01",
+      "repeticao": 2,
+      "resposta_sha256": "970c2d873406320ff060c64b88ef70874e9e3107a61536d204f6c5cae19809ad",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-contexto",
+      "id": "I01",
+      "repeticao": 3,
+      "resposta_sha256": "970c2d873406320ff060c64b88ef70874e9e3107a61536d204f6c5cae19809ad",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-contexto",
+      "id": "I01",
+      "repeticao": 4,
+      "resposta_sha256": "e6d921a8bd5e7a7677f68c133011d6783451ad49283d8c46c082632136f7779b",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-contexto",
+      "id": "I01",
+      "repeticao": 5,
+      "resposta_sha256": "e6d921a8bd5e7a7677f68c133011d6783451ad49283d8c46c082632136f7779b",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-contexto",
+      "id": "I03",
+      "repeticao": 1,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-contexto",
+      "id": "I03",
+      "repeticao": 2,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-contexto",
+      "id": "I03",
+      "repeticao": 3,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-contexto",
+      "id": "I03",
+      "repeticao": 4,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-contexto",
+      "id": "I03",
+      "repeticao": 5,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-alto",
+      "id": "I01",
+      "repeticao": 1,
+      "resposta_sha256": "8d25000f3d110bcbcf5000e5bc65faa1713bdd25ec996cec7a33f5557c1b03f7",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-alto",
+      "id": "I01",
+      "repeticao": 2,
+      "resposta_sha256": "8d25000f3d110bcbcf5000e5bc65faa1713bdd25ec996cec7a33f5557c1b03f7",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-alto",
+      "id": "I01",
+      "repeticao": 3,
+      "resposta_sha256": "8d25000f3d110bcbcf5000e5bc65faa1713bdd25ec996cec7a33f5557c1b03f7",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-alto",
+      "id": "I01",
+      "repeticao": 4,
+      "resposta_sha256": "4a3ef5cbb41387a5efff31d766ac69865a9c3366b912e2dd7d84a969a4ae351d",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-alto",
+      "id": "I01",
+      "repeticao": 5,
+      "resposta_sha256": "8d25000f3d110bcbcf5000e5bc65faa1713bdd25ec996cec7a33f5557c1b03f7",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-alto",
+      "id": "I03",
+      "repeticao": 1,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-alto",
+      "id": "I03",
+      "repeticao": 2,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-alto",
+      "id": "I03",
+      "repeticao": 3,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-alto",
+      "id": "I03",
+      "repeticao": 4,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "original-alto",
+      "id": "I03",
+      "repeticao": 5,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "explicita",
+      "id": "I01",
+      "repeticao": 1,
+      "resposta_sha256": "e95a9ce9e0c84676c1941ac931dcf89d440f9e1c857e11009ddd4a7a92d9e6ae",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    },
+    {
+      "fase": "explicita",
+      "id": "I03",
+      "repeticao": 1,
+      "resposta_sha256": "f8efeef7c1dd3733d242d81e0238c171fa9e147b645d0be0cad60facd6445bcc",
+      "resultado_semantico": "aprovado",
+      "falhas": []
+    }
+  ],
+  "conclusao_selecao": "As candidatas não demonstram benefício: I01/I03/I10 permanecem sem leitura nas matrizes completas, I09 muda de 4/5 para 3/5; a candidata leia mantém 0/5 em I01/I03. Não houve leitura de PTS-BR nos negativos testados. A candidata leia cobre somente I06/I08 negativos, não os seis controles.",
+  "limite_fase_explicita": "A revisão explícita julga somente preservação de sentido. Ausência de command_execution não é classificada como omissão, pois o runtime pode injetar o corpo quando identifica $pts-br; o carregamento pertence a outra investigação."
+}
