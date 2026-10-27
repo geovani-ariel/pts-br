@@ -9,6 +9,7 @@ import sys
 from urllib.parse import unquote, urlsplit
 
 from verificar import conferir
+from verificar_documentos import conferir_documentos
 
 RAIZ = Path(__file__).resolve().parents[1]
 AVALIACAO = Path('tests/avaliacoes/v0.1.2')
@@ -98,6 +99,9 @@ def checar(raiz):
             f['gravidade'] in ['crítica', 'material'] for f in item['falhas']
         ):
             erros.append(f"{item['id']}: revisão registra falha ou resultado pendente")
+    documentos = ler_json(raiz / 'tests/uso-automatico/registro.json')
+    erros.extend(conferir_integridade(raiz, documentos['arquivos_sha256']))
+    erros.extend(conferir_documentos(raiz, documentos))
     return erros
 
 

@@ -1,0 +1,191 @@
+{
+  "data": "2026-10-27",
+  "skill_avaliada": "0.1.2",
+  "skill_sha256": "b3204ba5419327789e9873ec6888b0292352f1083ac3ea799b29a0cb09ba3c09",
+  "metodo": "Três subagentes em contextos novos. Pedido sem nome de skill. Leitura de AGENTS.md com a política do usuário. Leitor instrumentado entrega conteúdo e grava hash.",
+  "modelo_runtime_id": null,
+  "modelo_runtime_revisao": null,
+  "parametros_amostragem": null,
+  "limite_identificacao_runtime": "ID exato não é exposto pela ferramenta de subagentes; não foi inferido a partir da configuração do CLI.",
+  "tentativa_cli": {
+    "versao": "0.154.0",
+    "modelo_configurado": "gpt-6.1-sol",
+    "sandbox_solicitado": "read-only",
+    "estado": "falhou_antes_da_tarefa",
+    "codigo": "model_not_found",
+    "mensagem": "O modelo configurado não é suportado pelo CLI com a conta ChatGPT utilizada.",
+    "configuracao_global_alterada": false
+  },
+  "limites": [
+    "Validou política de AGENTS.md, não seleção somente por descrição.",
+    "Leitura registrada não prova aplicação correta; os documentos foram revisados separadamente.",
+    "O CLI não gerou os resultados; a execução final usou subagentes do runtime.",
+    "O protocolo não captura leituras feitas por outros meios; U01 teve uma edição após a leitura instrumentada da saída."
+  ],
+  "leituras": {
+    "U01": [
+      {
+        "arquivo": "caso/AGENTS.md",
+        "sha256": "581130b5023090ebf44bb6b5155462f3721c47855cd32d15836000198c1f92a3",
+        "bytes": 1773
+      },
+      {
+        "arquivo": "caso/pedido.txt",
+        "sha256": "7032da56a583a0d7097ebb51db78d9ee9de97981d07967b9e62b2d6c2239c9b9",
+        "bytes": 299
+      },
+      {
+        "arquivo": "runtime/skills/ponytail/SKILL.md",
+        "sha256": "1316a2f3f95741d2300b116fe0c2d81ce4a9568656ed0a62643f54aaf09957f2",
+        "bytes": 6637
+      },
+      {
+        "arquivo": "runtime/skills/pts-br/SKILL.md",
+        "sha256": "b3204ba5419327789e9873ec6888b0292352f1083ac3ea799b29a0cb09ba3c09",
+        "bytes": 7234
+      },
+      {
+        "arquivo": "caso/entrada.md",
+        "sha256": "aa8993bed49c4b099c76173e1d49cb388d53ce113f7c618ee1775e7f67862f31",
+        "bytes": 3607
+      },
+      {
+        "arquivo": "runtime/skills/pts-br/references/glossario.md",
+        "sha256": "1e5af8d123b217ee2a5582106c9c7e1d18f66848c1b0b2a8b56e999bac6ea8cf",
+        "bytes": 9911
+      },
+      {
+        "arquivo": "runtime/skills/pts-br/references/regras.md",
+        "sha256": "e3470dbdddcf4431036a600d86a2e1a377b942b6f258570d42421884058b9e28",
+        "bytes": 13439
+      },
+      {
+        "arquivo": "caso/saida.md",
+        "sha256": "08241a98cbc652a1e021003def3336cde3b0dcee7cefb9dc9ffaac34aec79799",
+        "bytes": 3831
+      }
+    ],
+    "U02": [
+      {
+        "arquivo": "caso/AGENTS.md",
+        "sha256": "581130b5023090ebf44bb6b5155462f3721c47855cd32d15836000198c1f92a3",
+        "bytes": 1773
+      },
+      {
+        "arquivo": "caso/pedido.txt",
+        "sha256": "7032da56a583a0d7097ebb51db78d9ee9de97981d07967b9e62b2d6c2239c9b9",
+        "bytes": 299
+      },
+      {
+        "arquivo": "runtime/skills/ponytail/SKILL.md",
+        "sha256": "1316a2f3f95741d2300b116fe0c2d81ce4a9568656ed0a62643f54aaf09957f2",
+        "bytes": 6637
+      },
+      {
+        "arquivo": "runtime/skills/pts-br/SKILL.md",
+        "sha256": "b3204ba5419327789e9873ec6888b0292352f1083ac3ea799b29a0cb09ba3c09",
+        "bytes": 7234
+      },
+      {
+        "arquivo": "caso/entrada.md",
+        "sha256": "ff4f5caf81513f215f030221ee7f348c67d8803af270ad59c509dec32ae20490",
+        "bytes": 4321
+      },
+      {
+        "arquivo": "runtime/skills/pts-br/references/glossario.md",
+        "sha256": "1e5af8d123b217ee2a5582106c9c7e1d18f66848c1b0b2a8b56e999bac6ea8cf",
+        "bytes": 9911
+      },
+      {
+        "arquivo": "caso/saida.md",
+        "sha256": "292217bc0e82ec79989ea8e2eb4fc86fcf222028210ac626a5d9e4d4207b79a9",
+        "bytes": 4509
+      }
+    ],
+    "U03": [
+      {
+        "arquivo": "caso/AGENTS.md",
+        "sha256": "581130b5023090ebf44bb6b5155462f3721c47855cd32d15836000198c1f92a3",
+        "bytes": 1773
+      },
+      {
+        "arquivo": "caso/pedido.txt",
+        "sha256": "7032da56a583a0d7097ebb51db78d9ee9de97981d07967b9e62b2d6c2239c9b9",
+        "bytes": 299
+      },
+      {
+        "arquivo": "runtime/skills/ponytail/SKILL.md",
+        "sha256": "1316a2f3f95741d2300b116fe0c2d81ce4a9568656ed0a62643f54aaf09957f2",
+        "bytes": 6637
+      },
+      {
+        "arquivo": "runtime/skills/pts-br/SKILL.md",
+        "sha256": "b3204ba5419327789e9873ec6888b0292352f1083ac3ea799b29a0cb09ba3c09",
+        "bytes": 7234
+      },
+      {
+        "arquivo": "caso/entrada.md",
+        "sha256": "ad6db755fbbf63471f721878edacd362bd5d30ce77c11d911e31e2fe33965c95",
+        "bytes": 3589
+      },
+      {
+        "arquivo": "runtime/skills/pts-br/references/glossario.md",
+        "sha256": "1e5af8d123b217ee2a5582106c9c7e1d18f66848c1b0b2a8b56e999bac6ea8cf",
+        "bytes": 9911
+      },
+      {
+        "arquivo": "runtime/skills/pts-br/references/regras.md",
+        "sha256": "e3470dbdddcf4431036a600d86a2e1a377b942b6f258570d42421884058b9e28",
+        "bytes": 13439
+      },
+      {
+        "arquivo": "caso/saida.md",
+        "sha256": "e162d20f378d97d88ce86e011597e6f93401b7452763e6a9d7bf5c79c97de631",
+        "bytes": 3718
+      }
+    ]
+  },
+  "arquivos_sha256": {
+    "tests/uso-automatico/revisao.json": "c0677bae679707f14063c223493697cbc3109d1a17f9198219fb7d74350eb3a2",
+    "tests/uso-automatico/acordos.md": "128cb63ddf6de1ebf1ac0af648911ef6ac2f1f2ae4881216fd1892367e10adb0",
+    "tests/uso-automatico/pedido.txt": "7032da56a583a0d7097ebb51db78d9ee9de97981d07967b9e62b2d6c2239c9b9",
+    "tests/uso-automatico/casos.json": "40b7fa08f229b17740e39023b18c946b7c51c29f8cebdcfbcd6fda7727552e08",
+    "tests/uso-automatico/entradas/incidente.md": "ad6db755fbbf63471f721878edacd362bd5d30ce77c11d911e31e2fe33965c95",
+    "tests/uso-automatico/entradas/api.md": "ff4f5caf81513f215f030221ee7f348c67d8803af270ad59c509dec32ae20490",
+    "tests/uso-automatico/entradas/procedimento.md": "aa8993bed49c4b099c76173e1d49cb388d53ce113f7c618ee1775e7f67862f31",
+    "tests/uso-automatico/saidas/incidente.md": "e162d20f378d97d88ce86e011597e6f93401b7452763e6a9d7bf5c79c97de631",
+    "tests/uso-automatico/saidas/api.md": "292217bc0e82ec79989ea8e2eb4fc86fcf222028210ac626a5d9e4d4207b79a9",
+    "tests/uso-automatico/saidas/procedimento.md": "d5a8751f119b10b49dd81208d1fd7ea921b4206c05e7fdd9402a0bab6d05a21a",
+    "tests/ler_registrando.py": "9e4420fca026a7db1a18270a09eec534f9f1041ed1d797cf4841f85c53a6bb63",
+    "tests/uso-automatico/intermediaria-procedimento.md": "08241a98cbc652a1e021003def3336cde3b0dcee7cefb9dc9ffaac34aec79799"
+  },
+  "ajuste_do_executor_U01": {
+    "leitura_saida": "intermediaria",
+    "origem_intermediaria": "Reconstruída pela substituição exata relatada pelo executor; bytes e SHA-256 conferem com o recibo anterior.",
+    "arquivo_intermediario": "tests/uso-automatico/intermediaria-procedimento.md",
+    "mudanca": "As duas ações foram colocadas sob a condição comum por meio de lista; a frase isolada poderia ampliar a proibição.",
+    "edicao_apos_recibo": true,
+    "leitura_na_edicao_fora_do_leitor": true,
+    "revisao_independente": "Avaliou a versão final, após essa edição."
+  },
+  "finalizacao": {
+    "U01": {
+      "arquivo": "tests/uso-automatico/saidas/procedimento.md",
+      "sha256": "d5a8751f119b10b49dd81208d1fd7ea921b4206c05e7fdd9402a0bab6d05a21a",
+      "bytes": 3836,
+      "responsavel": "coordenador após a conclusão do executor"
+    },
+    "U02": {
+      "arquivo": "tests/uso-automatico/saidas/api.md",
+      "sha256": "292217bc0e82ec79989ea8e2eb4fc86fcf222028210ac626a5d9e4d4207b79a9",
+      "bytes": 4509,
+      "responsavel": "coordenador após a conclusão do executor"
+    },
+    "U03": {
+      "arquivo": "tests/uso-automatico/saidas/incidente.md",
+      "sha256": "e162d20f378d97d88ce86e011597e6f93401b7452763e6a9d7bf5c79c97de631",
+      "bytes": 3718,
+      "responsavel": "coordenador após a conclusão do executor"
+    }
+  }
+}

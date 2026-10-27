@@ -126,7 +126,12 @@ versão, tratar cópias manuais e consultar o ciclo de instalação testado.
 
 ## Como usar
 
-No chat do agente:
+O Codex pode selecionar a skill pela descrição. Para aplicá-la como padrão em
+textos técnicos, registre essa preferência no `AGENTS.md` do seu ambiente.
+A [rodada de uso automático](docs/uso-automatico.md) verificou essa política em
+três documentos completos, sem mencionar a skill nos pedidos de revisão.
+
+A invocação explícita é opcional. No chat do agente:
 
 ```text
 Use $pts-br para revisar este procedimento sem alterar as condições:
@@ -171,9 +176,10 @@ hipóteses, código, JSON, CSV e traduções ambíguas.
 
 ## Testes
 
-O repositório contém 108 casos em cinco baterias. A
-[avaliação v0.1.2](docs/contratos-ambiguos.md) executa todos contra a mesma cópia
-das instruções e registra os hashes dos arquivos avaliados:
+O repositório contém 108 casos focais em cinco baterias e três documentos
+completos na [rodada de uso automático](docs/uso-automatico.md). A
+[avaliação v0.1.2](docs/contratos-ambiguos.md) registra a execução dos 108 casos
+focais contra a mesma cópia das instruções, com hashes dos arquivos avaliados:
 
 | Bateria | Casos | Cobertura |
 |---|---:|---|
@@ -203,6 +209,10 @@ novas respostas nem executa uma nova revisão semântica.
 A versão do pacote está em [VERSION](VERSION), com mudanças documentadas no
 [changelog](CHANGELOG.md). Os [releases](https://github.com/geovani-ariel/pts-br/releases)
 identificam o commit publicado.
+
+As instruções linguísticas da v0.1.2 permaneceram iguais na v0.1.3; os três
+documentos acrescentam cobertura de condições entre seções e evidência de leitura
+da skill sob a política de `AGENTS.md`.
 
 ## Fontes
 

@@ -1,0 +1,181 @@
+[
+  {
+    "id": "U01",
+    "resultado": "aprovado",
+    "criterios": [
+      {
+        "indice": 1,
+        "resultado": "aprovado",
+        "justificativa": "Escopo explícito abrange Preparação, Exportação, Conferência e Retomada. A lista exige hml-a, janela aprovada e aprovação de Paula em CHG-241; o parágrafo seguinte conserva a confirmação do operador e a proibição de produção. A mudança de formato não torna essas condições alternativas."
+      },
+      {
+        "indice": 2,
+        "resultado": "aprovado",
+        "justificativa": "A única exceção continua sendo a leitura de logs existentes para diagnóstico fora da janela, sem criar exportação nem alterar registros. Não há nova permissão para execução ou modificação."
+      },
+      {
+        "indice": 3,
+        "resultado": "aprovado",
+        "justificativa": "AVISO [W-17], risco de duplicação ao retomar com outro identificador e possibilidade de a operação aceita ainda não ter começado permanecem expressos."
+      },
+      {
+        "indice": 4,
+        "resultado": "aprovado",
+        "justificativa": "O comando inspect foi preservado, com leitura apenas, ausência de alteração da origem e ausência de aprovação da janela. A condição de operação em andamento governa aguardar e não criar segunda exportação; a preparação continua anterior à exportação."
+      },
+      {
+        "indice": 5,
+        "resultado": "aprovado",
+        "justificativa": "accepted confirma somente recebimento da solicitação. A saída conserva separadamente as três ausências de confirmação: criação do arquivo, término da operação e conferência dos registros."
+      },
+      {
+        "indice": 6,
+        "resultado": "aprovado",
+        "justificativa": "A sequência mantém pelo menos 90 segundos antes da primeira consulta, no máximo seis consultas e intervalo mínimo de 30 segundos. A sexta sem confirmação exige interromper e registrar o estado; o parágrafo seguinte conserva a vedação de declarar falha apenas pelo limite."
+      },
+      {
+        "indice": 7,
+        "resultado": "aprovado",
+        "justificativa": "A conclusão antecede a conferência. Existência do arquivo e igualdade das contagens continuam cumulativas. A condição de inexistência ou divergência governa preservar arquivos e logs, registrar divergência e impedir limpeza; alterar os dados para ajustar contagem continua sem autorização."
+      },
+      {
+        "indice": 8,
+        "resultado": "aprovado",
+        "justificativa": "A exclusão da cópia temporária depende cumulativamente da conferência e da confirmação de recebimento por Paula. O verbo pode e a frase seguinte mantêm a permissão sem obrigação; a proibição de excluir o original vale em todas as etapas."
+      },
+      {
+        "indice": 9,
+        "resultado": "aprovado",
+        "justificativa": "A retomada depende da falha anterior antes de produzir arquivo, da mesma janela, de aprovação ainda válida e da ausência de outra execução. A seção retoma explicitamente o escopo global; janela encerrada exige nova aprovação e divergências devem ir a Paula sem descarte de evidência."
+      }
+    ],
+    "falhas": [],
+    "observacoes_editoriais": []
+  },
+  {
+    "id": "U02",
+    "resultado": "aprovado",
+    "criterios": [
+      {
+        "indice": 1,
+        "resultado": "aprovado",
+        "justificativa": "Preserva a identificação pelo token sem equipará-la à autorização, as permissões de escrita e leitura na mesma organização indicada por X-Org-Id e a insuficiência da leitura para criar exportações."
+      },
+      {
+        "indice": 2,
+        "resultado": "aprovado",
+        "justificativa": "Preserva POST /v1/exports, a obrigatoriedade de range, as datas ISO 8601 inclusivas de from/to, o tipo booleano e o padrão false de dry_run. O corpo JSON e o comando curl permanecem literais."
+      },
+      {
+        "indice": 3,
+        "resultado": "aprovado",
+        "justificativa": "Mantém 202 como aceitação sem garantia de início, término ou arquivo disponível e 200 como confirmação da consulta ao registro, sem confirmar sucesso da exportação."
+      },
+      {
+        "indice": 4,
+        "resultado": "aprovado",
+        "justificativa": "Mantém Idempotency-Key obrigatório na criação e reconhecido por 24 horas. As duas regras de reutilização ficam sob esse período: mesmo corpo retorna a mesma operação e outro corpo retorna 409. Após o período pode surgir nova operação, sem deduplicação permanente presumida."
+      },
+      {
+        "indice": 5,
+        "resultado": "aprovado",
+        "justificativa": "A tabela preserva todos os significados de accepted, running, completed e failed, inclusive a ausência de recuperação automática informada. Mantém file_url possivelmente null até a publicação, mesmo em completed, e distingue disponibilidade de confirmação de entrega, não definida pela página."
+      },
+      {
+        "indice": 6,
+        "resultado": "aprovado",
+        "justificativa": "Preserva o atraso possível de até 30 segundos em relação ao processamento e a negação explícita de que essa tolerância seja prazo de conclusão."
+      },
+      {
+        "indice": 7,
+        "resultado": "aprovado",
+        "justificativa": "Mantém limit inteiro de 1 a 100, padrão 50, next_cursor opaco e não reconstruível, null como encerramento apenas do snapshot consultado com novos registros posteriores possíveis, e 410 para expiração sem promessa de reinício transparente."
+      },
+      {
+        "indice": 8,
+        "resultado": "aprovado",
+        "justificativa": "Preserva ratio como string decimal entre \"0.00\" e \"1.00\", com as negações de percentual e número JSON. O exemplo mantém integralmente os campos, valores e tipos, inclusive ratio igual à string \"0.05\"."
+      },
+      {
+        "indice": 9,
+        "resultado": "aprovado",
+        "justificativa": "A tabela mantém 401 condicionado à correção da autenticação, 403 sem repetição no mesmo contexto esperando autorização e 409 sem troca de chave para contornar conflito, coerente com a seção de idempotência."
+      },
+      {
+        "indice": 10,
+        "resultado": "aprovado",
+        "justificativa": "Preserva a espera mínima de Retry-After em 429, a permissão de nova tentativa sem garantia de êxito em 503 e a garantia do cabeçalho apenas em 429. Não estabelece orçamento máximo nem autoriza tentativas ilimitadas."
+      },
+      {
+        "indice": 11,
+        "resultado": "aprovado",
+        "justificativa": "Mantém literalmente Export accepted; delivery unconfirmed e a proibição de tratá-la como confirmação de entrega. Preserva o glossário de request, operation e job, sem inferir agendamento, além do caráter fictício, interno e destinado à leitura dos exemplos."
+      }
+    ],
+    "falhas": [],
+    "observacoes_editoriais": []
+  },
+  {
+    "id": "U03",
+    "resultado": "aprovado",
+    "criterios": [
+      {
+        "indice": 1,
+        "resultado": "aprovado",
+        "justificativa": "O título mantém o caráter fictício e a abertura limita o relato aos logs e mensagens fornecidos. A data, UTC-3 e janela de 09:54 a 10:12 foram conservados, com desconhecimento explícito do impacto fora dessa janela."
+      },
+      {
+        "indice": 2,
+        "resultado": "aprovado",
+        "justificativa": "Os números 14, 210 e 196 e os códigos 503 e 202 permanecem associados a requisições. A saída nega a equivalência com 14 clientes, mantém desconhecidas a quantidade de pessoas e a perda de arquivos, e não transforma aceitação em conclusão ou entrega."
+      },
+      {
+        "indice": 3,
+        "resultado": "aprovado",
+        "justificativa": "A ausência observada de exclusão permanece restrita aos logs consultados. A frase seguinte conserva que isso não prova ausência em todo o ambiente."
+      },
+      {
+        "indice": 4,
+        "resultado": "aprovado",
+        "justificativa": "A publicação às 09:50 continua anterior à janela, sem relação causal comprovada. As operações observadas com state=accepted às 09:58 permanecem sem instante de início conhecido."
+      },
+      {
+        "indice": 5,
+        "resultado": "aprovado",
+        "justificativa": "Às 10:02 continua situado o relato do suporte, anterior à resposta das 10:04. A substituição de timeout por tempo limite excedido conserva o evento técnico e a ressalva de que os logs não fixam sua ocorrência. A recepção por um cliente de teste não é generalizada aos demais destinatários."
+      },
+      {
+        "indice": 6,
+        "resultado": "aprovado",
+        "justificativa": "A desativação de exports_batch_v2 às 10:08 permanece exclusiva de homologação e sem prova de mitigação em produção. Permissões inalteradas e ausência de autorização para credenciais, reprocessamento e exclusão são preservadas."
+      },
+      {
+        "indice": 7,
+        "resultado": "aprovado",
+        "justificativa": "A saturação do pool permanece suspeita sem medição. A possibilidade de problema na fila é mantida, assim como a impossibilidade de escolher entre hipóteses ou declará-las excludentes."
+      },
+      {
+        "indice": 8,
+        "resultado": "aprovado",
+        "justificativa": "Às 11:20 passaram os testes locais disponíveis com a candidata no commit a1b2c3d. A ausência de deploy está vinculada aos dados fornecidos; o resultado local não demonstra resolução em produção e uma falha pode continuar."
+      },
+      {
+        "indice": 9,
+        "resultado": "aprovado",
+        "justificativa": "A comparação pretendida dos logs da fila e API continua condicionada ao fornecimento dos logs. O acesso à segunda fonte permanece ainda não concedido."
+      },
+      {
+        "indice": 10,
+        "resultado": "aprovado",
+        "justificativa": "O suporte já prestado aos integradores está registrado, sem converter disponibilidade de canal em atendimento de cada pessoa."
+      },
+      {
+        "indice": 11,
+        "resultado": "aprovado",
+        "justificativa": "A investigação continua em andamento; ausência de novo alerta após 10:12 não basta para recuperação. A ressalva final permanece ligada à amostra fornecida e à falta de verificação do ambiente inteiro. A redação conserva parágrafos completos e tom natural."
+      }
+    ],
+    "falhas": [],
+    "observacoes_editoriais": []
+  }
+]

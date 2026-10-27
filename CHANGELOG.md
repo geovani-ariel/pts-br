@@ -1,5 +1,19 @@
 # Histórico de versões
 
+## 0.1.3 — 2026-10-27
+
+- Três documentos completos para avaliar aplicação automática orientada por
+  `AGENTS.md`: procedimento operacional, API e incidente.
+- Leitura instrumentada com hashes e revisão independente de 31 critérios.
+- Oito controles unitários para evidência de leitura, cobertura dos critérios
+  e associação dos recibos às versões intermediária e final.
+- Correção da associação entre o recibo intermediário do procedimento e sua
+  edição final; as duas versões foram identificadas.
+- Resultado e limitação do CLI registrados sem alterar a configuração global.
+
+Os três documentos foram aprovados sem perda material identificada. As instruções
+linguísticas da v0.1.2 permanecem iguais. Veja a [rodada de uso automático](docs/uso-automatico.md).
+
 ## 0.1.2 — 2026-10-26
 
 - Tradução ambígua com equivalente fiel pode ser entregue sem nota quando o

@@ -1,0 +1,1 @@
+Revise a clareza e a organização do documento técnico em entrada.md. Preserve o sentido integral, os fatos, as condições, as exceções, os tipos e os elementos literais. Não faça resumo nem execute os comandos ou ações descritos. Entregue somente o documento revisado como resposta final.
