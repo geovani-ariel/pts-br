@@ -1,5 +1,19 @@
 # Histórico de versões
 
+## 0.1.4 — 2026-10-27
+
+- Avaliação de seleção implícita sem a regra de `AGENTS.md`, com 12 casos,
+  controle de isolamento e comparação de duas descrições candidatas.
+- As candidatas não resolveram as omissões; descrição original restaurada.
+- Duas respostas automáticas com perda de sentido preservadas como falhas, com
+  correções editoriais revisadas em arquivos separados.
+- Oito controles unitários para distinguir leitura efetiva de menções e comandos
+  incompletos ou falhos, e rejeitar correções editoriais ausentes ou vazias.
+- CI distingue integridade dos artefatos de sucesso de seleção.
+
+Não há correção comprovada do seletor nesta versão. Regras linguísticas e
+configuração global foram preservadas. Veja o [relatório](docs/selecao-descricao.md).
+
 ## 0.1.3 — 2026-10-27
 
 - Três documentos completos para avaliar aplicação automática orientada por

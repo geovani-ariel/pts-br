@@ -1,0 +1,14 @@
+[
+  {
+    "id": "I09",
+    "resultado_semantico": "aprovado",
+    "justificativa": "A correção preserva a permissão de remoção expressa por pode, sem ordenar a remoção. Mantém dry_run for false E aprovação como condições cumulativas. Se qualquer condição faltar, limita a ferramenta à listagem. Preserva o identificador dry_run.",
+    "falhas": []
+  },
+  {
+    "id": "I10",
+    "resultado_semantico": "aprovado",
+    "justificativa": "A correção reproduz fielmente os três enunciados da fonte: testes locais disponíveis passaram, a falha pode continuar em produção e não houve deploy da correção. Não acrescenta causalidade e não restringe a ausência de deploy a um ambiente.",
+    "falhas": []
+  }
+]

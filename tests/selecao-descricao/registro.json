@@ -1,0 +1,72 @@
+{
+  "data": "2026-10-27",
+  "cli_versao": "0.154.0",
+  "modelo_id": null,
+  "limite_modelo": "Configuração limpa do CLI, sem override de modelo. O identificador efetivo não consta no JSONL utilizado e não foi inferido pelo cache do app.",
+  "AGENTS_desativado_no_processo": true,
+  "config_usuario_ignorada_no_processo": true,
+  "configuracao_global_preservada": true,
+  "skill_habilitada": true,
+  "origem_skill": "user",
+  "quantidade_skills_catalogo": 46,
+  "comparacao_contextos": "Contexto novo por pedido, sem AGENTS local e com limite de zero bytes para instruções. A descrição original foi medida em oito casos base e quatro reservados após restaurá-la.",
+  "fase_I04_invalida": {
+    "prompt": "Revise a documentação de API em entrada.md para ficar clara em português brasileiro. Preserve o contrato integral, os nomes dos campos, os tipos e os exemplos de código. Não execute comandos. Entregue somente a documentação revisada.",
+    "resposta": "Envie o conteúdo de `entrada.md` ou anexe o arquivo. Não consigo acessar o arquivo local sem executar comandos nesta sessão. Com o conteúdo disponível, entregarei somente a documentação revisada, preservando integralmente o contrato, os nomes dos campos, os tipos e os exemplos de código.",
+    "motivo": "Não execute comandos foi entendido como proibição de ler entrada.md; caso corrigido e repetido, excluindo esta execução da matriz."
+  },
+  "descricoes": {
+    "original": {
+      "texto": "Use ao escrever ou revisar textos técnicos em português brasileiro que precisam de leitura inequívoca: instruções, prompts, descrições de ferramentas, mensagens de erro, status e documentação. Também se aplica a pedidos de simplificar, desambiguar, padronizar traduções técnicas ou usar português técnico claro. Não é uma skill de resumo.",
+      "skill_sha256": "b3204ba5419327789e9873ec6888b0292352f1083ac3ea799b29a0cb09ba3c09",
+      "corpo_sha256": "1e79722f5076a6b86d53bd23941ee0dd97c09f9dfc5edc541dba53b286ed8ba9",
+      "arquivo": "SKILL.md"
+    },
+    "candidata-a": {
+      "texto": "Use quando o pedido for redigir, revisar ou traduzir mensagens de erro, status ou outra prosa técnica para português brasileiro, inclusive trechos curtos. Abrange procedimentos, prompts e documentação de API; exclui código puro, literatura, publicidade e saída só em outro idioma. Não é uma skill de resumo.",
+      "skill_sha256": "2c137bfd082e5e6d358c5071f87fe29bda40ae65f7fb94898c3008b195cef741",
+      "corpo_sha256": "1e79722f5076a6b86d53bd23941ee0dd97c09f9dfc5edc541dba53b286ed8ba9",
+      "arquivo": "tests/selecao-descricao/candidata-a.txt"
+    },
+    "candidata-b": {
+      "texto": "Use para melhorar a clareza de mensagens técnicas, mesmo de uma única frase, ou para traduzir conteúdo técnico para português brasileiro. Inclui erros, status, relatos de incidente, procedimentos, prompts, descrições de ferramentas e contratos de API. Não use em código puro, literatura, publicidade ou saída pedida só em outro idioma. Não é uma skill de resumo.",
+      "skill_sha256": "a995fc249023adf4eeef327227b06ff70a52019fa4fc069e1c15d716804d6901",
+      "corpo_sha256": "1e79722f5076a6b86d53bd23941ee0dd97c09f9dfc5edc541dba53b286ed8ba9",
+      "arquivo": "tests/selecao-descricao/candidata-b.txt"
+    }
+  },
+  "controle_AGENTS": {
+    "0": {
+      "AGENTS": "O nome deste projeto é PROJETO_CANARIO_Q7M4Z9.\n",
+      "prompt": "Qual é o nome deste projeto informado nas instruções já carregadas? Não abra arquivos nem execute comandos. Responda somente com o nome, ou com NÃO INFORMADO se ele não estiver no contexto.",
+      "resposta": "NÃO INFORMADO",
+      "exit_code": 0,
+      "executou_comando": false
+    },
+    "32768": {
+      "AGENTS": "O nome deste projeto é PROJETO_CANARIO_Q7M4Z9.\n",
+      "prompt": "Qual é o nome deste projeto informado nas instruções já carregadas? Não abra arquivos nem execute comandos. Responda somente com o nome, ou com NÃO INFORMADO se ele não estiver no contexto.",
+      "resposta": "PROJETO_CANARIO_Q7M4Z9",
+      "exit_code": 0,
+      "executou_comando": false
+    }
+  },
+  "arquivos_sha256": {
+    "tests/selecao-descricao/original.json": "73e7d7cf96ab48c64e0d6b26e216767baaab191a58e804ae5916f43994e01b6a",
+    "tests/selecao-descricao/candidata-b.json": "2b43329f666e7671664e8033eaa0f08d33208b9f3386fd1eab8d3cfdfae2f1e5",
+    "tests/selecao-descricao/contexto-ampliado.json": "f67776ba89534ad192c62a8270ec488bd6c604436f9192382b7104770f987190",
+    "tests/selecao-descricao/casos.json": "1ffbc62b89e737977cb96efb521916b04ca7c8b3f0a8ff3a1fd6371f0db2d1d2",
+    "tests/selecao-descricao/candidata-a.json": "7134e367a7da6d2d19b18d291bdd7b511ccf56cbd9785db710b73709325454d5",
+    "tests/selecao-descricao/revisao-semantica.json": "736197308dfc46eaa095925c50916f500e57b53d136e4d88005d7052c5316250",
+    "tests/selecao-descricao/revisao-correcoes.json": "454326682c16c45a9b042e1cab15f4f90074d93b1739c64e048a4fa2749fe1fd",
+    "tests/selecao-descricao/correcoes-editoriais.json": "8dc1e4365b757ec424b26ed196a92ac12c56a5c803fb701472f8c9c0c0193fe9",
+    "tests/selecao-descricao/candidata-b.txt": "a995fc249023adf4eeef327227b06ff70a52019fa4fc069e1c15d716804d6901",
+    "tests/selecao-descricao/candidata-a.txt": "2c137bfd082e5e6d358c5071f87fe29bda40ae65f7fb94898c3008b195cef741"
+  },
+  "falhas_semanticas_originais": [
+    "I09",
+    "I10"
+  ],
+  "descricao_original_restaurada": true,
+  "candidatas_adotadas": false
+}

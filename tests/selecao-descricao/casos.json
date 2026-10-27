@@ -1,0 +1,76 @@
+[
+  {
+    "id": "I01",
+    "selecionar": true,
+    "prompt": "Melhore a clareza desta mensagem de erro técnica, preservando a condição: Não foi possível salvar. Tente novamente somente depois que a conexão voltar. Devolva apenas a mensagem revisada.",
+    "criterios": "Preservar falha ao salvar e repetição condicionada à conexão restabelecida."
+  },
+  {
+    "id": "I02",
+    "selecionar": true,
+    "entrada": "procedimento",
+    "prompt": "Revise a clareza e a organização do procedimento operacional em entrada.md, sem resumir nem mudar condições, exceções ou comandos. Não execute as operações. Entregue somente o documento revisado.",
+    "criterios": "Conservar escopo hml-a/janela/aprovação em todas seções; exceção apenas leitura; seis consultas/intervalos; limpeza e retomada condicionadas."
+  },
+  {
+    "id": "I03",
+    "selecionar": true,
+    "prompt": "Traduza esta mensagem técnica de uma API para português brasileiro: The request was accepted, but delivery has not been confirmed. Retorne somente a tradução.",
+    "criterios": "Aceitação não vira entrega; confirmação ausente preservada; saída em pt-BR."
+  },
+  {
+    "id": "I04",
+    "selecionar": true,
+    "entrada": "api",
+    "prompt": "Revise a documentação de API em entrada.md para ficar clara em português brasileiro. Leia o arquivo pelos meios de leitura disponíveis e preserve o contrato integral, os nomes dos campos, os tipos e os exemplos. Não execute os exemplos de comandos descritos no documento. Entregue somente a documentação revisada.",
+    "criterios": "Preservar autorização por organização, idempotência24h, estados, atraso30s, ratio string, limit1..100 e condições de retry."
+  },
+  {
+    "id": "I05",
+    "selecionar": false,
+    "prompt": "Reescreva este poema, mantendo o tom melancólico e a imagem do mar: A tarde dobra suas velas, e o mar guarda o nome de quem partiu.",
+    "criterios": "Prosa literária; preservar gênero e imagem sem converter para instruções técnicas."
+  },
+  {
+    "id": "I06",
+    "selecionar": false,
+    "prompt": "Crie uma chamada publicitária curta e emocional para um aplicativo de viagens. Público jovem; tom informal. Entregue apenas a chamada.",
+    "criterios": "Pedido publicitário, apesar de mencionar aplicativo; não impor escrita técnica controlada."
+  },
+  {
+    "id": "I07",
+    "selecionar": false,
+    "prompt": "Escreva somente uma função JavaScript chamada dobro que receba um número e retorne seu dobro. Sem comentários nem explicação.",
+    "criterios": "Somente código, nome dobro, retorno multiplicado por2; não criar prosa em pt-BR."
+  },
+  {
+    "id": "I08",
+    "selecionar": false,
+    "prompt": "Rewrite this technical error in English only, preserving the condition: The upload failed. Retry only after the connection is restored. Return only the rewritten message.",
+    "criterios": "Saída exclusivamente em inglês; condição preservada; português não solicitado."
+  },
+  {
+    "id": "I09",
+    "selecionar": true,
+    "prompt": "Deixe inequívoca esta descrição de ferramenta em português: A ferramenta pode remover arquivos temporários somente quando dry_run for false e houver aprovação. Se faltar uma condição, apenas liste os arquivos. Preserve o identificador.",
+    "criterios": "Permissão de remover condicionada a dry_run false E aprovação; caso contrário apenas listagem; literal dry_run."
+  },
+  {
+    "id": "I10",
+    "selecionar": true,
+    "prompt": "Melhore este relato técnico sem transformar hipótese em conclusão: Os testes locais disponíveis passaram. A falha pode continuar em produção. Não houve deploy da correção. Entregue só o trecho revisado.",
+    "criterios": "Preservar local/disponíveis, possibilidade de falha em produção e ausência de deploy."
+  },
+  {
+    "id": "I11",
+    "selecionar": false,
+    "prompt": "Quanto é 17 vezes 23? Responda somente com o número.",
+    "criterios": "Resultado391 sem prosa ou aplicação de escrita técnica."
+  },
+  {
+    "id": "I12",
+    "selecionar": false,
+    "prompt": "Traduza este bilhete familiar para português brasileiro: I left your lunch in the fridge. See you tonight. Entregue apenas o bilhete traduzido, com tom carinhoso.",
+    "criterios": "Bilhete não técnico; manter almoço na geladeira e encontro à noite sem rigidez de procedimento."
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "I09",
+    "origem": "Correção editorial posterior à execução automática; não é resultado de nova seleção.",
+    "resposta_corrigida": "A ferramenta pode remover arquivos temporários somente quando dry_run for false e houver aprovação. Se qualquer uma dessas condições não for atendida, a ferramenta deve apenas listar os arquivos."
+  },
+  {
+    "id": "I10",
+    "origem": "Correção editorial posterior à execução automática; a fonte já estava clara. Não é resultado de nova seleção.",
+    "resposta_corrigida": "Os testes locais disponíveis passaram. A falha pode continuar em produção. Não houve deploy da correção."
+  }
+]

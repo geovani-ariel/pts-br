@@ -10,6 +10,7 @@ from urllib.parse import unquote, urlsplit
 
 from verificar import conferir
 from verificar_documentos import conferir_documentos
+from verificar_selecao import conferir_selecao
 
 RAIZ = Path(__file__).resolve().parents[1]
 AVALIACAO = Path('tests/avaliacoes/v0.1.2')
@@ -102,6 +103,9 @@ def checar(raiz):
     documentos = ler_json(raiz / 'tests/uso-automatico/registro.json')
     erros.extend(conferir_integridade(raiz, documentos['arquivos_sha256']))
     erros.extend(conferir_documentos(raiz, documentos))
+    selecao = ler_json(raiz / 'tests/selecao-descricao/registro.json')
+    erros.extend(conferir_integridade(raiz, selecao['arquivos_sha256']))
+    erros.extend(conferir_selecao(raiz, selecao))
     return erros
 
 
@@ -115,5 +119,6 @@ if __name__ == '__main__':
         raise SystemExit(f'Não foi possível conferir os artefatos: {erro}')
     if erros:
         raise SystemExit('\n'.join(erros))
-    print('Checagens aprovadas: amostras históricas, avaliação registrada, hashes e links locais.')
+    print('Integridade aprovada: amostras históricas, avaliações registradas, hashes e links locais.')
+    print('Omissões de seleção e falhas semânticas acima permanecem registradas; este gate não as resolve.')
     print('As revisões semânticas salvas foram conferidas; nenhuma nova revisão por modelo foi executada.')

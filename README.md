@@ -126,7 +126,10 @@ versão, tratar cópias manuais e consultar o ciclo de instalação testado.
 
 ## Como usar
 
-O Codex pode selecionar a skill pela descrição. Para aplicá-la como padrão em
+O Codex pode selecionar a skill pela descrição, mas isso não garante leitura em
+todo pedido compatível. A [rodada sem AGENTS](docs/selecao-descricao.md) registrou
+omissões em trechos curtos e traduções; as duas descrições candidatas não
+resolveram o problema e foram rejeitadas. Para aplicá-la como padrão em
 textos técnicos, registre essa preferência no `AGENTS.md` do seu ambiente.
 A [rodada de uso automático](docs/uso-automatico.md) verificou essa política em
 três documentos completos, sem mencionar a skill nos pedidos de revisão.
@@ -213,6 +216,11 @@ identificam o commit publicado.
 As instruções linguísticas da v0.1.2 permaneceram iguais na v0.1.3; os três
 documentos acrescentam cobertura de condições entre seções e evidência de leitura
 da skill sob a política de `AGENTS.md`.
+
+A [seleção apenas pela descrição](docs/selecao-descricao.md) foi avaliada em
+12 pedidos, com controles negativos e duas candidatas rejeitadas. As omissões
+permanecem visíveis no relatório e no comando de checagem. A aprovação da
+integridade no CI não significa aprovação de todos os acionamentos implícitos.
 
 ## Fontes
 

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "I01",
+    "resultado_semantico": "aprovado",
+    "rotulo_de_escopo": "coerente",
+    "justificativa": "Preserva a falha ao salvar e condiciona a nova tentativa ao restabelecimento da conexão. A seleção é coerente com mensagem de erro técnica em português brasileiro.",
+    "falhas": []
+  },
+  {
+    "id": "I02",
+    "resultado_semantico": "aprovado",
+    "rotulo_de_escopo": "coerente",
+    "justificativa": "Preserva as condições cumulativas de ambiente, janela e aprovação, além da confirmação do destino pelo operador, em todas as seções. Conserva a exceção de leitura, os comandos, a distinção accepted/início/conclusão, os limites de seis consultas e seus intervalos, a conferência conjunta, a limpeza facultativa e a retomada condicionada. Os comandos registrados apenas leem o documento e a skill. A seleção é coerente com revisão de procedimento técnico.",
+    "falhas": []
+  },
+  {
+    "id": "I03",
+    "resultado_semantico": "aprovado",
+    "rotulo_de_escopo": "coerente",
+    "justificativa": "Traduz para português brasileiro sem converter aceitação em entrega nem omitir a falta de confirmação. A seleção é coerente com tradução de mensagem técnica.",
+    "falhas": []
+  },
+  {
+    "id": "I04",
+    "resultado_semantico": "aprovado",
+    "rotulo_de_escopo": "coerente",
+    "justificativa": "Preserva autorização na organização, escopos de acesso, datas inclusivas, dry_run booleano padrão false, exemplos literais, idempotência por 24 horas, estados e seus limites, atraso de até 30 segundos, paginação, ratio string e todas as condições de novas tentativas. Não executa os exemplos; os comandos registrados são de leitura. A seleção é coerente com revisão de documentação técnica em português brasileiro.",
+    "falhas": []
+  },
+  {
+    "id": "I05",
+    "resultado_semantico": "aprovado",
+    "rotulo_de_escopo": "coerente",
+    "justificativa": "Mantém o gênero poético, o tom melancólico e a imagem do mar. A liberdade de reescrita permite a variação expressiva apresentada. O rótulo de não seleção é coerente: a descrição original trata de textos técnicos em português brasileiro e não inclui poemas.",
+    "falhas": []
+  },
+  {
+    "id": "I06",
+    "resultado_semantico": "aprovado",
+    "rotulo_de_escopo": "coerente",
+    "justificativa": "Entrega uma chamada curta, informal e emocional, sem prosa técnica adicional. O rótulo de não seleção é coerente: mencionar um aplicativo não transforma publicidade em documentação técnica.",
+    "falhas": []
+  },
+  {
+    "id": "I07",
+    "resultado_semantico": "aprovado",
+    "rotulo_de_escopo": "coerente",
+    "justificativa": "Entrega somente a função JavaScript dobro, com um parâmetro e retorno multiplicado por 2, sem comentários nem explicação. O rótulo de não seleção é coerente com uma descrição dirigida à escrita e revisão de textos técnicos em português brasileiro, e não à geração de código puro.",
+    "falhas": []
+  },
+  {
+    "id": "I08",
+    "resultado_semantico": "aprovado",
+    "rotulo_de_escopo": "coerente",
+    "justificativa": "Entrega apenas inglês e preserva a falha de upload e a nova tentativa condicionada ao restabelecimento da conexão. O rótulo de não seleção é coerente com o recorte explícito de textos técnicos em português brasileiro da primeira frase da descrição original; a lista posterior de tarefas de clareza não estabelece explicitamente outro idioma.",
+    "falhas": []
+  },
+  {
+    "id": "I09",
+    "resultado_semantico": "falha",
+    "rotulo_de_escopo": "coerente",
+    "justificativa": "Preserva o identificador dry_run e as duas condições cumulativas, incluindo a listagem quando qualquer uma faltar, mas transforma uma permissão da ferramenta em ordem de remoção. A seleção é coerente com descrição de ferramenta em português.",
+    "falhas": [
+      {
+        "gravidade": "material",
+        "fonte": "A ferramenta pode remover arquivos temporários somente quando dry_run for false e houver aprovação.",
+        "saida": "Remova os arquivos temporários somente se `dry_run` for `false` e houver aprovação.",
+        "explicacao": "O modal pode autoriza a remoção nas condições indicadas; o imperativo Remova passa a instruir a execução quando elas forem atendidas. Preservar as condições não preserva a modalidade nem a agência da descrição original."
+      }
+    ]
+  },
+  {
+    "id": "I10",
+    "resultado_semantico": "falha",
+    "rotulo_de_escopo": "coerente",
+    "justificativa": "Mantém a aprovação dos testes locais disponíveis e a possibilidade de falha em produção, mas acrescenta uma explicação causal não fornecida e restringe ao ambiente de produção a ausência de deploy declarada sem esse recorte. A seleção é coerente com relato técnico em português brasileiro.",
+    "falhas": [
+      {
+        "gravidade": "material",
+        "fonte": "Os testes locais disponíveis passaram. A falha pode continuar em produção. Não houve deploy da correção.",
+        "saida": "Os testes locais disponíveis passaram, mas a falha ainda pode ocorrer em produção, pois a correção não foi implantada nesse ambiente.",
+        "explicacao": "Pois apresenta a ausência de implantação em produção como razão da possível persistência da falha, enquanto a fonte apenas justapõe fatos e uma possibilidade. Além disso, nesse ambiente enfraquece a afirmação geral de que não houve deploy da correção para afirmar apenas que ele não ocorreu em produção."
+      }
+    ]
+  },
+  {
+    "id": "I11",
+    "resultado_semantico": "aprovado",
+    "rotulo_de_escopo": "coerente",
+    "justificativa": "Entrega exclusivamente 391, resultado correto de 17 vezes 23. O rótulo de não seleção é coerente: o pedido é cálculo com saída numérica, não escrita ou revisão de texto técnico.",
+    "falhas": []
+  },
+  {
+    "id": "I12",
+    "resultado_semantico": "aprovado",
+    "rotulo_de_escopo": "coerente",
+    "justificativa": "Mantém o almoço na geladeira e o encontro à noite, com tom familiar e carinhoso em português brasileiro. O rótulo de não seleção é coerente: a descrição original menciona traduções técnicas, não bilhetes familiares.",
+    "falhas": []
+  }
+]
